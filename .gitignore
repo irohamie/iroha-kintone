@@ -1,0 +1,16 @@
+# 資格情報（絶対にコミットしないこと）
+.env
+.env.*
+*.pem
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 一時ファイル
+tmp/
+*.tmp
