@@ -9,8 +9,20 @@ NPO法人いろ葉が運用するkintoneアプリの、JS/CSSカスタマイズ�
 | `docs/01_設計図.md` | 何を、なぜ、どう作るか（構造・認証方式・安全性設計） |
 | `docs/02_手順書.md` | Phase 0〜6の実作業手順（ボタン単位） |
 | `docs/03_Sonnet指示テンプレート.md` | Sonnetへの指示文とコード生成規約 |
+| `docs/04_ClaudeCode指示書.md` | Claude Codeに貼り付けるPhase別の指示文 |
+| `CLAUDE.md` | Claude Codeが毎セッション自動で読み込む永続指示 |
 
-Sonnetに作業を依頼するときは、上記3つをすべて読み込ませてから始めてください。
+Claude Codeに作業を依頼するときは、`docs/04_ClaudeCode指示書.md` のPhase別の枠内をそのままコピーして貼り付けてください。`CLAUDE.md` はClaude Codeが自動で読み込みます。
+
+## 役割分担
+
+| 担い手 | 役割 | kintone資格情報 |
+| --- | --- | --- |
+| Claude Code | コードを書く、構文検証する、コミット・pushする | 持たない |
+| GitHub Actions | 書かれたコードを実行してkintoneと通信する | GitHub Secretsから取得 |
+| まーくん | 実行トリガー、目視確認、デプロイ承認 | kintone管理画面で操作 |
+
+Claude Codeはkintoneに直接通信しません。資格情報がセッション履歴に残る経路を構造的に排除するためです。
 
 ## フォルダ構成
 
