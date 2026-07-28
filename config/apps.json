@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T07:42:41.314Z",
+  "generatedAt": "2026-07-28T07:49:10.178Z",
   "baseUrl": "https://iroha-mie.cybozu.com",
   "apps": [
     {
@@ -83,12 +83,28 @@
       "note": ""
     },
     {
+      "appId": "39",
+      "name": "17 防災・感染・防犯訓練",
+      "folder": "App39_17_防災・感染・防犯訓練",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
       "appId": "42",
       "name": "04 訪問支援計画",
       "folder": "App42_支援計画リストビュー",
       "spaceId": null,
       "enabled": true,
       "note": "実際のアプリ名は「04 訪問支援計画」で、フォルダ名「支援計画リストビュー」と表記が異なります（フォルダはリネームせず維持）"
+    },
+    {
+      "appId": "45",
+      "name": "26 給与明細",
+      "folder": "App45_26_給与明細",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
     },
     {
       "appId": "46",
@@ -99,9 +115,41 @@
       "note": ""
     },
     {
+      "appId": "48",
+      "name": "23 教材（運動・SST・学習）",
+      "folder": "App48_23_教材（運動・SST・学習）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "49",
+      "name": "23 教材（ADL・就労準備・支援ツール）",
+      "folder": "App49_23_教材（ADL・就労準備・支援ツール）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
       "appId": "50",
       "name": "11 通勤手段申告書・勤続年数・研修受講",
       "folder": "App50_11_通勤手段申告書・勤続年数・研修受講",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "60",
+      "name": "事務 手順書",
+      "folder": "App60_事務_手順書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "61",
+      "name": "23 教材リスト",
+      "folder": "App61_23_教材リスト",
       "spaceId": null,
       "enabled": false,
       "note": ""
@@ -126,6 +174,22 @@
       "appId": "77",
       "name": "09 着替え貸出",
       "folder": "App77_09_着替え貸出",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "117",
+      "name": "❌物損(損失)報告書",
+      "folder": "App117_物損(損失)報告書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "118",
+      "name": "13 書籍貸出届",
+      "folder": "App118_13_書籍貸出届",
       "spaceId": null,
       "enabled": false,
       "note": ""
@@ -206,6 +270,22 @@
       "appId": "135",
       "name": "❌休暇・残業・タイムカード修正申請（～2026/2）",
       "folder": "App135_休暇・残業・タイムカード修正申請（～2026_2）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "137",
+      "name": "15 係・業務分掌",
+      "folder": "App137_15_係・業務分掌",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "139",
+      "name": "10➋ 土曜希望（前月5日まで）",
+      "folder": "App139_10➋_土曜希望（前月5日まで）",
       "spaceId": null,
       "enabled": false,
       "note": ""
@@ -347,6 +427,14 @@
       "note": "実際のアプリ名は「04 個別支援計画」で、フォルダ名「支援計画コピー機能」と表記が異なります（フォルダはリネームせず維持）"
     },
     {
+      "appId": "210",
+      "name": "✖担当者数",
+      "folder": "App210_担当者数",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
       "appId": "211",
       "name": "10➊ 休暇・残業・タイムカード修正申請",
       "folder": "App211_10➊_休暇・残業・タイムカード修正申請",
@@ -422,6 +510,14 @@
       "appId": "226",
       "name": "マネジャー業務管理",
       "folder": "App226_マネジャー業務管理",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "228",
+      "name": "95 事務アプリ",
+      "folder": "App228_タイムカード管理",
       "spaceId": null,
       "enabled": false,
       "note": ""
