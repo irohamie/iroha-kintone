@@ -1,0 +1,47 @@
+{
+  "rights": [
+    {
+      "entity": {
+        "type": "CREATOR",
+        "code": null
+      },
+      "includeSubs": false,
+      "appEditable": true,
+      "recordViewable": true,
+      "recordAddable": true,
+      "recordEditable": true,
+      "recordDeletable": true,
+      "recordImportable": true,
+      "recordExportable": true
+    },
+    {
+      "entity": {
+        "type": "ORGANIZATION",
+        "code": "いろ葉_3oWTo5"
+      },
+      "includeSubs": false,
+      "appEditable": false,
+      "recordViewable": true,
+      "recordAddable": true,
+      "recordEditable": true,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    },
+    {
+      "entity": {
+        "type": "GROUP",
+        "code": "everyone"
+      },
+      "includeSubs": false,
+      "appEditable": false,
+      "recordViewable": false,
+      "recordAddable": false,
+      "recordEditable": false,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    }
+  ],
+  "revision": "149"
+}
