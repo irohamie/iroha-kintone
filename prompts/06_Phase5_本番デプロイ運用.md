@@ -21,11 +21,17 @@
 
 ## 作るファイル：.github/workflows/manual-deploy.yml
 
+【重要】承認の意味づけが変わりました。まーくんは技術的正しさを判断できないため、
+承認ボタンで問うのは「これは頼んだ内容と合っているか」だけです（CLAUDE.md 7-3-1）。
+そのため `summary` 入力欄を必須にし、承認前に必ず `$GITHUB_STEP_SUMMARY` へ
+平易な日本語サマリを出力します。
+
 1. トリガーは `workflow_dispatch` のみ
    【絶対禁止】`schedule` と `push` トリガーを付けること
 2. `inputs`
    - `app_id`：対象アプリID（`required: true`、`type: string`）
    - `confirm`：確認用にアプリIDを再入力（`required: true`、`type: string`）
+   - `summary`：変更内容の日本語1〜2文（`required: true`、`type: string`）
    - `source`：送信元フォルダパス（`required: false`。空なら本体フォルダを使う）
    - `allow_remove`：ファイル数が減ることを許可（`type: boolean`、`default: false`）
 3. ジョブを2つに分ける
@@ -36,21 +42,31 @@
    3. `node scripts/04_preflight.js --app={app_id}`
    4. `node scripts/05_snapshot_before.js --app={app_id}`
    5. `node scripts/06_push_preview.js --app={app_id} --source={source} [--allow-remove]`
-   6. ジョブサマリに「kintoneのアプリ設定画面で目視確認してから承認してください」を出力
+   6. `$GITHUB_STEP_SUMMARY` に以下を出力する
+      ```
+      ## 承認前の確認
+      対象：App{app_id}
+      変更内容：{summary}
+      ファイル数：{現行}個 → {送信後}個
+      退避済み：_backup_before/{当日}_{folder}/
+      → この内容が依頼と合っていれば「Approve and deploy」を、
+        違和感があれば「Reject」を選んでください。
+      ```
 
    **ジョブ2（`needs: ジョブ1`、`environment: production`）**
    7. `actions/checkout@v4`（`fetch-depth: 0`）
    8. `actions/setup-node@v4`（`node-version: 20`）
-   9. `node scripts/07_deploy.js --app={app_id} --confirm={confirm}`
+   9. `node scripts/07_deploy.js --app={app_id} --confirm={confirm} --summary={summary}`
    10. `_deploy_log/` をコミット・push
 
 4. `permissions: contents: write`
 5. `env` で Secrets の3つを両ジョブに渡す
 6. `git config` の `user.name` は `irohamie`、`user.email` は `npo@iroha-mie.com`
 
-【設計意図】ジョブを2つに分け、ジョブ2に `environment: production` を付けることで、
-テスト環境への反映後・運用環境への反映前にGitHub側で処理が自動停止し、
-まーくんの承認タップを待つ状態になります。これが最終確認のゲートです。
+【設計意図】ジョブ1のステップサマリに `summary` を含めることで、
+承認画面（Review deployments）を開いた時点で「何を、なぜ変えるか」が
+一目で見える。まーくんが判断するのは技術的な妥当性ではなく、
+このサマリが依頼内容と一致しているかどうかだけ。
 
 ## 最初の本番デプロイ（あなたが主導する）
 
@@ -60,19 +76,26 @@
 
 実行手順（起動と監視はあなたが行う。まーくんの操作は目視確認と承認のみ）：
 
-1. あなたが `POST .../actions/workflows/manual-deploy.yml/dispatches` を送って起動する
-   - `inputs`: `{ app_id, confirm, source: "", allow_remove: false }`
-2. ジョブ1（preflight・退避・テスト環境反映）の完了を、あなたがAPIでポーリングして待つ
-3. まーくんに目視確認を依頼する
+1. あなたが変更内容を1〜2文の平易な日本語に要約する（`summary`）
+   例：「App231の担当表で、学年計算の4/2生まれ境界のずれを修正します」
+2. あなたが `POST .../actions/workflows/manual-deploy.yml/dispatches` を送って起動する
+   - `inputs`: `{ app_id, confirm, summary, source: "", allow_remove: false }`
+3. ジョブ1（preflight・退避・テスト環境反映）の完了を、あなたがAPIでポーリングして待つ
+4. まーくんに以下をまとめて伝える
    「kintoneで対象アプリを開き、歯車マーク →『設定』タブ →
-   『JavaScript / CSSでカスタマイズ』でファイル名と並び順を確認してください」
-4. まーくんの承認操作（ここだけは人の手作業。安全のための意図的なゲート）
+   『JavaScript / CSSでカスタマイズ』でファイル名と並び順を見た上で、
+   GitHubの承認画面に出ている次のサマリが依頼内容と合っているか確認してください。
+   　変更内容：{summary}
+   技術的な正しさはこちらで確認済みです。『頼んだ内容と合っているか』だけご覧ください」
+5. まーくんの承認操作（ここだけは人の手作業。安全のための意図的なゲート）
    1. Actionsタブを開き、実行中のワークフローをタップ
    2. 「Review deployments」をタップ
-   3. `production` にチェックを入れ「Approve and deploy」をタップ
-5. ジョブ2（運用環境への反映）の完了を、あなたがAPIでポーリングして待つ
-6. `_deploy_log/` の内容をあなたが取得し、Gate 7 の照合結果を報告する
-7. まーくんにkintoneでの最終動作確認を依頼する
+   3. ステップサマリに表示された変更内容を確認
+   4. 合っていれば `production` にチェックを入れ「Approve and deploy」をタップ
+      違和感があれば「Reject」をタップ（Reject時、あなたは理由を確認して対応する）
+6. ジョブ2（運用環境への反映）の完了を、あなたがAPIでポーリングして待つ
+7. `_deploy_log/` の内容をあなたが取得し、Gate 7 の照合結果を報告する
+8. まーくんにkintoneでの最終動作確認を依頼する
 
 ## 検証（あなたがやること）
 

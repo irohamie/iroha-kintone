@@ -97,38 +97,51 @@
 
 ## 作るファイル4：scripts/07_deploy.js
 
-引数：`--app={アプリID} --confirm={アプリID}`
+引数：`--app={アプリID} --confirm={アプリID} --summary={変更内容の日本語1〜2文}`
+
+【重要】`--summary` は必須。人が判断できるのは「技術的な正しさ」ではなく
+「これは自分が頼んだ内容と合っているか」だけであるため、承認前に必ず
+平易な日本語サマリを提示すること（CLAUDE.md 7-3-1 参照）。
 
 1. Gate 5：`--confirm` の値が `--app` と完全一致するか確認。
    不一致なら「確認用アプリIDが一致しません」と表示して中止
 2. Gate 2：当日の `_backup_before/` スナップショットの存在を確認。
    さらに `git status` で未コミットの変更が無いことを確認
-3. `POST /k/v1/preview/app/deploy.json` を送信
+3. **承認待ちに入る前に、以下の形式で `$GITHUB_STEP_SUMMARY` に書き出す**
+   ```
+   【今回の変更】App{ID}（{アプリ名}）
+   変更内容：{--summary の内容}
+   ファイル数：{現行本番のファイル数}個 → {送信予定のファイル数}個（削除：{あり/なし}）
+   退避済み：_backup_before/{当日}_{folder}/（問題があればここへ即座に戻せます）
+   ```
+4. `POST /k/v1/preview/app/deploy.json` を送信
    - body: `{ apps: [{ app: "{id}", revision: "{取得済みrevision}" }] }`
    - 【禁止】`revision` に `-1` を指定すること
-4. `GET /k/v1/preview/app/deploy.json?apps[0].app={id}` を
+5. `GET /k/v1/preview/app/deploy.json?apps[0].app={id}` を
    3秒間隔で最大20回ポーリングし、`status` が `SUCCESS` になるまで待つ
    - `PROCESSING` なら継続
    - `FAIL` または `CANCEL` なら即座に内容を表示して終了コード1
    - 20回超でタイムアウトとして報告
-5. Gate 7：運用環境 `GET /k/v1/app/customize.json` を取得し、
+6. Gate 7：運用環境 `GET /k/v1/app/customize.json` を取得し、
    各 FILE をダウンロードして MD5 を再計算。送信前と照合
    - 一致：成功として報告
    - 不一致：「運用環境の内容が想定と一致しません。
      `_backup_before/{当日}_{folder}/` を `--source` に指定して
      06_push_preview.js と 07_deploy.js を再実行すれば元に戻せます」
      と復旧手順を明示して終了コード1
-6. `_deploy_log/{YYYYMMDD_HHMMSS}_App{ID}.md` に以下を記録する
+7. `_deploy_log/{YYYYMMDD_HHMMSS}_App{ID}.md` に以下を記録する
    - 実行日時（日本時間）／対象アプリIDとアプリ名／送信元フォルダパス
+   - **`--summary` の内容**（後から「何のために変更したか」を追える記録として残す）
    - 退避先スナップショットのパス
    - 送信前後の全ファイルの名前・バイト数・MD5
    - deploy の status 推移／Gate 7 の照合結果
-7. `_deploy_log/` をコミット・push
+8. `_deploy_log/` をコミット・push
    メッセージ：`デプロイ記録：{アプリ名}（App{ID}） {YYYY-MM-DD HH:MM}`
 
 【絶対禁止】preflight や Gate 2 をスキップすること
 【絶対禁止】`revision` に `-1` を指定すること
 【絶対禁止】`_deploy_log/` の既存ファイルを上書きすること
+【絶対禁止】`--summary` を省略して承認待ちに入ること
 
 ## 実行と検証（あなたがやること）
 
