@@ -76,6 +76,18 @@ async function waitForDeploy(appId) {
 }
 
 async function processApp(appId, appName) {
+  const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
+  const alreadyDeployedGrant = findGrant(production.rights);
+
+  if (alreadyDeployedGrant && alreadyDeployedGrant.appEditable === true) {
+    return {
+      appId: appId,
+      appName: appName,
+      result: 'スキップ',
+      detail: '運用環境に既にappEditable:trueが反映済み',
+    };
+  }
+
   const preview = await kintoneAdmin.apiGet('/k/v1/preview/app/acl.json', { app: appId });
   const previewGrant = findGrant(preview.rights);
 
@@ -89,13 +101,13 @@ async function processApp(appId, appName) {
   }
 
   await kintoneAdmin.apiPost('/k/v1/preview/app/deploy.json', {
-    apps: [{ app: appId, revision: preview.revision }],
+    apps: [{ app: Number(appId), revision: Number(preview.revision) }],
   });
 
   await waitForDeploy(appId);
 
-  const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
-  const productionGrant = findGrant(production.rights);
+  const productionAfter = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
+  const productionGrant = findGrant(productionAfter.rights);
 
   if (!productionGrant || productionGrant.appEditable !== true) {
     return {
@@ -123,10 +135,13 @@ function printReport(results) {
   }
 
   const success = results.filter((r) => r.result === '成功').length;
+  const skipped = results.filter((r) => r.result === 'スキップ').length;
   const errors = results.filter((r) => r.result === 'エラー').length;
 
   console.log('');
-  console.log('総数：' + results.length + '件（成功：' + success + '件／エラー：' + errors + '件）');
+  console.log(
+    '総数：' + results.length + '件（成功：' + success + '件／スキップ（反映済み）：' + skipped + '件／エラー：' + errors + '件）'
+  );
 }
 
 async function main() {

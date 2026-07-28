@@ -230,23 +230,11 @@ async function main() {
   }
 
   printReport(results);
-  writeNewlyGrantedOutput(results);
 
   const hasError = results.some((r) => r.result === 'エラー');
   if (hasError) {
     process.exit(1);
   }
-}
-
-function writeNewlyGrantedOutput(results) {
-  const newlyGrantedIds = results.filter((r) => r.result === '新規追加').map((r) => r.appId);
-  const outputPath = process.env.GITHUB_OUTPUT;
-
-  if (!outputPath) {
-    return;
-  }
-
-  fs.appendFileSync(outputPath, 'newly_granted_apps=' + newlyGrantedIds.join(',') + '\n', 'utf8');
 }
 
 main().catch((error) => {
