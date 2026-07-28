@@ -35,12 +35,16 @@
 1. `kintone_admin.js` を使い、対象アプリを1つずつ処理する（1アプリの失敗で全体を止めない）
 2. 各アプリについて `GET /k/v1/preview/app/acl.json?app={id}` で**現在のACLを取得**する
    - `rights`（エントリの配列）と `revision` を得る
-3. 【最重要】取得した `rights` 配列の中に、`entity.code` が `github-bot` の
+3. 【必須・CLAUDE.md 4-3-1 条件4】取得した現在のACLを、書き込みを行う**前に**
+   `_backup_before/{YYYYMMDD}_App{ID}_acl/acl_before.json` として保存し、
+   `git add` してコミット・pushする（メッセージ：`ACL変更前退避：App{ID} {YYYY-MM-DD}`）。
+   push が失敗した場合、そのアプリへの書き込みは行わない
+4. 取得した `rights` 配列の中に、`entity.code` が `github-bot` の
    エントリが**既に存在するか**確認する
    - 既に存在し、`appEditable`（アプリ管理相当の権限）が既に `true` なら、
      そのアプリは「変更不要」として記録し、書き込みを行わない（べき等性の確保）
    - 存在しない場合のみ、次の手順へ進む
-4. 既存の `rights` 配列は**1件も変更・削除しない**。末尾に以下のエントリを追記する
+5. 既存の `rights` 配列は**1件も変更・削除しない**。末尾に以下のエントリを追記する
    ```json
    {
      "entity": { "type": "USER", "code": "github-bot" },
@@ -54,11 +58,11 @@
      "includeSubs": false
    }
    ```
-5. Gate：送信前に、新しい配列の長さが「元の長さ + 1」であることを確認する。
+6. Gate：送信前に、新しい配列の長さが「元の長さ + 1」であることを確認する。
    異なる場合（既存エントリが減っている等）は送信せず、そのアプリをエラー記録する
-6. `PUT /k/v1/preview/app/acl.json` に `app` / `rights`（全件） / `revision` を送信
+7. `PUT /k/v1/preview/app/acl.json` に `app` / `rights`（全件） / `revision` を送信
    - 【禁止】`revision` に `-1` を指定すること
-7. 送信後、`GET /k/v1/preview/app/acl.json?app={id}` で再取得し、
+8. 送信後、`GET /k/v1/preview/app/acl.json?app={id}` で再取得し、
    - 元からあったエントリが1件も減っていないこと
    - `github-bot` のエントリが追加され、`appEditable: true` になっていること
    を確認する。異常があれば、そのアプリだけエラー記録して次へ進む
