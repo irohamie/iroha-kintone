@@ -42,18 +42,57 @@ NPO法人いろ葉（三重県、児童発達支援事業所）が運用する k
 
 ---
 
-## 4. 実行体制（役割分担）
+## 4. 実行体制（役割分担）【2026年7月28日 確定】
 
-**Claude Code が kintone に直接通信して、実行と動作確認まで行います。**
+**確定事項：Claude Code の実行環境から kintone（iroha-mie.cybozu.com）へは
+到達できません。** egressポリシーにより CONNECT 自体が拒否されることを実測で確認済みです
+（`x-deny-reason: host_not_allowed` および `connect_rejected` の両方の表現で同一現象を確認）。
 
-| 担い手 | 役割 |
+そのため、kintoneへの実通信は**すべて GitHub Actions のランナー**が担当します。
+Claude Code は「コードを書く」「GitHub Actions を起動する」「実行結果を取得して解析する」
+役割に専念します。
+
+| 担い手 | 役割 | kintoneへの直接通信 |
+| --- | --- | --- |
+| Claude Code | コードを書く、GitHub Actions を起動する、ログを取得し解析する、原因を特定する、コミット・pushする | 行わない（できない） |
+| GitHub Actions | Secretsを使ってkintoneと実通信する | 行う |
+| まーくん | 方針決定、kintone画面での目視確認、**本番デプロイの最終承認のみ** | 行わない |
+
+### 4-1. Claude Code は GitHub Actions を自分で起動・監視する
+
+このリポジトリに連携している GitHub App「Claude」には、
+Actions・code・workflows に対する読み書き権限が付与済みです。
+この権限を使い、**まーくんに「Actionsタブを開いてRun workflowを押してください」
+と依頼しないこと。** 代わりに、あなた自身が以下を行ってください。
+
+1. GitHub API（`gh` コマンドが使えるならそれを、無ければ REST API を直接）で
+   対象ワークフローに `workflow_dispatch` イベントを送って起動する
+   ```
+   POST /repos/irohamie/iroha-kintone/actions/workflows/{workflow_id}/dispatches
+   body: { "ref": "main", "inputs": { ... } }
+   ```
+2. `GET /repos/irohamie/iroha-kintone/actions/runs?event=workflow_dispatch` を
+   数秒間隔でポーリングし、起動した実行を見つける
+3. `status` が `completed` になるまで待つ
+4. `GET /repos/irohamie/iroha-kintone/actions/runs/{run_id}/jobs` でジョブ結果を取得
+5. 失敗している場合、`GET /repos/irohamie/iroha-kintone/actions/jobs/{job_id}/logs` で
+   ログ本文を取得して原因を解析する
+6. 結果を日本語で要約してまーくんに報告する
+
+**まーくんにブラウザのF12・リモートデスクトップ・Actionsタブでの手動操作をさせないこと。**
+唯一の例外は、GitHub Environments の **Required reviewers 承認**
+（Phase 5以降の本番デプロイ直前）で、これは意図的な人手の安全ゲートなので残す。
+
+### 4-2. 認証の使い分け（重要）
+
+| 用途 | 使う認証 |
 | --- | --- |
-| Claude Code | コードを書く、実行する、ログを読む、原因を特定する、コミット・pushする |
-| GitHub Actions | 定時の自動バックアップ（人が寝ている間の実行） |
-| まーくん | 方針決定、kintone画面での目視確認、デプロイ承認 |
+| GitHubへのAPI操作（ワークフロー起動・ログ取得・コミット・push） | Claude Code に既に付与されている GitHub App の権限。追加のトークンは不要 |
+| kintoneへの通信 | GitHub Actions の実行中にのみ、GitHub Secrets から環境変数として渡される。Claude Code のセッションには一切渡さない |
 
-まーくんにブラウザのF12やリモートデスクトップでのログ確認をさせないこと。
-実行ログはあなたが取得し、日本語で要約して報告してください。
+**Claude Code のセッションに kintone のパスワードを持たせる設計は撤回します。**
+`.env` はローカルでの動作確認用として一応用意しますが、Claude Code の実行環境からは
+kintoneに到達できないため実質的に使えません。作成不要です。
 
 ### 4-1. 資格情報の扱い
 
@@ -71,7 +110,7 @@ KINTONE_PASSWORD=（まーくんが提供する値）
 【禁止】パスワードを `console.log`、コミットメッセージ、報告文に含めること。
 【禁止】`.env` を `git add` すること。作業前に必ず `git status` で混入していないか確認する。
 
-### 4-2. 自動化ユーザーの権限について（重要な認識）
+### 4-3. 自動化ユーザーの権限について（重要な認識）
 
 自動化用ユーザー `github-bot` には、対象アプリの「アプリ管理」権限のみを付与し、
 レコード閲覧・追加・編集・削除の権限は付与していません。
