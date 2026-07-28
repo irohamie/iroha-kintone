@@ -57,6 +57,7 @@ function createClient(envNames) {
       if (json.code) parts.push('code=' + json.code);
       if (json.id) parts.push('id=' + json.id);
       if (json.message) parts.push('message=' + json.message);
+      parts.push('raw=' + JSON.stringify(json));
       throw new Error('kintone APIエラー（HTTP ' + res.status + '）: ' + parts.join(', '));
     }
 
