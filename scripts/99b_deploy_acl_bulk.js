@@ -84,7 +84,7 @@ async function collectDeployTargets(appIds, appNames) {
 
 async function deployBatch(targets) {
   const body = {
-    apps: targets.map((t) => ({ app: Number(t.appId), revision: Number(t.revision) })),
+    apps: targets.map((t) => ({ app: String(t.appId), revision: String(t.revision) })),
   };
   console.log('deploy.jsonへ送信するbody：' + JSON.stringify(body));
   await kintoneAdmin.apiPost('/k/v1/preview/app/deploy.json', body);
