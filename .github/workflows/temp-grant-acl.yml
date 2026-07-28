@@ -1,0 +1,45 @@
+name: Temp Grant ACL
+
+on:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: '対象アプリID（カンマ区切り）'
+        required: false
+        default: '10,11,30,42,46,50,67,128,133,137,139,141,142,144,146,147,160,161,162,163,207,211,216,219,220,221,222,225,229,230,231,232,233,236,237'
+
+permissions:
+  contents: write
+
+jobs:
+  grant-acl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Grant ACL (preview environment)
+        id: grant
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99_grant_acl_bulk.js --apps="${{ inputs.apps }}"
+
+      - name: Deploy ACL to production
+        if: steps.grant.outputs.newly_granted_apps != ''
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99b_deploy_acl_bulk.js --apps="${{ steps.grant.outputs.newly_granted_apps }}"
