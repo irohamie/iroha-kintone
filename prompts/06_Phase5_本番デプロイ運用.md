@@ -58,19 +58,21 @@
 理由：他アプリから参照されておらず、影響範囲が限定的なため。
 まーくんに対象を確認してから進めてください。
 
-実行手順の案内（ボタン単位）：
+実行手順（起動と監視はあなたが行う。まーくんの操作は目視確認と承認のみ）：
 
-1. Actionsタブ →「manual-deploy」→「Run workflow」をタップ
-2. `app_id` と `confirm` に同じアプリIDを入力
-3. `source` は空欄のまま
-4. 「Run workflow」をタップ
-5. ジョブ1（preflight・退避・テスト環境反映）の完了を待つ
-6. kintoneで対象アプリを開き、歯車マーク →「設定」タブ →
-   「JavaScript / CSSでカスタマイズ」でファイル名と並び順を目視確認
-7. GitHubに戻り「Review deployments」をタップ
-8. `production` にチェックを入れ「Approve and deploy」をタップ
-9. ジョブ2（運用環境への反映）の完了を待つ
-10. kintoneでアプリを開き、動作を確認
+1. あなたが `POST .../actions/workflows/manual-deploy.yml/dispatches` を送って起動する
+   - `inputs`: `{ app_id, confirm, source: "", allow_remove: false }`
+2. ジョブ1（preflight・退避・テスト環境反映）の完了を、あなたがAPIでポーリングして待つ
+3. まーくんに目視確認を依頼する
+   「kintoneで対象アプリを開き、歯車マーク →『設定』タブ →
+   『JavaScript / CSSでカスタマイズ』でファイル名と並び順を確認してください」
+4. まーくんの承認操作（ここだけは人の手作業。安全のための意図的なゲート）
+   1. Actionsタブを開き、実行中のワークフローをタップ
+   2. 「Review deployments」をタップ
+   3. `production` にチェックを入れ「Approve and deploy」をタップ
+5. ジョブ2（運用環境への反映）の完了を、あなたがAPIでポーリングして待つ
+6. `_deploy_log/` の内容をあなたが取得し、Gate 7 の照合結果を報告する
+7. まーくんにkintoneでの最終動作確認を依頼する
 
 ## 検証（あなたがやること）
 

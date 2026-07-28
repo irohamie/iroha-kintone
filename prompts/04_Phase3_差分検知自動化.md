@@ -53,13 +53,17 @@ GitHub Secrets に3つが登録済みかどうかは、あなたからは確認�
 7. 同じ手順で `KINTONE_USERNAME`（値：`github-bot`）と
    `KINTONE_PASSWORD`（値：`.env` に入れたパスワードと同じもの）を登録
 
-## 検証（あなたがやること）
+## 検証（あなたがやること・まーくんに手動起動を依頼しない）
 
 1. ワークフローのYAML構文を確認する（インデントとクォートの誤りがないか）
-2. まーくんにワークフローの手動起動を1回だけ依頼し、実行結果を確認する
-   - 依頼文：「Actionsタブ →「daily-pull」→「Run workflow」→ 緑の「Run workflow」をタップしてください」
-3. 失敗した場合、ログの内容から原因を特定し、あなたが修正して再依頼する
-4. 成功したら「初回の自動実行は明日の午前4時です」と報告する
+2. `POST /repos/irohamie/iroha-kintone/actions/workflows/daily-pull.yml/dispatches`
+   （`ref: main`）を送って、あなた自身が1回起動する
+3. `GET .../actions/runs?event=workflow_dispatch&per_page=1` をポーリングし、
+   `completed` になるまで待つ
+4. `conclusion` が `failure` の場合、
+   `GET .../actions/jobs/{job_id}/logs` でログを取得して原因を特定し、修正して再実行する
+5. 成功したら、取得できたコミット内容を確認し、
+   「初回の自動実行は明日の午前4時です。手動での動作確認は成功しました」と報告する
 
 ## 最後にやること
 
