@@ -55,75 +55,84 @@ function findGrant(rights) {
   return null;
 }
 
-async function waitForDeploy(appId) {
-  for (let attempt = 0; attempt < MAX_POLL_ATTEMPTS; attempt++) {
-    const result = await kintoneAdmin.apiGet('/k/v1/preview/app/deploy.json', {
-      'apps[0].app': appId,
-    });
-    const status = result.apps && result.apps[0] ? result.apps[0].status : undefined;
+async function determineTargets(appIds, appNames) {
+  const targets = [];
+  const results = [];
 
-    if (status === 'SUCCESS') {
-      return;
-    }
-    if (status === 'FAIL' || status === 'CANCELLED') {
-      throw new Error('deployのステータスが' + status + 'になりました');
+  for (const appId of appIds) {
+    const appName = appNames.get(appId) || '(名称不明)';
+
+    const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
+    const productionGrant = findGrant(production.rights);
+
+    if (productionGrant && productionGrant.appEditable === true) {
+      results.push({
+        appId: appId,
+        appName: appName,
+        result: 'スキップ',
+        detail: '運用環境に既にappEditable:trueが反映済み',
+      });
+      continue;
     }
 
-    await sleep(POLL_INTERVAL_MS);
+    const preview = await kintoneAdmin.apiGet('/k/v1/preview/app/acl.json', { app: appId });
+    const previewGrant = findGrant(preview.rights);
+
+    if (!previewGrant || previewGrant.appEditable !== true) {
+      results.push({
+        appId: appId,
+        appName: appName,
+        result: 'エラー',
+        detail: 'テスト環境でgithub-botのappEditable:trueが確認できないため対象から除外しました',
+      });
+      continue;
+    }
+
+    targets.push({ appId: appId, appName: appName, revision: preview.revision });
   }
 
-  throw new Error('deployの完了待ちが' + MAX_POLL_ATTEMPTS + '回のポーリングを超えました');
+  return { targets: targets, results: results };
 }
 
-async function processApp(appId, appName) {
-  const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
-  const alreadyDeployedGrant = findGrant(production.rights);
-
-  if (alreadyDeployedGrant && alreadyDeployedGrant.appEditable === true) {
-    return {
-      appId: appId,
-      appName: appName,
-      result: 'スキップ',
-      detail: '運用環境に既にappEditable:trueが反映済み',
-    };
-  }
-
-  const preview = await kintoneAdmin.apiGet('/k/v1/preview/app/acl.json', { app: appId });
-  const previewGrant = findGrant(preview.rights);
-
-  if (!previewGrant || previewGrant.appEditable !== true) {
-    return {
-      appId: appId,
-      appName: appName,
-      result: 'エラー',
-      detail: 'テスト環境でgithub-botのappEditable:trueが確認できないため反映を中止しました',
-    };
-  }
-
+async function deployBatch(targets) {
   await kintoneAdmin.apiPost('/k/v1/preview/app/deploy.json', {
-    apps: [{ app: Number(appId), revision: Number(preview.revision) }],
+    apps: targets.map((t) => ({ app: Number(t.appId), revision: Number(t.revision) })),
   });
+}
 
-  await waitForDeploy(appId);
+async function waitForDeployBatch(targets) {
+  const pendingIds = new Set(targets.map((t) => t.appId));
+  const statusById = new Map();
 
-  const productionAfter = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
-  const productionGrant = findGrant(productionAfter.rights);
+  for (let attempt = 0; attempt < MAX_POLL_ATTEMPTS && pendingIds.size > 0; attempt++) {
+    const params = {};
+    let i = 0;
+    for (const appId of pendingIds) {
+      params['apps[' + i + '].app'] = appId;
+      i++;
+    }
 
-  if (!productionGrant || productionGrant.appEditable !== true) {
-    return {
-      appId: appId,
-      appName: appName,
-      result: 'エラー',
-      detail: '運用環境への反映後、github-botのappEditable:trueを確認できませんでした',
-    };
+    const result = await kintoneAdmin.apiGet('/k/v1/preview/app/deploy.json', params);
+    const statusList = result.apps || [];
+
+    for (const entry of statusList) {
+      const appIdStr = String(entry.app);
+      if (entry.status === 'SUCCESS' || entry.status === 'FAIL' || entry.status === 'CANCELLED') {
+        statusById.set(appIdStr, entry.status);
+        pendingIds.delete(appIdStr);
+      }
+    }
+
+    if (pendingIds.size > 0) {
+      await sleep(POLL_INTERVAL_MS);
+    }
   }
 
-  return {
-    appId: appId,
-    appName: appName,
-    result: '成功',
-    detail: '',
-  };
+  for (const appId of pendingIds) {
+    statusById.set(appId, 'TIMEOUT');
+  }
+
+  return statusById;
 }
 
 function printReport(results) {
@@ -157,31 +166,90 @@ async function main() {
   console.log('対象アプリ数：' + apps.length + '件');
 
   const appNames = loadAppNames();
-  const results = [];
+  const { targets, results } = await determineTargets(apps, appNames);
 
-  for (const appId of apps) {
-    const appName = appNames.get(appId) || '(名称不明)';
+  console.log(
+    '反映が必要なアプリ：' + targets.length + '件（スキップ・除外：' + (apps.length - targets.length) + '件）'
+  );
+
+  if (targets.length === 0) {
+    printReport(sortByOriginalOrder(apps, results));
+    if (results.some((r) => r.result === 'エラー')) {
+      process.exit(1);
+    }
+    return;
+  }
+
+  try {
+    await deployBatch(targets);
+  } catch (error) {
+    for (const t of targets) {
+      results.push({
+        appId: t.appId,
+        appName: t.appName,
+        result: 'エラー',
+        detail: 'deployの一括送信に失敗：' + error.message,
+      });
+    }
+    printReport(sortByOriginalOrder(apps, results));
+    process.exit(1);
+    return;
+  }
+
+  const statusById = await waitForDeployBatch(targets);
+
+  for (const t of targets) {
+    const status = statusById.get(t.appId);
+
+    if (status !== 'SUCCESS') {
+      results.push({
+        appId: t.appId,
+        appName: t.appName,
+        result: 'エラー',
+        detail: 'deployのステータスが' + status + 'になりました',
+      });
+      continue;
+    }
+
     try {
-      const result = await processApp(appId, appName);
-      results.push(result);
-      console.log(appId + '：' + result.result);
+      const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: t.appId });
+      const grant = findGrant(production.rights);
+
+      if (!grant || grant.appEditable !== true) {
+        results.push({
+          appId: t.appId,
+          appName: t.appName,
+          result: 'エラー',
+          detail: '運用環境への反映後、github-botのappEditable:trueを確認できませんでした',
+        });
+      } else {
+        results.push({
+          appId: t.appId,
+          appName: t.appName,
+          result: '成功',
+          detail: '',
+        });
+      }
     } catch (error) {
       results.push({
-        appId: appId,
-        appName: appName,
+        appId: t.appId,
+        appName: t.appName,
         result: 'エラー',
-        detail: error.message,
+        detail: '反映後の検証に失敗：' + error.message,
       });
-      console.log(appId + '：エラー：' + error.message);
     }
   }
 
-  printReport(results);
+  printReport(sortByOriginalOrder(apps, results));
 
-  const hasError = results.some((r) => r.result === 'エラー');
-  if (hasError) {
+  if (results.some((r) => r.result === 'エラー')) {
     process.exit(1);
   }
+}
+
+function sortByOriginalOrder(apps, results) {
+  const order = new Map(apps.map((appId, index) => [appId, index]));
+  return results.slice().sort((a, b) => order.get(a.appId) - order.get(b.appId));
 }
 
 main().catch((error) => {
