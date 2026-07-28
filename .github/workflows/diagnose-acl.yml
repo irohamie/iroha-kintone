@@ -1,0 +1,33 @@
+name: Diagnose ACL
+
+on:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: '対象アプリID（カンマ区切り）'
+        required: false
+        default: '10,42,207,219,225,228,231'
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Diagnose ACL (read-only)
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          KINTONE_USERNAME: ${{ secrets.KINTONE_USERNAME }}
+          KINTONE_PASSWORD: ${{ secrets.KINTONE_PASSWORD }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99c_diagnose_acl.js --apps="${{ inputs.apps }}"
