@@ -40,6 +40,8 @@ jobs:
         if: steps.grant.outcome == 'success' || steps.grant.outcome == 'failure'
         env:
           KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          KINTONE_USERNAME: ${{ secrets.KINTONE_USERNAME }}
+          KINTONE_PASSWORD: ${{ secrets.KINTONE_PASSWORD }}
           TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
           TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
         run: node scripts/99b_deploy_acl_bulk.js --apps="${{ inputs.apps }}"

@@ -3,6 +3,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const kintoneAdmin = require('./lib/kintone_admin.js');
+const kintone = require('./lib/kintone.js');
 
 const REPO_ROOT = path.join(__dirname, '..');
 const CONFIG_PATH = path.join(REPO_ROOT, 'config', 'apps.json');
@@ -55,25 +56,12 @@ function findGrant(rights) {
   return null;
 }
 
-async function determineTargets(appIds, appNames) {
+async function collectDeployTargets(appIds, appNames) {
   const targets = [];
   const results = [];
 
   for (const appId of appIds) {
     const appName = appNames.get(appId) || '(名称不明)';
-
-    const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: appId });
-    const productionGrant = findGrant(production.rights);
-
-    if (productionGrant && productionGrant.appEditable === true) {
-      results.push({
-        appId: appId,
-        appName: appName,
-        result: 'スキップ',
-        detail: '運用環境に既にappEditable:trueが反映済み',
-      });
-      continue;
-    }
 
     const preview = await kintoneAdmin.apiGet('/k/v1/preview/app/acl.json', { app: appId });
     const previewGrant = findGrant(preview.rights);
@@ -135,6 +123,15 @@ async function waitForDeployBatch(targets) {
   return statusById;
 }
 
+async function verifyGithubBotCanAccess(appId) {
+  try {
+    await kintone.apiGet('/k/v1/app/customize.json', { app: appId });
+    return { ok: true, message: '' };
+  } catch (error) {
+    return { ok: false, message: error.message };
+  }
+}
+
 function printReport(results) {
   console.log('');
   console.log('=== ACL運用環境反映 結果 ===');
@@ -144,13 +141,15 @@ function printReport(results) {
   }
 
   const success = results.filter((r) => r.result === '成功').length;
-  const skipped = results.filter((r) => r.result === 'スキップ').length;
   const errors = results.filter((r) => r.result === 'エラー').length;
 
   console.log('');
-  console.log(
-    '総数：' + results.length + '件（成功：' + success + '件／スキップ（反映済み）：' + skipped + '件／エラー：' + errors + '件）'
-  );
+  console.log('総数：' + results.length + '件（成功：' + success + '件／エラー：' + errors + '件）');
+}
+
+function sortByOriginalOrder(apps, results) {
+  const order = new Map(apps.map((appId, index) => [appId, index]));
+  return results.slice().sort((a, b) => order.get(a.appId) - order.get(b.appId));
 }
 
 async function main() {
@@ -166,11 +165,9 @@ async function main() {
   console.log('対象アプリ数：' + apps.length + '件');
 
   const appNames = loadAppNames();
-  const { targets, results } = await determineTargets(apps, appNames);
+  const { targets, results } = await collectDeployTargets(apps, appNames);
 
-  console.log(
-    '反映が必要なアプリ：' + targets.length + '件（スキップ・除外：' + (apps.length - targets.length) + '件）'
-  );
+  console.log('deployを送信するアプリ：' + targets.length + '件（除外：' + (apps.length - targets.length) + '件）');
 
   if (targets.length === 0) {
     printReport(sortByOriginalOrder(apps, results));
@@ -211,33 +208,23 @@ async function main() {
       continue;
     }
 
-    try {
-      const production = await kintoneAdmin.apiGet('/k/v1/app/acl.json', { app: t.appId });
-      const grant = findGrant(production.rights);
-
-      if (!grant || grant.appEditable !== true) {
-        results.push({
-          appId: t.appId,
-          appName: t.appName,
-          result: 'エラー',
-          detail: '運用環境への反映後、github-botのappEditable:trueを確認できませんでした',
-        });
-      } else {
-        results.push({
-          appId: t.appId,
-          appName: t.appName,
-          result: '成功',
-          detail: '',
-        });
-      }
-    } catch (error) {
+    const verification = await verifyGithubBotCanAccess(t.appId);
+    if (!verification.ok) {
       results.push({
         appId: t.appId,
         appName: t.appName,
         result: 'エラー',
-        detail: '反映後の検証に失敗：' + error.message,
+        detail: 'deployは完了しましたが、github-bot自身によるGET customize.jsonがまだ失敗します：' + verification.message,
       });
+      continue;
     }
+
+    results.push({
+      appId: t.appId,
+      appName: t.appName,
+      result: '成功',
+      detail: 'github-bot自身によるGET customize.jsonで反映を確認',
+    });
   }
 
   printReport(sortByOriginalOrder(apps, results));
@@ -245,11 +232,6 @@ async function main() {
   if (results.some((r) => r.result === 'エラー')) {
     process.exit(1);
   }
-}
-
-function sortByOriginalOrder(apps, results) {
-  const order = new Map(apps.map((appId, index) => [appId, index]));
-  return results.slice().sort((a, b) => order.get(a.appId) - order.get(b.appId));
 }
 
 main().catch((error) => {
