@@ -1,0 +1,534 @@
+{
+  "generatedAt": "2026-07-28T07:20:04.770Z",
+  "baseUrl": "https://iroha-mie.cybozu.com",
+  "apps": [
+    {
+      "appId": "10",
+      "name": "05 利用者リスト",
+      "folder": "App10_利用希望調査",
+      "spaceId": null,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "appId": "11",
+      "name": "In-Home Daycare Report",
+      "folder": "App11_In-Home_Daycare_Report",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "15",
+      "name": "File Sharing",
+      "folder": "App15_File_Sharing",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "20",
+      "name": "❌個別支援計画/アセス(2022/11)",
+      "folder": "App20_個別支援計画_アセス(2022_11)",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "23",
+      "name": "❌グループカルテ(～2019)",
+      "folder": "App23_グループカルテ(～2019)",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "27",
+      "name": "18 出張復命書",
+      "folder": "App27_18_出張復命書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "28",
+      "name": "❌苦情処理報告書",
+      "folder": "App28_苦情処理報告書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "29",
+      "name": "❌事故発生報告書",
+      "folder": "App29_事故発生報告書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "30",
+      "name": "In-Home Daycare Report",
+      "folder": "App30_In-Home_Daycare_Report",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "31",
+      "name": "22 事例検討会",
+      "folder": "App31_22_事例検討会",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "39",
+      "name": "17 防災・感染・防犯訓練",
+      "folder": "App39_17_防災・感染・防犯訓練",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "42",
+      "name": "04 訪問支援計画",
+      "folder": "App42_支援計画リストビュー",
+      "spaceId": null,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "appId": "45",
+      "name": "26 給与明細",
+      "folder": "App45_26_給与明細",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "46",
+      "name": "24 新人 業務チェックリスト",
+      "folder": "App46_24_新人_業務チェックリスト",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "48",
+      "name": "23 教材（運動・SST・学習）",
+      "folder": "App48_23_教材（運動・SST・学習）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "49",
+      "name": "23 教材（ADL・就労準備・支援ツール）",
+      "folder": "App49_23_教材（ADL・就労準備・支援ツール）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "50",
+      "name": "11 通勤手段申告書・勤続年数・研修受講",
+      "folder": "App50_11_通勤手段申告書・勤続年数・研修受講",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "60",
+      "name": "事務 手順書",
+      "folder": "App60_事務_手順書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "61",
+      "name": "23 教材リスト",
+      "folder": "App61_23_教材リスト",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "67",
+      "name": "16 安全管理(ﾋﾔﾘ/事故/苦情/物損/紛失)",
+      "folder": "App67_16_安全管理(ﾋﾔﾘ_事故_苦情_物損_紛失)",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "68",
+      "name": "❌スタッフミーティング(～2023/3)",
+      "folder": "App68_スタッフミーティング(～2023_3)",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "77",
+      "name": "09 着替え貸出",
+      "folder": "App77_09_着替え貸出",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "117",
+      "name": "❌物損(損失)報告書",
+      "folder": "App117_物損(損失)報告書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "118",
+      "name": "13 書籍貸出届",
+      "folder": "App118_13_書籍貸出届",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "123",
+      "name": "❌随意運動検査記録",
+      "folder": "App123_随意運動検査記録",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "125",
+      "name": "❌個別支援計画(2025/12)",
+      "folder": "App125_個別支援計画(2025_12)",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "127",
+      "name": "12 ICT機器 持出届",
+      "folder": "App127_12_ICT機器_持出届",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "128",
+      "name": "07 見学予約・新規利用チェック",
+      "folder": "App128_07_見学予約・新規利用チェック",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "129",
+      "name": "❌玉城日報",
+      "folder": "App129_玉城日報",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "130",
+      "name": "❌明和日報",
+      "folder": "App130_明和日報",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "131",
+      "name": "24 【新任研修】アセス➡立案練習",
+      "folder": "App131_24_【新任研修】アセス➡立案練習",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "132",
+      "name": "❌スタッフミーティング(～2026/3)",
+      "folder": "App132_スタッフミーティング(～2026_3)",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "133",
+      "name": "14 物品購入・予算管理",
+      "folder": "App133_14_物品購入・予算管理",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "135",
+      "name": "❌休暇・残業・タイムカード修正申請（～2026/2）",
+      "folder": "App135_休暇・残業・タイムカード修正申請（～2026_2）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "137",
+      "name": "15 係・業務分掌",
+      "folder": "App137_15_係・業務分掌",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "139",
+      "name": "10➋ 土曜希望（前月5日まで）",
+      "folder": "App139_10➋_土曜希望（前月5日まで）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "141",
+      "name": "01 明和日報",
+      "folder": "App141_01_明和日報",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "142",
+      "name": "01 玉城日報",
+      "folder": "App142_01_玉城日報",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "143",
+      "name": "03 運動評価",
+      "folder": "App143_03_運動評価",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "144",
+      "name": "06➊ 計画相談リスト",
+      "folder": "App144_06➊_計画相談リスト",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "146",
+      "name": "06➌ 訪問リスト 学校",
+      "folder": "App146_06➌_訪問リスト_学校",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "147",
+      "name": "06➋ 訪問リスト 園",
+      "folder": "App147_06➋_訪問リスト_園",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "149",
+      "name": "❌専門的支援実施計画（初回）",
+      "folder": "App149_専門的支援実施計画（初回）",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "154",
+      "name": "00 スケジュール",
+      "folder": "App154_00_スケジュール",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "155",
+      "name": "25 スタッフ目標",
+      "folder": "App155_25_スタッフ目標",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "157",
+      "name": "訪問支援計画【案】",
+      "folder": "App157_訪問支援計画【案】",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "159",
+      "name": "08➋ 空き状況",
+      "folder": "App159_08➋_空き状況",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "160",
+      "name": "21 年間研修・訓練計画",
+      "folder": "App160_21_年間研修・訓練計画",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "207",
+      "name": "04 個別支援計画",
+      "folder": "App207_支援計画コピー機能",
+      "spaceId": null,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "appId": "211",
+      "name": "10➊ 休暇・残業・タイムカード修正申請",
+      "folder": "App211_10➊_休暇・残業・タイムカード修正申請",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "216",
+      "name": "02 スタッフミーティング",
+      "folder": "App216_02_スタッフミーティング",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "217",
+      "name": "99 kintoneバックアップ管理",
+      "folder": "App217_99_kintoneバックアップ管理",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "218",
+      "name": "14 リマインド",
+      "folder": "App218_14_リマインド",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "219",
+      "name": "ホーム",
+      "folder": "App219_ポータル",
+      "spaceId": null,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "appId": "220",
+      "name": "07➋ 就学相談",
+      "folder": "App220_07➋_就学相談",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "222",
+      "name": "もりのわ通話履歴ログ",
+      "folder": "App222_もりのわ通話履歴ログ",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "225",
+      "name": "93 3町月次報告",
+      "folder": "App225_3町月次報告",
+      "spaceId": null,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "appId": "226",
+      "name": "マネジャー業務管理",
+      "folder": "App226_マネジャー業務管理",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "229",
+      "name": "PDFエディタ",
+      "folder": "App229_PDFエディタ",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "230",
+      "name": "03❷ サーキットのネタ帳",
+      "folder": "App230_03❷_サーキットのネタ帳",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "231",
+      "name": "08 担当表",
+      "folder": "App231_担当表",
+      "spaceId": null,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "appId": "232",
+      "name": "20 保護者アンケート",
+      "folder": "App232_20_保護者アンケート",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "233",
+      "name": "19 クラス替えアンケート",
+      "folder": "App233_19_クラス替えアンケート",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "234",
+      "name": "NPO報告書",
+      "folder": "App234_NPO報告書",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "236",
+      "name": "94 タイムカード",
+      "folder": "App236_94_タイムカード",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    },
+    {
+      "appId": "237",
+      "name": "新カルテ",
+      "folder": "App237_新カルテ",
+      "spaceId": null,
+      "enabled": false,
+      "note": ""
+    }
+  ]
+}
