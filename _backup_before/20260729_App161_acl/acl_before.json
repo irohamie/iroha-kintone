@@ -1,0 +1,75 @@
+{
+  "rights": [
+    {
+      "entity": {
+        "type": "CREATOR",
+        "code": null
+      },
+      "includeSubs": false,
+      "appEditable": true,
+      "recordViewable": true,
+      "recordAddable": true,
+      "recordEditable": true,
+      "recordDeletable": true,
+      "recordImportable": true,
+      "recordExportable": true
+    },
+    {
+      "entity": {
+        "type": "ORGANIZATION",
+        "code": "事務_m606lm"
+      },
+      "includeSubs": false,
+      "appEditable": false,
+      "recordViewable": true,
+      "recordAddable": true,
+      "recordEditable": true,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    },
+    {
+      "entity": {
+        "type": "ORGANIZATION",
+        "code": "もりのわ_19okbP"
+      },
+      "includeSubs": false,
+      "appEditable": false,
+      "recordViewable": true,
+      "recordAddable": true,
+      "recordEditable": true,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    },
+    {
+      "entity": {
+        "type": "USER",
+        "code": "github-bot"
+      },
+      "includeSubs": false,
+      "appEditable": true,
+      "recordViewable": false,
+      "recordAddable": false,
+      "recordEditable": false,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    },
+    {
+      "entity": {
+        "type": "GROUP",
+        "code": "everyone"
+      },
+      "includeSubs": false,
+      "appEditable": false,
+      "recordViewable": false,
+      "recordAddable": false,
+      "recordEditable": false,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    }
+  ],
+  "revision": "358"
+}
