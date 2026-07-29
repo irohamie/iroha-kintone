@@ -1,0 +1,31 @@
+name: Test Deploy POST Formats
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: '対象アプリID（1件のみ）'
+        required: true
+        default: '207'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Test deploy POST body formats
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99j_test_deploy_post_formats.js --app="${{ inputs.app }}"
