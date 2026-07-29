@@ -1,0 +1,31 @@
+name: Check Deploy Status
+
+on:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: '対象アプリID（カンマ区切り）'
+        required: false
+        default: '207,228,231'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check deploy status (read-only)
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99h_check_deploy_status.js --apps="${{ inputs.apps }}"
