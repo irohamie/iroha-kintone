@@ -7,7 +7,16 @@ const kintoneAdmin = require('./lib/kintone_admin.js');
 
 const REPO_ROOT = path.join(__dirname, '..');
 const CONFIG_PATH = path.join(REPO_ROOT, 'config', 'apps.json');
-const GRANT_ENTITY_CODE = 'github-bot';
+
+function getGrantEntityCode() {
+  const code = process.env.KINTONE_USERNAME;
+  if (!code) {
+    throw new Error('環境変数 KINTONE_USERNAME が設定されていません（付与対象アカウントのログイン名が必要です）');
+  }
+  return code;
+}
+
+const GRANT_ENTITY_CODE = getGrantEntityCode();
 
 const DEFAULT_APP_IDS = [
   '10', '11', '30', '42', '46', '50', '67', '128', '133', '137', '139', '141',

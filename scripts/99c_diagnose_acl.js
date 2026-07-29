@@ -7,7 +7,7 @@ const kintone = require('./lib/kintone.js');
 
 const REPO_ROOT = path.join(__dirname, '..');
 const CONFIG_PATH = path.join(REPO_ROOT, 'config', 'apps.json');
-const GRANT_ENTITY_CODE = 'github-bot';
+const GRANT_ENTITY_CODE = process.env.KINTONE_USERNAME || 'github-bot';
 
 function parseArgs(argv) {
   let apps = [];
