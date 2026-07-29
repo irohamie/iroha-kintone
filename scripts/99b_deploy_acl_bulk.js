@@ -7,7 +7,16 @@ const kintone = require('./lib/kintone.js');
 
 const REPO_ROOT = path.join(__dirname, '..');
 const CONFIG_PATH = path.join(REPO_ROOT, 'config', 'apps.json');
-const GRANT_ENTITY_CODE = 'github-bot';
+
+function getGrantEntityCode() {
+  const code = process.env.KINTONE_USERNAME;
+  if (!code) {
+    throw new Error('環境変数 KINTONE_USERNAME が設定されていません（対象アカウントのログイン名が必要です）');
+  }
+  return code;
+}
+
+const GRANT_ENTITY_CODE = getGrantEntityCode();
 const POLL_INTERVAL_MS = 2000;
 const MAX_POLL_ATTEMPTS = 30;
 
@@ -84,7 +93,7 @@ async function collectDeployTargets(appIds, appNames) {
 
 async function deployBatch(targets) {
   const body = {
-    apps: targets.map((t) => ({ app: String(t.appId) })),
+    apps: targets.map((t) => ({ app: Number(t.appId), revision: Number(t.revision) })),
   };
   console.log('deploy.jsonへ送信するbody：' + JSON.stringify(body));
   await kintoneAdmin.apiPost('/k/v1/preview/app/deploy.json', body);

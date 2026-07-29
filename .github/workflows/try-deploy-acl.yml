@@ -1,0 +1,32 @@
+name: Try Deploy ACL
+
+on:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: '対象アプリID（カンマ区切り）'
+        required: false
+        default: '207'
+
+permissions:
+  contents: read
+
+jobs:
+  try-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Try deploy ACL to production
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          KINTONE_USERNAME: ${{ secrets.KINTONE_USERNAME }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99b_deploy_acl_bulk.js --apps="${{ inputs.apps }}"
