@@ -28,7 +28,7 @@ async function main() {
 
   const params = {};
   apps.forEach((appId, index) => {
-    params['apps[' + index + '].app'] = appId;
+    params['apps[' + index + ']'] = appId;
   });
 
   try {
