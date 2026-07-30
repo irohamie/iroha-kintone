@@ -1,0 +1,37 @@
+name: Fix ACL Reorder
+
+on:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: '対象アプリID（カンマ区切り）'
+        required: false
+        default: '228,231'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fix ACL order and add record view permission
+        env:
+          KINTONE_BASE_URL: ${{ secrets.KINTONE_BASE_URL }}
+          KINTONE_USERNAME: ${{ secrets.KINTONE_USERNAME }}
+          TEMP_ADMIN_USERNAME: ${{ secrets.TEMP_ADMIN_USERNAME }}
+          TEMP_ADMIN_PASSWORD: ${{ secrets.TEMP_ADMIN_PASSWORD }}
+        run: node scripts/99l_fix_acl_recordview_reorder.js --apps="${{ inputs.apps }}"
