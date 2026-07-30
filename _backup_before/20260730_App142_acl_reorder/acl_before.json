@@ -17,6 +17,20 @@
     {
       "entity": {
         "type": "USER",
+        "code": "GitHub"
+      },
+      "includeSubs": false,
+      "appEditable": true,
+      "recordViewable": true,
+      "recordAddable": false,
+      "recordEditable": false,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    },
+    {
+      "entity": {
+        "type": "USER",
         "code": "npo@iroha-mie.com"
       },
       "includeSubs": false,
@@ -72,20 +86,6 @@
     },
     {
       "entity": {
-        "type": "USER",
-        "code": "GitHub"
-      },
-      "includeSubs": false,
-      "appEditable": true,
-      "recordViewable": false,
-      "recordAddable": false,
-      "recordEditable": false,
-      "recordDeletable": false,
-      "recordImportable": false,
-      "recordExportable": false
-    },
-    {
-      "entity": {
         "type": "GROUP",
         "code": "everyone"
       },
@@ -99,5 +99,5 @@
       "recordExportable": false
     }
   ],
-  "revision": "95"
+  "revision": "96"
 }
