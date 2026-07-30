@@ -98,7 +98,15 @@ async function processApp(appId) {
 
   const grantIndex = findGrantIndex(beforeRights);
   if (grantIndex === -1) {
-    return { appId: appId, result: 'エラー', detail: '対象アカウントのエントリが見つかりませんでした' };
+    return { appId: appId, result: 'スキップ', detail: '対象アカウントのエントリがそもそも存在しないため対象外（新規付与は行わない）' };
+  }
+
+  const existingGrant = beforeRights[grantIndex];
+  if (existingGrant.appEditable === true && existingGrant.recordViewable === true && grantIndex > 0) {
+    const priorEntity = beforeRights[grantIndex - 1].entity;
+    if (priorEntity && priorEntity.type === 'CREATOR') {
+      return { appId: appId, result: 'スキップ', detail: '既に修正済み（アプリ作成者の直後、appEditable=true、recordViewable=true）' };
+    }
   }
 
   try {
@@ -174,7 +182,13 @@ async function main() {
     console.log(r.appId + '\t' + r.result + '\t' + r.detail);
   }
 
-  if (results.some((r) => r.result === 'エラー')) {
+  const succeeded = results.filter((r) => r.result === '成功').length;
+  const skipped = results.filter((r) => r.result === 'スキップ').length;
+  const errored = results.filter((r) => r.result === 'エラー').length;
+  console.log('');
+  console.log('総数：' + results.length + '件（成功：' + succeeded + '件／スキップ：' + skipped + '件／エラー：' + errored + '件）');
+
+  if (errored > 0) {
     process.exit(1);
   }
 }
