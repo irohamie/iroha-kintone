@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T07:49:10.178Z",
+  "generatedAt": "2026-07-30T09:47:50.990Z",
   "baseUrl": "https://iroha-mie.cybozu.com",
   "apps": [
     {
@@ -428,7 +428,7 @@
     },
     {
       "appId": "210",
-      "name": "✖担当者数",
+      "name": "❌担当者数",
       "folder": "App210_担当者数",
       "spaceId": null,
       "enabled": false,
