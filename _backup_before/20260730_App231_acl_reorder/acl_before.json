@@ -16,6 +16,20 @@
     },
     {
       "entity": {
+        "type": "USER",
+        "code": "GitHub"
+      },
+      "includeSubs": false,
+      "appEditable": true,
+      "recordViewable": true,
+      "recordAddable": false,
+      "recordEditable": false,
+      "recordDeletable": false,
+      "recordImportable": false,
+      "recordExportable": false
+    },
+    {
+      "entity": {
         "type": "ORGANIZATION",
         "code": "事務_m606lm"
       },
@@ -44,20 +58,6 @@
     },
     {
       "entity": {
-        "type": "USER",
-        "code": "GitHub"
-      },
-      "includeSubs": false,
-      "appEditable": true,
-      "recordViewable": false,
-      "recordAddable": false,
-      "recordEditable": false,
-      "recordDeletable": false,
-      "recordImportable": false,
-      "recordExportable": false
-    },
-    {
-      "entity": {
         "type": "GROUP",
         "code": "everyone"
       },
@@ -71,5 +71,5 @@
       "recordExportable": false
     }
   ],
-  "revision": "37"
+  "revision": "38"
 }
