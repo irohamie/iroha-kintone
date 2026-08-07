@@ -14,3 +14,9 @@ Thumbs.db
 # 一時ファイル
 tmp/
 *.tmp
+
+# 保留中：Azure Functionキーが直書きされているためコミット対象外
+# （2026-08-07 GitHub Push Protectionにより検知。キーのローテーションと
+#  直書きしない形への修正が完了するまで、このリポジトリには含めない）
+App228_タイムカード管理/desktop/js/timecard_dashboard.js
+App219_ポータル/desktop/js/secret_renewal_popup.js
