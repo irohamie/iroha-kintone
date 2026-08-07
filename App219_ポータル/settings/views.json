@@ -1,0 +1,30 @@
+{
+  "revision": "225",
+  "views": {
+    "データ": {
+      "fields": [
+        "更新日時",
+        "作成者",
+        "更新者",
+        "レイアウト情報"
+      ],
+      "filterCond": "添付ファイル is empty",
+      "id": "5768862",
+      "index": "1",
+      "name": "データ",
+      "sort": "更新日時 desc",
+      "type": "LIST"
+    },
+    "ホーム": {
+      "device": "ANY",
+      "filterCond": "",
+      "html": "<div id=\"iroha-portal\">\n  <header class=\"iroha-header\">\n    <div class=\"header-left\"></div>\n    <div class=\"header-right\" style=\"display: flex; align-items: center;\">\n      <a href=\"https://iroha-mie.cybozu.com/k/#/portal\" id=\"old-home-btn\" class=\"btn-old-home\">🏠 昔のホーム</a>\n      <button id=\"edit-mode-btn\" class=\"btn-edit\">⚙️ ポータル設定</button>\n    </div>\n  </header>\n\n  <div class=\"tabs-container\">\n    <nav class=\"iroha-tabs\" id=\"iroha-tabs\"></nav>\n    <button id=\"add-tab-btn\" class=\"btn-add edit-only\" title=\"タブを追加\">＋</button>\n  </div>\n\n  <main class=\"iroha-main\">\n    <div id=\"portal-content\" class=\"portal-grid\"></div>\n    <div class=\"add-cat-wrap edit-only\">\n      <button id=\"add-cat-btn\" class=\"btn-add\">＋ カテゴリー追加</button>\n    </div>\n  </main>\n\n  <aside id=\"edit-panel\" class=\"edit-panel\">\n    <div class=\"edit-panel-header\">\n      <h3>⚙️ 設定メニュー</h3>\n      <div style=\"display:flex; gap:10px;\">\n        <button id=\"save-config-btn\" class=\"btn-save\">保存</button>\n        <button id=\"close-edit-btn\" class=\"btn-close\">閉じる</button>\n      </div>\n    </div>\n    \n    <div class=\"edit-panel-content\">\n      <div class=\"settings-block password-settings\">\n        <h4 style=\"margin-top:0;\">🔐 セキュリティ設定</h4>\n        <input type=\"password\" id=\"new-password\" placeholder=\"新しい設定パスワード\">\n        <button id=\"btn-change-pass\" class=\"btn-save\" style=\"margin-top:8px; width:100%;\">パスワードを変更</button>\n      </div>\n\n      <div class=\"settings-block\">\n        <p class=\"edit-help\">💡 <b>操作ガイド</b><br>・【＋/－】文字サイズの変更（改行可能）<br>・【↕️】標準サイズとハーフサイズ（テトリス）を切り替えます。<br>・タブ、カテゴリー、アプリはドラッグで移動可能です。</p>\n        <button id=\"btn-custom-link\" class=\"btn-custom-link\">🔗 外部URL（カスタムリンク）を作成</button>\n      </div>\n\n      <div class=\"palette-section\">\n        <div style=\"display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;\">\n          <h4 style=\"margin:0; font-size:14px;\">📦 未配置アプリ</h4>\n        </div>\n        \n        <div id=\"app-palette\" class=\"palette-list\"></div>\n        \n        <div class=\"palette-actions\" style=\"display:flex; gap:6px; margin-top:10px;\">\n          <select id=\"multi-add-target\" class=\"target-select\"></select>\n          <button id=\"multi-add-btn\" class=\"btn-save\" style=\"white-space:nowrap; flex-shrink:0;\">選択を追加</button>\n        </div>\n      </div>\n    </div>\n  </aside>\n\n  <div id=\"link-modal\" class=\"modal-overlay\" style=\"display:none;\">\n    <div class=\"modal-content\">\n      <h3>カスタムリンク作成</h3>\n      <input type=\"text\" id=\"link-title\" placeholder=\"表示名（例：社内HP）\">\n      <input type=\"text\" id=\"link-url\" placeholder=\"URL（例：https://...）\">\n      <div class=\"modal-actions\">\n        <button id=\"link-close-btn\" class=\"btn-close\" style=\"color:#333; border-color:#ccc;\">キャンセル</button>\n        <button id=\"link-save-btn\" class=\"btn-save\">作成</button>\n      </div>\n    </div>\n  </div>\n\n  <div id=\"user-modal\" class=\"modal-overlay\" style=\"display:none;\">\n    <div class=\"modal-content\">\n      <h3>タブの対象スタッフ選択</h3>\n      <p style=\"font-size:12px; color:#666; margin-bottom:15px;\">※未チェックの場合は全員に表示されます。</p>\n      <input type=\"text\" id=\"user-search\" placeholder=\"ユーザー名で検索...\">\n      <div id=\"user-list\" class=\"user-list\"></div>\n      <div class=\"modal-actions\">\n        <button id=\"modal-close-btn\" class=\"btn-close\" style=\"color:#333; border-color:#ccc;\">キャンセル</button>\n        <button id=\"modal-save-btn\" class=\"btn-save\">決定</button>\n      </div>\n    </div>\n  </div>\n\n  <input type=\"file\" id=\"icon-upload-input\" accept=\"image/*\" style=\"display: none;\">\n</div>",
+      "id": "5768860",
+      "index": "0",
+      "name": "ホーム",
+      "pager": true,
+      "sort": "レコード番号 desc",
+      "type": "CUSTOM"
+    }
+  }
+}

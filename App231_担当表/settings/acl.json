@@ -1,0 +1,75 @@
+{
+  "revision": "60",
+  "rights": [
+    {
+      "appEditable": true,
+      "entity": {
+        "code": null,
+        "type": "CREATOR"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": true,
+      "recordImportable": true,
+      "recordViewable": true
+    },
+    {
+      "appEditable": true,
+      "entity": {
+        "code": "GitHub",
+        "type": "USER"
+      },
+      "includeSubs": false,
+      "recordAddable": false,
+      "recordDeletable": false,
+      "recordEditable": false,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "事務_m606lm",
+        "type": "ORGANIZATION"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "マネジャー_ClXPed",
+        "type": "ORGANIZATION"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "everyone",
+        "type": "GROUP"
+      },
+      "includeSubs": false,
+      "recordAddable": false,
+      "recordDeletable": false,
+      "recordEditable": false,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    }
+  ]
+}

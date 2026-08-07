@@ -1,0 +1,636 @@
+{
+  "layout": [
+    {
+      "fields": [
+        {
+          "code": "種別",
+          "size": {
+            "width": "265"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "elementId": "a",
+          "size": {
+            "height": "66",
+            "width": "394"
+          },
+          "type": "SPACER"
+        },
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"6\"><a href=\"https://iroha-mie.cybozu.com/k/157/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">訪問支援計画</a></font></b></div>",
+          "size": {
+            "width": "224"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "更新月",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "児童氏名",
+          "size": {
+            "width": "256"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "生年月日",
+          "size": {
+            "width": "192"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "size": {
+            "height": "66",
+            "width": "48"
+          },
+          "type": "SPACER"
+        },
+        {
+          "code": "短期開始日",
+          "size": {
+            "width": "190"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:right\"><font size=\"4\"><b><br /></b></font></div><div style=\"text-align:right\"><font size=\"4\"><b>&#xff5e;</b></font></div></div>",
+          "size": {
+            "width": "50"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "短期終了日",
+          "size": {
+            "width": "190"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "label": "<div>※訪問支援時間は、原則9:30&#xff5e;11:30&#xff08;&#xff12;時間&#xff09;となります。</div>",
+          "size": {
+            "width": "427"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "契約",
+          "size": {
+            "width": "108"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "計画相談",
+          "size": {
+            "width": "132"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "長期目標",
+          "size": {
+            "width": "758"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "短期目標",
+          "size": {
+            "width": "911"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "訪問計画",
+      "fields": [
+        {
+          "code": "文字列__複数行_",
+          "size": {
+            "innerHeight": "345",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__0",
+          "size": {
+            "innerHeight": "345",
+            "width": "243"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__1",
+          "size": {
+            "innerHeight": "345",
+            "width": "820"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__8",
+          "size": {
+            "innerHeight": "345",
+            "width": "340"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__13",
+          "size": {
+            "innerHeight": "345",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "code": "支援のポイント",
+          "size": {
+            "innerHeight": "84",
+            "width": "1669"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "本人希望",
+          "size": {
+            "width": "1669"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "保護者希望",
+          "size": {
+            "width": "1669"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "syomei",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "氏名",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "計算",
+          "size": {
+            "width": "239"
+          },
+          "type": "CALC"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "アセス開始",
+          "size": {
+            "width": "190"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "アセス終了",
+          "size": {
+            "width": "134"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "size": {
+            "height": "66",
+            "width": "576"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "長期目標_0",
+          "size": {
+            "width": "1669"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "アセスメント目標",
+          "size": {
+            "width": "1251"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "アセスメント計画本文",
+      "fields": [
+        {
+          "code": "文字列__複数行__3",
+          "size": {
+            "innerHeight": "345",
+            "width": "263"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__4",
+          "size": {
+            "innerHeight": "345",
+            "width": "324"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__5",
+          "size": {
+            "innerHeight": "345",
+            "width": "664"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "code": "アセスメント計画_0",
+      "fields": [
+        {
+          "code": "文字列__複数行__12",
+          "size": {
+            "innerHeight": "345",
+            "width": "587"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__14",
+          "size": {
+            "innerHeight": "345",
+            "width": "664"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "code": "本人希望アセス",
+          "size": {
+            "width": "1669"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "保護者希望アセス",
+          "size": {
+            "width": "1669"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "syomei2",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "署名",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "署名2",
+          "size": {
+            "width": "204"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "ラジオボタン_0",
+          "size": {
+            "width": "641"
+          },
+          "type": "RADIO_BUTTON"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "ユーザー選択_0",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "code": "訪問支援会議",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "訪問担当",
+          "size": {
+            "width": "190"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "エリア",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "訪問契約",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "テーブル",
+      "fields": [
+        {
+          "code": "文字列__1行_",
+          "size": {
+            "width": "324"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__2",
+          "size": {
+            "innerHeight": "125",
+            "width": "927"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス",
+          "size": {
+            "width": "597"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "案",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "計画",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "アセス案",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "アセス計画",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "button_space",
+          "size": {
+            "height": "66",
+            "width": "117"
+          },
+          "type": "SPACER"
+        },
+        {
+          "code": "liff_url",
+          "size": {
+            "width": "315"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "token",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "作成者",
+          "size": {
+            "width": "136"
+          },
+          "type": "CREATOR"
+        },
+        {
+          "code": "更新者",
+          "size": {
+            "width": "451"
+          },
+          "type": "MODIFIER"
+        },
+        {
+          "code": "作成者コピー",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "更新者コピー",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "利用状況",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "ふりがな",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "学年",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "園",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "学校",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "更新用",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "会議内容",
+          "size": {
+            "width": "914"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    }
+  ],
+  "revision": "654"
+}

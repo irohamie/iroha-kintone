@@ -1,0 +1,25 @@
+{
+  "description": "",
+  "enableBulkDeletion": false,
+  "enableComments": false,
+  "enableDuplicateRecord": true,
+  "enableInlineRecordEditing": true,
+  "enableThumbnails": true,
+  "firstMonthOfFiscalYear": "4",
+  "icon": {
+    "key": "APP77",
+    "type": "PRESET"
+  },
+  "name": "04 訪問支援計画",
+  "numberPrecision": {
+    "decimalPlaces": "4",
+    "digits": "16",
+    "roundingMode": "HALF_EVEN"
+  },
+  "revision": "654",
+  "theme": "WHITE",
+  "titleField": {
+    "code": "更新月",
+    "selectionMode": "AUTO"
+  }
+}

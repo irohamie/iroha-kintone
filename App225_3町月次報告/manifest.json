@@ -1,0 +1,52 @@
+{
+  "appId": "225",
+  "appName": "93 3町月次報告",
+  "scope": "ALL",
+  "revision": "138",
+  "pulledAt": "2026-08-07T06:55:14.883Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "URL",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"
+      },
+      {
+        "order": 2,
+        "type": "URL",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      },
+      {
+        "order": 3,
+        "type": "URL",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+      },
+      {
+        "order": 4,
+        "type": "URL",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+      },
+      {
+        "order": 5,
+        "type": "FILE",
+        "path": "desktop/js/calc_monthly.js",
+        "name": "calc_monthly.js",
+        "size": 32530,
+        "md5": "6e60962edd028006b0065908cb9b6cef"
+      },
+      {
+        "order": 6,
+        "type": "FILE",
+        "path": "desktop/js/kintone_report.js",
+        "name": "kintone_report.js",
+        "size": 76397,
+        "md5": "660dc145230c05c184381b789db4892b"
+      }
+    ],
+    "css": []
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

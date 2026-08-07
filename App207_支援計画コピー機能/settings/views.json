@@ -1,0 +1,88 @@
+{
+  "revision": "1481",
+  "views": {
+    "一覧": {
+      "fields": [
+        "前期計画開始",
+        "更新月",
+        "氏名",
+        "作成者",
+        "前期立案署名"
+      ],
+      "filterCond": "",
+      "id": "5522497",
+      "index": "2",
+      "name": "一覧",
+      "sort": "前期計画開始 desc",
+      "type": "LIST"
+    },
+    "年長チェック": {
+      "fields": [
+        "氏名",
+        "利用状況",
+        "利用先",
+        "学年",
+        "署名_玉城就学用_",
+        "更新者",
+        "更新日時"
+      ],
+      "filterCond": "学年 like \"年長\" and 利用状況 = \"利用中\" and 利用先 not like \"訪問\"",
+      "id": "5523102",
+      "index": "3",
+      "name": "年長チェック",
+      "sort": "利用先 desc, 更新日時 desc",
+      "type": "LIST"
+    },
+    "更新月一覧": {
+      "device": "ANY",
+      "filterCond": "",
+      "html": "<div id=\"a207u-root\"></div>",
+      "id": "5771137",
+      "index": "1",
+      "name": "更新月一覧",
+      "pager": true,
+      "sort": "レコード番号 desc",
+      "type": "CUSTOM"
+    },
+    "本人の希望": {
+      "fields": [
+        "氏名",
+        "作成者",
+        "前期計画開始",
+        "前期本人希望",
+        "前期保護者希望",
+        "後期計画開始コピー",
+        "後期本人希望",
+        "後期保護者希望"
+      ],
+      "filterCond": "",
+      "id": "5771122",
+      "index": "5",
+      "name": "本人の希望",
+      "sort": "前期計画開始 desc",
+      "type": "LIST"
+    },
+    "検索": {
+      "device": "DESKTOP",
+      "filterCond": "",
+      "html": "<div id='ribbit-smart-view-root'></div>",
+      "id": "5527165",
+      "index": "0",
+      "name": "検索",
+      "pager": false,
+      "sort": "更新日時 desc",
+      "type": "CUSTOM"
+    },
+    "計画相談": {
+      "device": "ANY",
+      "filterCond": "",
+      "html": "<div id='ribbit-smart-view-root'></div>",
+      "id": "5734924",
+      "index": "4",
+      "name": "計画相談",
+      "pager": false,
+      "sort": "前期計画開始 desc, 計画相談 desc",
+      "type": "CUSTOM"
+    }
+  }
+}

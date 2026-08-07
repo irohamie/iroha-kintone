@@ -1,0 +1,69 @@
+{
+  "properties": {
+    "カテゴリー": {
+      "code": "カテゴリー",
+      "enabled": false,
+      "label": "カテゴリー",
+      "type": "CATEGORY"
+    },
+    "ステータス": {
+      "code": "ステータス",
+      "enabled": false,
+      "label": "ステータス",
+      "type": "STATUS"
+    },
+    "レイアウト情報": {
+      "code": "レイアウト情報",
+      "defaultValue": "",
+      "label": "レイアウト情報",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "レコード番号": {
+      "code": "レコード番号",
+      "label": "レコード番号",
+      "noLabel": false,
+      "type": "RECORD_NUMBER"
+    },
+    "作成日時": {
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false,
+      "type": "CREATED_TIME"
+    },
+    "作成者": {
+      "code": "作成者",
+      "label": "作成者",
+      "noLabel": false,
+      "type": "CREATOR"
+    },
+    "作業者": {
+      "code": "作業者",
+      "enabled": false,
+      "label": "作業者",
+      "type": "STATUS_ASSIGNEE"
+    },
+    "更新日時": {
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false,
+      "type": "UPDATED_TIME"
+    },
+    "更新者": {
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false,
+      "type": "MODIFIER"
+    },
+    "添付ファイル": {
+      "code": "添付ファイル",
+      "label": "添付ファイル",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    }
+  },
+  "revision": "225"
+}

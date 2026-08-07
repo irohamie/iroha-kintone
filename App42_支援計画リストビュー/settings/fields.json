@@ -1,0 +1,801 @@
+{
+  "properties": {
+    "liff_url": {
+      "code": "liff_url",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "LINEでサイン※使いたいスタッフは齋藤まで",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "token": {
+      "code": "token",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "LINE署名用トークン",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "ふりがな": {
+      "code": "ふりがな",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "ふりがな",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "アセスメント目標": {
+      "code": "アセスメント目標",
+      "defaultValue": "それぞれの課題での現状の把握と改善点をアセスメントする。",
+      "expression": "",
+      "hideExpression": false,
+      "label": "アセスメント目標",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "アセスメント計画_0": {
+      "code": "アセスメント計画_0",
+      "fields": {
+        "文字列__複数行__12": {
+          "code": "文字列__複数行__12",
+          "defaultValue": "達成・ほぼ達成・未達成",
+          "label": "達成状況の評価",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__14": {
+          "code": "文字列__複数行__14",
+          "defaultValue": "変更有・無",
+          "label": "変更・変更点",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        }
+      },
+      "label": "Table",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "アセスメント計画本文": {
+      "code": "アセスメント計画本文",
+      "fields": {
+        "文字列__複数行__3": {
+          "code": "文字列__複数行__3",
+          "defaultValue": "基本的生活スキル\n粗大運動・微細運動\n感覚の総合的な活用\n外部環境の適切な認知と適切な行動\nコミュニケーション能力\n対人関係\n集団参加",
+          "label": "課題（発達を促すスキル）",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__4": {
+          "code": "文字列__複数行__4",
+          "defaultValue": "それぞれの課題での現状の把握と改善点をアセスメントする。\n通常級および特別支援学級での行動や振る舞いの違いなど、環境面での配慮についてもアセスメントする。",
+          "label": "ねらい（スキル獲得のための1つの目標）",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__5": {
+          "code": "文字列__複数行__5",
+          "defaultValue": "クラスおよび休み時間での観察、子どもへの直接支援、先生からの聞き取り等による間接支援により、課題と目標、その手立てをより具体的に抽出し、支援方略について先生および保護者と共有する。",
+          "label": "内容（ねらいを達成するための手段：具体的に）",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        }
+      },
+      "label": "Table",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "アセス案": {
+      "code": "アセス案",
+      "label": "アセス(案)保存",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "アセス終了": {
+      "code": "アセス終了",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "～アセス終了日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "アセス計画": {
+      "code": "アセス計画",
+      "label": "アセス計画保存",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "アセス開始": {
+      "code": "アセス開始",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "短期アセス開始日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "エリア": {
+      "code": "エリア",
+      "defaultValue": "",
+      "expression": "契約",
+      "hideExpression": false,
+      "label": "居住地",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "カテゴリー": {
+      "code": "カテゴリー",
+      "enabled": false,
+      "label": "カテゴリー",
+      "type": "CATEGORY"
+    },
+    "ステータス": {
+      "code": "ステータス",
+      "enabled": false,
+      "label": "ステータス",
+      "type": "STATUS"
+    },
+    "チェックボックス": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス",
+      "defaultValue": [],
+      "label": "修正点なし",
+      "noLabel": false,
+      "options": {
+        "訪問支援計画（案）について参加者で検討し、修正点がないことを確認しました。": {
+          "index": "0",
+          "label": "訪問支援計画（案）について参加者で検討し、修正点がないことを確認しました。"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "テーブル": {
+      "code": "テーブル",
+      "fields": {
+        "文字列__1行_": {
+          "code": "文字列__1行_",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "項目",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "文字列__複数行__2": {
+          "code": "文字列__複数行__2",
+          "defaultValue": "",
+          "label": "内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        }
+      },
+      "label": "案　訂正",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "ユーザー選択_0": {
+      "code": "ユーザー選択_0",
+      "defaultValue": [],
+      "entities": [],
+      "label": "個別支援会議　参加者",
+      "noLabel": false,
+      "required": false,
+      "type": "USER_SELECT"
+    },
+    "ラジオボタン_0": {
+      "align": "HORIZONTAL",
+      "code": "ラジオボタン_0",
+      "defaultValue": "児童発達支援管理責任者：　小林華",
+      "label": "児発管",
+      "noLabel": true,
+      "options": {
+        "児童発達支援管理責任者：　小林華": {
+          "index": "1",
+          "label": "児童発達支援管理責任者：　小林華"
+        },
+        "児童発達支援管理責任者：　山本あや葉": {
+          "index": "0",
+          "label": "児童発達支援管理責任者：　山本あや葉"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "レコード番号": {
+      "code": "レコード番号",
+      "label": "レコード番号",
+      "noLabel": false,
+      "type": "RECORD_NUMBER"
+    },
+    "会議内容": {
+      "code": "会議内容",
+      "defaultValue": "支援計画（案）について以下の参加者で共通し、異議なく採用されました。（参加者：太田・マギー・齋藤）",
+      "expression": "",
+      "hideExpression": false,
+      "label": "会議内容",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "作成日時": {
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false,
+      "type": "CREATED_TIME"
+    },
+    "作成者": {
+      "code": "作成者",
+      "label": "作成者",
+      "noLabel": false,
+      "type": "CREATOR"
+    },
+    "作成者コピー": {
+      "code": "作成者コピー",
+      "defaultValue": "",
+      "expression": "作成者",
+      "hideExpression": false,
+      "label": "作成者",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "作業者": {
+      "code": "作業者",
+      "enabled": false,
+      "label": "作業者",
+      "type": "STATUS_ASSIGNEE"
+    },
+    "保護者希望": {
+      "code": "保護者希望",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "保護者の希望",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "保護者希望アセス": {
+      "code": "保護者希望アセス",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "保護者の希望",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "児童氏名": {
+      "code": "児童氏名",
+      "label": "氏名",
+      "lookup": {
+        "fieldMappings": [
+          {
+            "field": "生年月日",
+            "relatedField": "誕生日"
+          },
+          {
+            "field": "氏名",
+            "relatedField": "児童氏名"
+          },
+          {
+            "field": "訪問担当",
+            "relatedField": "訪問担当者コピー"
+          },
+          {
+            "field": "更新月",
+            "relatedField": "支援計画"
+          },
+          {
+            "field": "契約",
+            "relatedField": "エリア"
+          },
+          {
+            "field": "計画相談",
+            "relatedField": "計画相談事業所"
+          },
+          {
+            "field": "利用状況",
+            "relatedField": "利用状況"
+          },
+          {
+            "field": "訪問契約",
+            "relatedField": "訪問契約事業所"
+          },
+          {
+            "field": "学年",
+            "relatedField": "学年"
+          },
+          {
+            "field": "園",
+            "relatedField": "園コピー"
+          },
+          {
+            "field": "学校",
+            "relatedField": "学校コピー"
+          },
+          {
+            "field": "ふりがな",
+            "relatedField": "児童フリガナ"
+          }
+        ],
+        "filterCond": "利用状況 in (\"利用中\", \"待機中\")",
+        "lookupPickerFields": [],
+        "relatedApp": {
+          "app": "10",
+          "code": ""
+        },
+        "relatedKeyField": "児童氏名",
+        "sort": "児童フリガナ desc"
+      },
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT"
+    },
+    "利用状況": {
+      "code": "利用状況",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "利用状況",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "園": {
+      "code": "園",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "園",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "契約": {
+      "code": "契約",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "居住地",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "学年": {
+      "code": "学年",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "学年",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "学校": {
+      "code": "学校",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "学校",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "支援のポイント": {
+      "code": "支援のポイント",
+      "defaultValue": "",
+      "label": "★支援のポイント",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "更新日時": {
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false,
+      "type": "UPDATED_TIME"
+    },
+    "更新月": {
+      "code": "更新月",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "更新月",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "更新用": {
+      "code": "更新用",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "更新用",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "更新者": {
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false,
+      "type": "MODIFIER"
+    },
+    "更新者コピー": {
+      "code": "更新者コピー",
+      "defaultValue": "",
+      "expression": "更新者",
+      "hideExpression": false,
+      "label": "更新者",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "本人希望": {
+      "code": "本人希望",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "本人の希望　（※聴き取りが難しい場合は普段の様子から考えられる希望）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "本人希望アセス": {
+      "code": "本人希望アセス",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "本人の希望　（※聴き取りが難しい場合は普段の様子から考えられる希望）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "案": {
+      "code": "案",
+      "label": "訪問(案)保存",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "氏名": {
+      "code": "氏名",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "生年月日": {
+      "code": "生年月日",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "生年月日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "短期目標": {
+      "code": "短期目標",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "短期目標",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "短期終了日": {
+      "code": "短期終了日",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "終了日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "短期開始日": {
+      "code": "短期開始日",
+      "defaultNowValue": true,
+      "defaultValue": "",
+      "label": "計画開始日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "種別": {
+      "code": "種別",
+      "defaultValue": "",
+      "label": "種別",
+      "noLabel": false,
+      "options": {
+        "アセス計画": {
+          "index": "4",
+          "label": "アセス計画"
+        },
+        "アセス評価": {
+          "index": "5",
+          "label": "アセス評価"
+        },
+        "終結評価": {
+          "index": "6",
+          "label": "終結評価"
+        },
+        "訪問（前期立案）": {
+          "index": "0",
+          "label": "訪問（前期立案）"
+        },
+        "訪問（前期評価）": {
+          "index": "1",
+          "label": "訪問（前期評価）"
+        },
+        "訪問（後期立案）": {
+          "index": "2",
+          "label": "訪問（後期立案）"
+        },
+        "訪問（後期評価）": {
+          "index": "3",
+          "label": "訪問（後期評価）"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "署名": {
+      "code": "署名",
+      "label": "利用者署名",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "署名2": {
+      "code": "署名2",
+      "label": "利用者署名（アセス計画）",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "計画": {
+      "code": "計画",
+      "label": "訪問計画保存",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "計画相談": {
+      "code": "計画相談",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "計画相談",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "計算": {
+      "code": "計算",
+      "displayScale": "",
+      "expression": "短期開始日+(183*60*60*24)",
+      "format": "DATE",
+      "hideExpression": true,
+      "label": "短期アセス開始日～6か月(継続)",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "訪問契約": {
+      "code": "訪問契約",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "訪問契約",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "訪問担当": {
+      "code": "訪問担当",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": true,
+      "label": "訪問担当",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "訪問支援会議": {
+      "code": "訪問支援会議",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "訪問支援会議",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "訪問計画": {
+      "code": "訪問計画",
+      "fields": {
+        "文字列__複数行_": {
+          "code": "文字列__複数行_",
+          "defaultValue": "",
+          "label": "課題（発達を促すｽｷﾙ）",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__0": {
+          "code": "文字列__複数行__0",
+          "defaultValue": "",
+          "label": "ねらい（ｽｷﾙ獲得のための目標）",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__1": {
+          "code": "文字列__複数行__1",
+          "defaultValue": "",
+          "label": "内容（ねらいを達成するための手段：具体的に）",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__13": {
+          "code": "文字列__複数行__13",
+          "defaultValue": "変更有・無",
+          "label": "変更・変更点",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__8": {
+          "code": "文字列__複数行__8",
+          "defaultValue": "達成・ほぼ達成・未達成",
+          "label": "達成状況の評価",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        }
+      },
+      "label": "Table",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "長期目標": {
+      "code": "長期目標",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "長期目標（１年）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "長期目標_0": {
+      "code": "長期目標_0",
+      "defaultValue": "それぞれの課題での現状の把握と改善点をアセスメントする。",
+      "expression": "",
+      "hideExpression": false,
+      "label": "長期目標",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    }
+  },
+  "revision": "654"
+}

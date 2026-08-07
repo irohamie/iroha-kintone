@@ -1,0 +1,25 @@
+{
+  "description": "",
+  "enableBulkDeletion": false,
+  "enableComments": true,
+  "enableDuplicateRecord": true,
+  "enableInlineRecordEditing": true,
+  "enableThumbnails": true,
+  "firstMonthOfFiscalYear": "4",
+  "icon": {
+    "key": "APP74",
+    "type": "PRESET"
+  },
+  "name": "95 事務アプリ",
+  "numberPrecision": {
+    "decimalPlaces": "4",
+    "digits": "16",
+    "roundingMode": "HALF_EVEN"
+  },
+  "revision": "191",
+  "theme": "WHITE",
+  "titleField": {
+    "code": "staff_name",
+    "selectionMode": "AUTO"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "",
+  "enableBulkDeletion": true,
+  "enableComments": false,
+  "enableDuplicateRecord": true,
+  "enableInlineRecordEditing": true,
+  "enableThumbnails": true,
+  "firstMonthOfFiscalYear": "4",
+  "icon": {
+    "key": "APP77",
+    "type": "PRESET"
+  },
+  "name": "04 個別支援計画",
+  "numberPrecision": {
+    "decimalPlaces": "4",
+    "digits": "16",
+    "roundingMode": "HALF_EVEN"
+  },
+  "revision": "1481",
+  "theme": "RED",
+  "titleField": {
+    "code": "担当",
+    "selectionMode": "AUTO"
+  }
+}

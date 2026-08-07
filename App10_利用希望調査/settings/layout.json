@@ -1,0 +1,2591 @@
+{
+  "layout": [
+    {
+      "fields": [
+        {
+          "code": "見学日",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "契約日",
+          "size": {
+            "width": "122"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "利用状況",
+          "size": {
+            "width": "430"
+          },
+          "type": "RADIO_BUTTON"
+        },
+        {
+          "code": "ラジオボタン_3",
+          "size": {
+            "width": "314"
+          },
+          "type": "RADIO_BUTTON"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "児童氏名",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "児童フリガナ",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__54",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ラジオボタン",
+          "size": {
+            "width": "166"
+          },
+          "type": "RADIO_BUTTON"
+        },
+        {
+          "code": "誕生日",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "学年",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "支援計画",
+          "size": {
+            "width": "180"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "担当",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "通所先",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "通所種別",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_22",
+          "size": {
+            "width": "162"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "利用曜日",
+          "size": {
+            "width": "472"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "利用時間",
+          "size": {
+            "width": "138"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "訪問契約",
+          "size": {
+            "width": "192"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "訪問支援担当",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "太田ステージ",
+          "size": {
+            "width": "876"
+          },
+          "type": "RADIO_BUTTON"
+        },
+        {
+          "code": "数値_0",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "数値_4",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "Table_0",
+      "fields": [
+        {
+          "code": "日付_3",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__7",
+          "size": {
+            "innerHeight": "84",
+            "width": "759"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__13",
+          "size": {
+            "width": "474"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_5",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "list",
+          "size": {
+            "height": "66",
+            "width": "1350"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "契約保護者氏名",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "契約保護者フリガナ",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "契約保護者続柄",
+          "size": {
+            "width": "87"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "きょうだい",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "エリア",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "主保護者TEL",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "主保護者氏名",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "主保護者続柄",
+          "size": {
+            "width": "87"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "Zipcode",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "住所",
+          "size": {
+            "width": "386"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "緊急連絡先1",
+          "size": {
+            "width": "195"
+          },
+          "type": "RADIO_BUTTON"
+        },
+        {
+          "code": "緊急1TEL",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "緊急1氏名",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "緊急続柄1",
+          "size": {
+            "width": "87"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "緊急住所1",
+          "size": {
+            "width": "386"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "緊急連絡先2",
+          "size": {
+            "width": "195"
+          },
+          "type": "RADIO_BUTTON"
+        },
+        {
+          "code": "緊急2TEL",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "緊急2氏名",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "緊急続柄2",
+          "size": {
+            "width": "87"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "緊急住所2",
+          "size": {
+            "width": "386"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1694"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">園・学校</font></b></div>",
+          "size": {
+            "width": "354"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "園",
+          "size": {
+            "width": "354"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ドロップダウン_1",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "小学校",
+          "size": {
+            "width": "331"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ドロップダウン_21",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "中学校",
+          "size": {
+            "width": "246"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "中学クラス",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1694"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">医療・診断・手帳</font></b></div>",
+          "size": {
+            "width": "354"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "かかりつけ",
+          "size": {
+            "width": "223"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "診療科",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "主治医",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "病院住所",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "病院電話",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "児童精神",
+          "size": {
+            "width": "216"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "リハ病院",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "その他病院",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "テーブル_0",
+      "fields": [
+        {
+          "code": "診断日",
+          "size": {
+            "width": "222"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__40",
+          "size": {
+            "width": "223"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__41",
+          "size": {
+            "width": "783"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "code": "Table_6",
+      "fields": [
+        {
+          "code": "日付_10",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__1行__30",
+          "size": {
+            "width": "889"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス",
+          "size": {
+            "width": "255"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_5",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_0",
+          "size": {
+            "width": "254"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_6",
+          "size": {
+            "width": "197"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_1",
+          "size": {
+            "width": "255"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_7",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1694"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">福祉サービス</font></b></div>",
+          "size": {
+            "width": "354"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "計画相談事業所",
+          "size": {
+            "width": "289"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "計画相談担当者",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "添付ファイル_6",
+          "size": {
+            "width": "316"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_7",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "数値",
+          "size": {
+            "width": "138"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "ドロップダウン_4",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "チェックボックス_7",
+          "size": {
+            "width": "94"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_8",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_17",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_10",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "数値_1",
+          "size": {
+            "width": "245"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "数値_3",
+          "size": {
+            "width": "245"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "支給量",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "日付_7",
+          "size": {
+            "width": "176"
+          },
+          "type": "DATE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font color=\"#ff0000\">●他事業所の利用がある場合&#xff08;負担額&#xff10;、無償化を除く&#xff09;</font></div>",
+          "size": {
+            "width": "526"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__1行__17",
+          "size": {
+            "width": "454"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__18",
+          "size": {
+            "width": "436"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_17",
+          "size": {
+            "width": "138"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_16",
+          "size": {
+            "width": "134"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_12",
+          "size": {
+            "width": "138"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_13",
+          "size": {
+            "width": "245"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "チェックボックス_8",
+          "size": {
+            "width": "138"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_11",
+          "size": {
+            "width": "138"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font color=\"#ff0000\">●自社が上限管理をする場合の他社の利用状況</font></div>",
+          "size": {
+            "width": "431"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__1行__19",
+          "size": {
+            "width": "233"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "数値_6",
+          "size": {
+            "width": "200"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "文字列__1行__20",
+          "size": {
+            "width": "233"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "数値_7",
+          "size": {
+            "width": "200"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__1行__21",
+          "size": {
+            "width": "233"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "数値_8",
+          "size": {
+            "width": "200"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "文字列__1行__22",
+          "size": {
+            "width": "233"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "数値_9",
+          "size": {
+            "width": "200"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "文字列__1行__52",
+          "size": {
+            "width": "233"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "数値_2",
+          "size": {
+            "width": "200"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__複数行_",
+          "size": {
+            "innerHeight": "84",
+            "width": "593"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "チェックボックス_20",
+          "size": {
+            "width": "162"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1694"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">添付ファイル</font></b></div>",
+          "size": {
+            "width": "354"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "添付ファイル_3",
+          "size": {
+            "width": "202"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_4",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_0",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_15",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_2",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_11",
+          "size": {
+            "width": "182"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_5",
+          "size": {
+            "width": "182"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "添付ファイル",
+          "size": {
+            "width": "202"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "Vineland実施",
+          "size": {
+            "width": "418"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "Table_4",
+      "fields": [
+        {
+          "code": "日付_8",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__1行__33",
+          "size": {
+            "width": "889"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1487"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__複数行__1",
+          "size": {
+            "innerHeight": "124",
+            "width": "720"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__複数行__0",
+          "size": {
+            "innerHeight": "124",
+            "width": "720"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">欠席連絡</font></b></div>",
+          "size": {
+            "width": "354"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "Table_3",
+      "fields": [
+        {
+          "code": "日付_4",
+          "size": {
+            "width": "140"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "ドロップダウン_20",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "日付_5",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "ドロップダウン_2",
+          "size": {
+            "width": "486"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "文字列__1行__14",
+          "size": {
+            "width": "204"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">電話・相談・懇談&#xff08;保護者ニーズ&#xff09;・担当者会議・連絡調整など</font></b></div>",
+          "size": {
+            "width": "554"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "連絡調整",
+      "fields": [
+        {
+          "code": "日付_1",
+          "size": {
+            "width": "140"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "電話・会議",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "文字列__複数行__2",
+          "size": {
+            "innerHeight": "84",
+            "width": "600"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "添付ファイル_16",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "ユーザー選択_1",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1487"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "運動評価",
+          "type": "REFERENCE_TABLE"
+        },
+        {
+          "elementId": "karte_att_cal",
+          "size": {
+            "height": "66",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"4\"><b>就学レディネスチェック&#xff08;年中&#xff09;</b></font></div>",
+          "size": {
+            "width": "304"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "レディネス実施者",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "elementId": "",
+          "size": {
+            "height": "66",
+            "width": "65"
+          },
+          "type": "SPACER"
+        },
+        {
+          "elementId": "",
+          "label": "<div><font size=\"4\"><b>就学レディネスチェック&#xff08;年長&#xff09;</b></font></div>",
+          "size": {
+            "width": "304"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "ユーザー選択_7",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b>①視空間認識チェック</b></div>",
+          "size": {
+            "width": "172"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "ドロップダウン_34",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_41",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_40",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_39",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "elementId": "",
+          "size": {
+            "height": "66",
+            "width": "243"
+          },
+          "type": "SPACER"
+        },
+        {
+          "code": "ドロップダウン_42",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_43",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_44",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_45",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "ドロップダウン_38",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_37",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_36",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "elementId": "",
+          "size": {
+            "height": "66",
+            "width": "360"
+          },
+          "type": "SPACER"
+        },
+        {
+          "code": "ドロップダウン_46",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_47",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_48",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "チェックボックス_23",
+          "size": {
+            "width": "351"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "テーブル",
+      "fields": [
+        {
+          "code": "日付_12",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "ドロップダウン_23",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "文字列__複数行__8",
+          "size": {
+            "innerHeight": "84",
+            "width": "470"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "code": "添付ファイル_1",
+          "size": {
+            "width": "184"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_9",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_17",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_18",
+          "size": {
+            "width": "191"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "添付ファイル_20",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "文字列__1行__38",
+          "size": {
+            "width": "407"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__39",
+          "size": {
+            "width": "482"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1487"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">モニタリング報告</font></b></div>",
+          "size": {
+            "width": "184"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "計画相談コピー",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "ﾓﾆﾀ",
+      "fields": [
+        {
+          "code": "日付_14",
+          "size": {
+            "width": "148"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__10",
+          "size": {
+            "innerHeight": "84",
+            "width": "396"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "文字列__複数行__11",
+          "size": {
+            "innerHeight": "84",
+            "width": "412"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_10",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_22",
+          "size": {
+            "width": "1017"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "Table_8",
+      "fields": [
+        {
+          "code": "日付_13",
+          "size": {
+            "width": "148"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__9",
+          "size": {
+            "innerHeight": "84",
+            "width": "600"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_9",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "code": "添付ファイル_19",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "code": "Table_7",
+      "fields": [
+        {
+          "code": "日付_11",
+          "size": {
+            "width": "148"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__6",
+          "size": {
+            "innerHeight": "84",
+            "width": "600"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_8",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "code": "添付ファイル_10",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "code": "Table_5",
+      "fields": [
+        {
+          "code": "日付_9",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__5",
+          "size": {
+            "innerHeight": "84",
+            "width": "600"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_3",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "code": "添付ファイル_14",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "code": "Table_2",
+      "fields": [
+        {
+          "code": "日付_6",
+          "size": {
+            "width": "148"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__3",
+          "size": {
+            "innerHeight": "84",
+            "width": "600"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_2",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "code": "添付ファイル_12",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "code": "Table_1",
+      "fields": [
+        {
+          "code": "日付_2",
+          "size": {
+            "width": "148"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "文字列__複数行__4",
+          "size": {
+            "innerHeight": "84",
+            "width": "600"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ユーザー選択_0",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        },
+        {
+          "code": "添付ファイル_13",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1299"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "関連レコード一覧",
+          "type": "REFERENCE_TABLE"
+        },
+        {
+          "code": "チェックボックス_18",
+          "size": {
+            "width": "847"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "関連レコード一覧_1",
+          "type": "REFERENCE_TABLE"
+        },
+        {
+          "code": "チェックボックス_26",
+          "size": {
+            "width": "847"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_24",
+          "size": {
+            "width": "847"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "関連レコード一覧_8",
+          "type": "REFERENCE_TABLE"
+        },
+        {
+          "code": "チェックボックス_19",
+          "size": {
+            "width": "319"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_27",
+          "size": {
+            "width": "319"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_25",
+          "size": {
+            "width": "319"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "関連レコード一覧_0",
+          "type": "REFERENCE_TABLE"
+        },
+        {
+          "elementId": "karte_karte_list",
+          "size": {
+            "height": "66",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "関連レコード一覧_10",
+          "type": "REFERENCE_TABLE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">NPO会員</font></b></div>",
+          "size": {
+            "width": "116"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__1行__37",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__42",
+          "size": {
+            "width": "132"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__50",
+          "size": {
+            "width": "120"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__51",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ラジオボタン_0",
+          "size": {
+            "width": "107"
+          },
+          "type": "RADIO_BUTTON"
+        },
+        {
+          "code": "数値_5",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "文字列__1行__44",
+          "size": {
+            "width": "148"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "record_no",
+          "size": {
+            "width": "120"
+          },
+          "type": "RECORD_NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_2",
+          "size": {
+            "width": "109"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_3",
+          "size": {
+            "width": "108"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_4",
+          "size": {
+            "width": "108"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_5",
+          "size": {
+            "width": "108"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_6",
+          "size": {
+            "width": "110"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "ドロップダウン_3",
+          "size": {
+            "width": "134"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_25",
+          "size": {
+            "width": "134"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_18",
+          "size": {
+            "width": "134"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン",
+          "size": {
+            "width": "134"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"4\">利用希望</font></b></div>",
+          "size": {
+            "width": "116"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_14",
+          "size": {
+            "width": "383"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_15",
+          "size": {
+            "width": "383"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_11",
+          "size": {
+            "width": "383"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "チェックボックス_12",
+          "size": {
+            "width": "382"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "チェックボックス_13",
+          "size": {
+            "width": "417"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "文字列__1行__32",
+          "size": {
+            "width": "348"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font color=\"#ff0000\">ブランクデータ</font></div>",
+          "size": {
+            "width": "165"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "文字列__1行__16",
+          "size": {
+            "width": "79"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__23",
+          "size": {
+            "width": "78"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__24",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__25",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__27",
+          "size": {
+            "width": "120"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__26",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__31",
+          "size": {
+            "width": "123"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__29",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__28",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__34",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__45",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "０歳児",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "１歳児",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "２歳児",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "年少",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "年中",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "年長",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "小１",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "小２",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "小３",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "小４",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "小５",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "小６",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "中学生以上",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "年齢4",
+          "size": {
+            "width": "148"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "担当者コピー",
+          "size": {
+            "width": "78"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "訪問担当者コピー",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "訪問契約事業所",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "基準日",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "YMD1",
+          "size": {
+            "width": "76"
+          },
+          "type": "CALC"
+        },
+        {
+          "code": "YMD2",
+          "size": {
+            "width": "76"
+          },
+          "type": "CALC"
+        },
+        {
+          "code": "年齢",
+          "size": {
+            "width": "88"
+          },
+          "type": "CALC"
+        },
+        {
+          "code": "文字列__1行__43",
+          "size": {
+            "width": "81"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__46",
+          "size": {
+            "width": "81"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__47",
+          "size": {
+            "width": "81"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__49",
+          "size": {
+            "width": "81"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "文字列__1行__48",
+          "size": {
+            "width": "81"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "通所先コピー",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "園コピー",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "学校コピー",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "クラスコピー",
+          "size": {
+            "width": "106"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ドロップダウン_0",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "利用曜日コピー",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "支援計画月コピー",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "vineチェック",
+          "size": {
+            "width": "120"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "テーブル_1",
+      "fields": [
+        {
+          "code": "ドロップダウン_24",
+          "size": {
+            "width": "117"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "チェックボックス_21",
+          "size": {
+            "width": "875"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font color=\"#000000\"><b><font size=\"4\">&#xff3b; 契約書/重要事項説明書/個人情報同意書&#xff08;見本&#xff09;&#xff3d;</font></b></font><span style=\"color:rgb( 52 , 152 , 219 );font-size:large;font-weight:700\"><a href=\"https://app.box.com/s/q3hk86z30nj77oo5ey9tjey55i7rgvh6\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">玉城</a></span><font size=\"4\"><span style=\"font-weight:700\"> </span><font color=\"#000000\" style=\"font-weight:700\">&#xff0f; </font><font color=\"#3d85c6\" style=\"font-weight:700\"><a href=\"https://app.box.com/s/uy3g7rpyax8n0vhvtoqyccevghbaj88c\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">明和</a></font></font></div>",
+          "size": {
+            "width": "611"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "利用者サイン原本",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "利用者サイン",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "契約書",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "sign",
+          "size": {
+            "height": "66",
+            "width": "193"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "学年コピー",
+          "size": {
+            "width": "134"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "誕生月",
+          "size": {
+            "width": "79"
+          },
+          "type": "CALC"
+        },
+        {
+          "code": "契約書原本玉城",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "契約書原本明和",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "座標設定データ",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "サインファイルキー",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    }
+  ],
+  "revision": "1517"
+}

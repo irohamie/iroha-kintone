@@ -1,0 +1,25 @@
+{
+  "description": "<div><span style=\"line-height:1.5\">利用者様の情報を登録し、チームで共有できるアプリです。</span><br /></div><div>キーワード検索、地域等の条件での絞り込み、リストのCSV入出力等が可能です。</div><div><br /></div><div>▼<a href=\"https://jp.cybozu.help/ja/k/user/5ways\" rel=\"nofollow nofollow\">アプリの作成方法</a><br /></div>",
+  "enableBulkDeletion": false,
+  "enableComments": false,
+  "enableDuplicateRecord": true,
+  "enableInlineRecordEditing": true,
+  "enableThumbnails": true,
+  "firstMonthOfFiscalYear": "4",
+  "icon": {
+    "key": "APP20",
+    "type": "PRESET"
+  },
+  "name": "05 利用者リスト",
+  "numberPrecision": {
+    "decimalPlaces": "4",
+    "digits": "16",
+    "roundingMode": "HALF_EVEN"
+  },
+  "revision": "1517",
+  "theme": "GREEN",
+  "titleField": {
+    "code": "record_no",
+    "selectionMode": "MANUAL"
+  }
+}

@@ -1,0 +1,639 @@
+/* =====================================================================
+ * アプリ42「支援計画」一覧カスタマイズ用CSS
+ * ファイル : app42_list_view.css（PC用CSS）
+ * 規約     : プレフィックス .a42m- / ルート #a42m-root 配下限定
+ *            kintone標準スタイルとは干渉させない
+ * ---------------------------------------------------------------------
+ * 改修履歴（2026-07-15 今回分）
+ *   a. 警告バッジ・パネルの見た目は変更なし（中身の絞り込み・表示内容はJS側）
+ *   b. スロットセルに「合算」バッジ（🔗）用スタイルを追加
+ *   c. 園/学校サブタブを2段（.a42m-subtabrow ×2）に変更。各段にラベルを付与
+ *   d. （表示ロジックのみの変更。CSS変更なし）
+ *   e. 児童検索ボックス（.a42m-searchwrap）を追加。検索中は
+ *      タブ・サブタブ・担当フィルタを視覚的にも無効化（.a42m-searching）
+ *   f. 「すべて」タブは通常の市町村タブと同じ見た目（担当別タブ専用スタイルは廃止）
+ *   g. （表示ロジックのみの変更。CSS変更なし）
+ * ===================================================================== */
+
+#a42m-root {
+  --a42m-ok: #2e7d32;
+  --a42m-ng: #c62828;
+  --a42m-multi: #1565c0;
+  --a42m-none: #b8b8b8;
+  --a42m-grade-pre: #fdecd2;
+  --a42m-grade-elem: #ddf0e0;
+  --a42m-grade-jhs: #dcebfa;
+  --a42m-grade-hs: #efe2f6;
+  --a42m-grade-unknown: #e9e9e9;
+  --a42m-grade-pre-accent: #e08e2b;
+  --a42m-grade-elem-accent: #3e9d63;
+  --a42m-grade-jhs-accent: #3a7fc1;
+  --a42m-grade-hs-accent: #8a56b0;
+  --a42m-grade-unknown-accent: #909090;
+  --a42m-badge-assess: #ef6c00;
+  --a42m-badge-end: #6a1b9a;
+  --a42m-merged: #00897b;          /* 合算バッジ色（青緑系。警告色とは区別） */
+  --a42m-warn: #d84315;
+  --a42m-border: #d5d9de;
+  --a42m-tab-active: #2f6fb1;
+  --a42m-headh: 38px;
+
+  font-size: 14px;
+  color: #333;
+}
+
+/* ================= レイアウト骨格 ================= */
+
+#a42m-root .a42m-wrap {
+  position: relative;
+  padding: 8px 8px 16px;
+}
+
+/* ---- ヘッダー行（年度 / 検索 / 訪問担当 / 再読込 / ⚠） ---- */
+#a42m-root .a42m-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 4px 0 8px;
+}
+#a42m-root .a42m-ctllabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+}
+#a42m-root select,
+#a42m-root .a42m-searchinput {
+  min-height: 36px;
+  font-size: 14px;
+  padding: 4px 8px;
+  border: 1px solid var(--a42m-border);
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+}
+#a42m-root select:disabled,
+#a42m-root .a42m-searchinput:disabled {
+  background: #f0f0f0;
+  color: #999;
+}
+#a42m-root .a42m-reload {
+  min-height: 36px;
+  padding: 4px 14px;
+  border: 1px solid var(--a42m-border);
+  border-radius: 6px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+#a42m-root .a42m-reload:hover {
+  background: #f3f6f9;
+}
+#a42m-root .a42m-spacer {
+  flex: 1;
+}
+#a42m-root .a42m-warnbtn {
+  min-height: 36px;
+  padding: 4px 12px;
+  border: 1px solid var(--a42m-warn);
+  border-radius: 6px;
+  background: #fff7f3;
+  color: var(--a42m-warn);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ---- 児童検索ボックス（2026-07-15改修 e） ---- */
+#a42m-root .a42m-searchwrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+#a42m-root .a42m-searchinput {
+  width: 200px;
+  padding-right: 28px;
+}
+#a42m-root .a42m-searchclear {
+  position: absolute;
+  right: 6px;
+  min-width: 20px;
+  min-height: 20px;
+  border: none;
+  background: none;
+  color: #999;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+}
+#a42m-root .a42m-searchclear:hover {
+  color: #666;
+}
+#a42m-root .a42m-searchnote {
+  margin: 0 0 8px;
+  padding: 6px 10px;
+  background: #eef6ee;
+  border: 1px solid #bfe0bf;
+  border-radius: 6px;
+  font-size: 12.5px;
+  color: #2e6b2e;
+}
+
+/* 検索中は市町村タブ・サブタブ・訪問担当フィルタを視覚的に無効化（実際の絞り込みも行わない） */
+#a42m-root .a42m-wrap.a42m-searching .a42m-tabs,
+#a42m-root .a42m-wrap.a42m-searching .a42m-subtabswrap,
+#a42m-root .a42m-wrap.a42m-searching .a42m-tantoselect {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ---- 1行目: 市町村タブバー（「すべて」も同じ見た目。横スクロール可） ---- */
+#a42m-root .a42m-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 2px 0 6px;
+  -webkit-overflow-scrolling: touch;
+}
+#a42m-root .a42m-tab {
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 6px 14px;
+  border: 1px solid var(--a42m-border);
+  border-radius: 18px;
+  background: #fff;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+#a42m-root .a42m-tab-active {
+  background: var(--a42m-tab-active);
+  border-color: var(--a42m-tab-active);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ---- 2行目: 園/学校 2段サブタブ（2026-07-15改修 c） ---- */
+#a42m-root .a42m-subtabswrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 10px 10px;
+  padding: 8px 10px;
+  background: #f1f6fb;
+  border: 1px solid #cfe0ef;
+  border-left: 4px solid var(--a42m-tab-active);
+  border-radius: 0 10px 10px 10px;
+}
+#a42m-root .a42m-subtabrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#a42m-root .a42m-subtabs-label {
+  flex: 0 0 auto;
+  min-width: 34px;
+  padding: 4px 8px;
+  background: var(--a42m-tab-active);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+#a42m-root .a42m-subtabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 2px 0;
+  -webkit-overflow-scrolling: touch;
+}
+#a42m-root .a42m-subtab {
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 4px 12px;
+  border: 1px solid #c3d5e7;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 12.5px;
+  color: #334;
+  cursor: pointer;
+}
+#a42m-root .a42m-subtab-active {
+  background: #e3eef9;
+  border-color: var(--a42m-tab-active);
+  box-shadow: inset 0 0 0 1px var(--a42m-tab-active);
+  color: #1e4f83;
+  font-weight: 700;
+}
+/* 「すべて」トグル: ラベル + スイッチ（トラック/ノブ）で構成。もう一度押すと
+   全解除できるトグル（null=全選択(ON)↔{}=全解除(OFF)）。オン/オフがひと目で
+   わかるよう、色の変化に加えてノブの位置が左右に動く見た目にする。 */
+#a42m-root .a42m-allswitch-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  margin-right: 4px;
+  padding-right: 8px;
+  border-right: 1px solid #cfe0ef;
+}
+#a42m-root .a42m-allswitch-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #556;
+  white-space: nowrap;
+}
+#a42m-root .a42m-allswitch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 11px;
+  background: #c6cdd6;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+#a42m-root .a42m-allswitch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  transition: left 0.15s ease;
+}
+#a42m-root .a42m-allswitch.a42m-allswitch-on {
+  background: var(--a42m-ok);
+}
+#a42m-root .a42m-allswitch.a42m-allswitch-on::after {
+  left: 20px;
+}
+
+/* ================= テーブル ================= */
+
+#a42m-root .a42m-tablewrap {
+  overflow: auto;
+  max-height: calc(100vh - 280px);
+  min-height: 280px;
+  border: 1px solid var(--a42m-border);
+  border-radius: 8px;
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+
+#a42m-root .a42m-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: max-content;
+  min-width: 640px;
+}
+/* 「すべて」タブ・検索モード時（契約列あり）は少し広め */
+#a42m-root .a42m-table-wide {
+  min-width: 740px;
+}
+
+#a42m-root .a42m-table th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-sizing: border-box;
+  height: var(--a42m-headh);
+  padding: 6px 8px;
+  background: #f0f2f5;
+  border-bottom: 2px solid var(--a42m-border);
+  border-right: 1px solid var(--a42m-border);
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+  white-space: nowrap;
+}
+#a42m-root .a42m-table th.a42m-sticky-name {
+  left: 0;
+  z-index: 7;
+}
+
+#a42m-root .a42m-col-contract { min-width: 88px; }
+#a42m-root .a42m-col-name     { min-width: 110px; }
+#a42m-root .a42m-col-tanto    { min-width: 88px; }
+#a42m-root .a42m-col-slot     { min-width: 128px; }
+
+#a42m-root .a42m-td {
+  box-sizing: border-box;
+  height: 44px;
+  padding: 4px 8px;
+  background: #fff;
+  border-bottom: 1px solid var(--a42m-border);
+  border-right: 1px solid var(--a42m-border);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#a42m-root td.a42m-col-contract,
+#a42m-root td.a42m-col-tanto {
+  font-size: 13px;
+  color: #444;
+}
+#a42m-root .a42m-name {
+  font-size: 14px;
+}
+/* 児童氏名 → アプリ10（児童氏名マスタ）へのリンク（今回改修 c） */
+#a42m-root a.a42m-namelink {
+  font-size: 14px;
+  color: #1e4f83;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+#a42m-root a.a42m-namelink:hover {
+  color: var(--a42m-tab-active);
+}
+#a42m-root .a42m-namenotfound {
+  margin-left: 4px;
+  color: #999;
+  font-size: 12px;
+  cursor: help;
+}
+
+#a42m-root td.a42m-sticky-name {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+  box-shadow: 1px 0 0 var(--a42m-border);
+}
+
+#a42m-root .a42m-graderow td {
+  position: sticky;
+  top: var(--a42m-headh);
+  z-index: 4;
+}
+#a42m-root .a42m-gradecell {
+  box-sizing: border-box;
+  padding: 5px 8px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--a42m-border);
+  border-left: 4px solid var(--a42m-accent, #999);
+}
+#a42m-root .a42m-grade-pre     { background: var(--a42m-grade-pre);     --a42m-accent: var(--a42m-grade-pre-accent); }
+#a42m-root .a42m-grade-elem    { background: var(--a42m-grade-elem);    --a42m-accent: var(--a42m-grade-elem-accent); }
+#a42m-root .a42m-grade-jhs     { background: var(--a42m-grade-jhs);     --a42m-accent: var(--a42m-grade-jhs-accent); }
+#a42m-root .a42m-grade-hs      { background: var(--a42m-grade-hs);      --a42m-accent: var(--a42m-grade-hs-accent); }
+#a42m-root .a42m-grade-unknown { background: var(--a42m-grade-unknown); --a42m-accent: var(--a42m-grade-unknown-accent); }
+
+#a42m-root .a42m-gradelabel {
+  position: sticky;
+  left: 8px;
+  display: inline-block;
+  z-index: 1;
+  font-weight: 600;
+  color: #333;
+}
+#a42m-root .a42m-gradelabel::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  background: var(--a42m-accent, #999);
+  border-radius: 2px;
+  vertical-align: baseline;
+}
+
+/* ================= 計画スロットセル ================= */
+
+#a42m-root .a42m-cell {
+  padding: 0 2px;
+  text-align: center;
+}
+
+#a42m-root .a42m-cell-none {
+  color: var(--a42m-none);
+  font-size: 16px;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#a42m-root .a42m-celllink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 44px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  color: inherit;
+  text-decoration: none;
+}
+#a42m-root .a42m-celllink:hover {
+  background: #eef4fb;
+}
+
+#a42m-root .a42m-badges {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 14px;
+}
+#a42m-root .a42m-badge {
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  line-height: 1;
+  color: #fff;
+}
+#a42m-root .a42m-badge-assess { background: var(--a42m-badge-assess); }
+#a42m-root .a42m-badge-end    { background: var(--a42m-badge-end); }
+#a42m-root .a42m-conflict {
+  color: var(--a42m-warn);
+  font-size: 12px;
+  font-weight: 700;
+}
+/* 合算バッジ（同一種別の重複登録を合算表示していることの目印。2026-07-15改修 b） */
+#a42m-root .a42m-merged {
+  color: var(--a42m-merged);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: help;
+}
+
+#a42m-root .a42m-marks {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+#a42m-root .a42m-mark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1px;
+}
+#a42m-root .a42m-marklabel {
+  font-size: 11px;
+  color: #666;
+}
+#a42m-root .a42m-marksym {
+  font-size: 14px;
+  font-weight: 600;
+}
+#a42m-root .a42m-marksym.a42m-ok    { color: var(--a42m-ok); }
+#a42m-root .a42m-marksym.a42m-ng    { color: var(--a42m-ng); }
+#a42m-root .a42m-marksym.a42m-multi { color: var(--a42m-multi); font-weight: 700; }
+
+#a42m-root .a42m-marksym.a42m-allok,
+#a42m-root .a42m-marksym.a42m-allng {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+#a42m-root .a42m-marksym.a42m-allok { color: var(--a42m-ok); }
+#a42m-root .a42m-marksym.a42m-allng { color: var(--a42m-ng); }
+
+#a42m-root .a42m-dupwarn {
+  margin-left: 4px;
+  color: var(--a42m-warn);
+  font-weight: 700;
+  cursor: help;
+}
+
+#a42m-root .a42m-facnote {
+  margin-left: 4px;
+  color: var(--a42m-warn);
+  font-size: 12px;
+  cursor: help;
+}
+
+#a42m-root .a42m-emptymsg {
+  padding: 48px 0;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ================= 警告・診断パネル ================= */
+
+#a42m-root .a42m-warnpanel {
+  position: absolute;
+  top: 52px;
+  right: 8px;
+  z-index: 40;
+  width: min(620px, calc(100% - 16px));
+  max-height: 60vh;
+  overflow: auto;
+  padding: 8px 12px 12px;
+  background: #fff;
+  border: 1px solid var(--a42m-warn);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  -webkit-overflow-scrolling: touch;
+}
+#a42m-root .a42m-warnhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+#a42m-root .a42m-warntitle {
+  font-weight: 700;
+  color: var(--a42m-warn);
+}
+#a42m-root .a42m-warnclose {
+  min-width: 36px;
+  min-height: 32px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+}
+#a42m-root .a42m-warnsec {
+  margin: 10px 0 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+#a42m-root .a42m-warnlist {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #444;
+}
+#a42m-root .a42m-warnlist li {
+  margin-bottom: 4px;
+}
+#a42m-root .a42m-reclink {
+  color: var(--a42m-multi);
+}
+
+/* ================= ローディング / エラー ================= */
+
+#a42m-root .a42m-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 72px 0;
+}
+#a42m-root .a42m-spinner {
+  width: 34px;
+  height: 34px;
+  border: 4px solid #d8dee5;
+  border-top-color: #2f6fb1;
+  border-radius: 50%;
+  animation: a42m-spin 0.9s linear infinite;
+}
+@keyframes a42m-spin {
+  to { transform: rotate(360deg); }
+}
+#a42m-root .a42m-loadingtext {
+  font-size: 13px;
+  color: #666;
+}
+
+#a42m-root .a42m-fatal {
+  margin: 12px 8px;
+  padding: 12px 16px;
+  background: #fdeceb;
+  border: 1px solid var(--a42m-ng);
+  border-radius: 8px;
+}
+#a42m-root .a42m-fataltitle {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--a42m-ng);
+}
+#a42m-root .a42m-fatallist {
+  margin: 0 0 8px;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #333;
+}
+#a42m-root .a42m-fatalnote {
+  margin-bottom: 8px;
+  font-size: 12.5px;
+  color: #555;
+}
+#a42m-root .a42m-retry {
+  min-height: 40px;
+  padding: 6px 18px;
+  border: 1px solid var(--a42m-ng);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--a42m-ng);
+  font-weight: 600;
+  cursor: pointer;
+}

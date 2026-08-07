@@ -1,0 +1,411 @@
+/* =====================================================================
+ * karte_style.css — いろ葉カルテ v2 共通スタイル
+ *
+ * 搭載先: アプリ11 と アプリ10 の【両方】
+ *   ※両アプリで完全に同一のファイル。更新時は必ず両方に再アップロードすること。
+ *
+ * 【重要】標準フォーム(レコード詳細・編集画面)の既存フィールドの見た目には
+ * 一切干渉しない。ここで定義するのは、以下の自作UIのみのスタイルである。
+ *   ・ヘッダーに追加したボタン (.k11-hdr)
+ *   ・モーダル (.ck-modal 配下)
+ *   ・カスタムビュー3種 (.karte-app 配下)
+ *   ・アプリ10のスペースに描くパネル (.karte-att-cal / .karte-klist)
+ * =================================================================== */
+
+/* ===================================================================
+ * 0. 共通の土台
+ * =================================================================== */
+.karte-app {
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  color: #222; max-width: 1800px; margin: 0; padding: 6px 6px 80px; box-sizing: border-box;
+}
+.karte-app *, .karte-app *::before, .karte-app *::after { box-sizing: border-box; }
+.karte-loading, .karte-error { padding: 24px; text-align: center; color: #666; }
+.karte-error { color: #c0392b; }
+
+.karte-header {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 10px 0; border-bottom: 2px solid #2e7d5b; margin-bottom: 12px;
+}
+.karte-title { font-size: 18px; font-weight: 700; color: #2e7d5b; }
+.karte-subtitle { font-weight: 700; color: #456; margin: 12px 0 5px; font-size: 13px; }
+.karte-chip {
+  display: inline-flex; align-items: center; gap: 4px; background: #eef5f1; color: #2e7d5b;
+  border-radius: 12px; padding: 2px 10px; font-size: 12px; margin: 2px;
+}
+.karte-chip-x { background: none; border: none; cursor: pointer; font-size: 13px; color: #789; padding: 0 0 0 2px; }
+
+.karte-row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+.karte-row.karte-wrap, .karte-wrap { flex-wrap: wrap; }
+.karte-field { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: #567; }
+.karte-field.karte-grow { flex: 1 1 260px; }
+.karte-grow { flex: 1 1 auto; }
+.karte-hint { font-size: 12px; color: #789; margin: 4px 0 8px; line-height: 1.6; }
+.karte-count { font-size: 12px; color: #567; font-weight: 700; }
+.karte-check { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; cursor: pointer; }
+
+/* 入力要素(自作UI内のみ) */
+.karte-app input[type=text], .karte-app input[type=number], .karte-app input[type=date],
+.karte-app input[type=month], .karte-app select, .karte-app textarea,
+.ck-modal input[type=text], .ck-modal input[type=number], .ck-modal input[type=date],
+.ck-modal select, .ck-modal textarea {
+  font-size: 14px; padding: 7px 9px; border: 1px solid #cdd8d3; border-radius: 6px;
+  background: #fff; color: #222; font-family: inherit;
+}
+.karte-app textarea, .ck-modal textarea { resize: vertical; width: 100%; line-height: 1.5; }
+.karte-app input:focus, .karte-app select:focus, .karte-app textarea:focus,
+.ck-modal input:focus, .ck-modal select:focus, .ck-modal textarea:focus {
+  outline: none; border-color: #2e7d5b; box-shadow: 0 0 0 2px rgba(46,125,91,.15);
+}
+
+/* ボタン */
+.karte-btn {
+  font-size: 14px; padding: 7px 14px; border: 1px solid #2e7d5b; background: #2e7d5b;
+  color: #fff; border-radius: 6px; cursor: pointer; white-space: nowrap; font-family: inherit;
+}
+.karte-btn:hover { background: #276b4e; }
+.karte-btn:disabled { opacity: .5; cursor: default; }
+.karte-btn-ghost { background: #fff; color: #2e7d5b; }
+.karte-btn-ghost:hover { background: #eef5f1; }
+.karte-btn-sm { font-size: 12px; padding: 4px 10px; }
+.karte-btn-primary { background: #1f6feb; border-color: #1f6feb; font-weight: 700; }
+.karte-btn-primary:hover { background: #1a5fd0; }
+/* 欠席の色分け: 事前欠席=オレンジ / 直近欠席=赤(全画面で統一) */
+.karte-btn-abspre { background: #e0912f; border-color: #e0912f; }
+.karte-btn-abspre:hover { background: #c97c1f; border-color: #c97c1f; }
+.karte-btn-absday { background: #c0392b; border-color: #c0392b; }
+.karte-btn-absday:hover { background: #a52d21; border-color: #a52d21; }
+.karte-icon-btn {
+  background: #fff; border: 1px solid #cdd8d3; border-radius: 6px; width: 30px; height: 30px;
+  cursor: pointer; font-size: 14px; color: #567; flex: 0 0 auto;
+}
+.karte-icon-btn:hover { background: #f0f4f2; }
+.karte-icon-btn.karte-danger { color: #c0392b; border-color: #e8bdb6; }
+
+/* メッセージ */
+.karte-msg { padding: 9px 12px; border-radius: 8px; margin: 6px 0; font-size: 13px; line-height: 1.6; }
+.karte-msg-ok { background: #e8f5ec; color: #1e6b3f; border: 1px solid #b5dfc3; }
+.karte-msg-warn { background: #fff6e5; color: #92660b; border: 1px solid #f0d9a8; }
+.karte-msg-error { background: #fdece9; color: #b02a17; border: 1px solid #f0c0b8; }
+
+/* 一覧の汎用行 */
+.karte-session-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 7px 10px; background: #f7faf8; border: 1px solid #e2e8e5; border-radius: 6px; font-size: 13px;
+}
+.karte-spot-list { display: flex; flex-direction: column; gap: 5px; margin-top: 6px; max-height: 200px; overflow-y: auto; }
+
+/* ===================================================================
+ * 1. アプリ11 標準フォームのヘッダーボタン
+ * =================================================================== */
+.k11-hdr { display: inline-flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-left: 8px; }
+.k11-toggle {
+  display: inline-flex; align-items: center; gap: 8px; font-size: 12px; color: #456;
+  cursor: pointer; margin-left: 6px; padding: 4px 10px 4px 4px; border: 1px solid #cdd8d3; border-radius: 14px;
+  background: #fff; user-select: none;
+}
+/* 実際のinput[checkbox]は見た目上は消し、代わりにトラック(帯)とノブ(丸)で
+   スライド式のトグルスイッチとして描画する */
+.k11-toggle input {
+  position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none;
+}
+.k11-switch-track {
+  position: relative; display: inline-block; flex: 0 0 auto;
+  width: 36px; height: 20px; background: #cdd8d3; border-radius: 10px;
+  transition: background-color .15s ease; box-sizing: border-box;
+}
+.k11-switch-track::after {
+  content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
+  background: #fff; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  transition: transform .15s ease;
+}
+.k11-toggle input:checked + .k11-switch-track { background: #2e7d5b; }
+.k11-toggle input:checked + .k11-switch-track::after { transform: translateX(16px); }
+.k11-toggle input:focus-visible + .k11-switch-track { outline: 2px solid #1f6feb; outline-offset: 2px; }
+.k11-switch-text { white-space: nowrap; }
+.k11-group-inline {
+  border: 1px solid #e2e8e5; border-radius: 8px; padding: 10px 12px; margin: 6px 0;
+  background: #fbfdfc; max-width: 900px;
+}
+.k11-search-wrap { margin: 6px 0; max-width: 900px; }
+
+/* ===================================================================
+ * 2. モーダル(全画面共通)
+ * =================================================================== */
+.ck-modal {
+  position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex;
+  align-items: center; justify-content: center; z-index: 9999; padding: 12px;
+}
+.ck-modal-inner {
+  background: #fff; border-radius: 12px; padding: 20px; max-width: 96%; width: 560px;
+  max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 8px 30px rgba(0,0,0,.2);
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; color: #222;
+}
+.ck-modal-close {
+  position: absolute; top: 10px; right: 12px; border: none; background: none;
+  font-size: 22px; cursor: pointer; color: #789;
+}
+.ck-modal-head { font-size: 16px; font-weight: 700; margin-bottom: 8px; padding-right: 26px; }
+.ck-modal-line { font-size: 13px; color: #567; margin-bottom: 6px; }
+.ck-modal-detail {
+  background: #fdf8f6; border: 1px solid #f0d9d2; border-radius: 6px;
+  padding: 8px 10px; font-size: 12px; color: #a03; margin-bottom: 10px; line-height: 1.6;
+}
+.ck-modal-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+
+/* 対象外にする前の案内 */
+.ck-guide {
+  background: #f7faf8; border: 1px solid #e2e8e5; border-left: 4px solid #e0912f;
+  border-radius: 6px; padding: 10px 12px; margin: 10px 0; font-size: 12px; color: #456; line-height: 1.7;
+}
+.ck-guide p { margin: 0 0 6px; }
+.ck-guide p:last-child { margin-bottom: 0; }
+.ck-guide-note { color: #92660b; }
+
+/* 欠席理由ピッカー */
+.ck-reason-list { display: flex; flex-direction: column; gap: 8px; margin: 10px 0; }
+.ck-reason-btn {
+  text-align: left; font-size: 13px; line-height: 1.6; padding: 10px 12px;
+  border: 1px solid #cdd8d3; border-radius: 8px; background: #fff; cursor: pointer;
+  font-family: inherit; color: #222;
+}
+.ck-reason-btn:hover { background: #eef5f1; border-color: #2e7d5b; }
+
+/* 同席児童の選択(カード) — 4列固定・幅は漢字7文字程度・氏名は省略記号で1行に収める */
+.karte-members { display: grid; grid-template-columns: repeat(5, 8em); gap: 6px; margin: 6px 0; max-height: 320px; overflow-y: auto; }
+.karte-member {
+  border: 2px solid #dfe6e2; border-radius: 8px; background: #fff; cursor: pointer;
+  padding: 6px 4px; text-align: center; box-sizing: border-box; min-width: 0;
+}
+.karte-member-name {
+  font-weight: 700; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.karte-member-status {
+  font-size: 11px; color: #789; margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.karte-member.st-none { opacity: .65; }
+.karte-member.st-present { border-color: #2e7d5b; background: #f2f9f5; }
+.karte-member.st-present .karte-member-name { color: #2e7d5b; }
+.karte-tag { font-size: 10px; background: #6c8; color: #fff; border-radius: 4px; padding: 1px 5px; }
+.karte-tag-abs { background: #e0912f; }
+
+/* ===================================================================
+ * 3. ✅作成チェック
+ * =================================================================== */
+.ck-status { font-size: 13px; color: #567; }
+.ck-status-err { color: #c0392b; }
+.ck-summary { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.ck-sumcard, .ck-sumrate {
+  border: 1px solid #e2e8e5; border-radius: 10px; padding: 10px 14px;
+  min-width: 84px; text-align: center; cursor: pointer; background: #fff;
+}
+.ck-sumrate { background: #2e7d5b; color: #fff; cursor: default; }
+.ck-sumnum { font-size: 22px; font-weight: 700; }
+.ck-sumnum-big { font-size: 26px; font-weight: 700; }
+.ck-sumlabel { font-size: 11px; margin-top: 2px; }
+
+/* 状態別の色(週間一覧・出欠カレンダーと共通) */
+.ck-done { background: #f2f9f5; }
+.ck-warn { background: #fff8ef; }
+.ck-lack { background: #fdf1ef; }
+.ck-none { background: #fbeaea; }
+.ck-dup  { background: #f3edfb; }
+.ck-abs  { background: #eef4fd; }
+.ck-extra { background: #f5f7f8; }
+.ck-excl { background: #f0f0f0; }
+
+.ck-filterbar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.ck-seg { display: inline-flex; border: 1px solid #cdd8d3; border-radius: 6px; overflow: hidden; }
+.ck-seg-btn { border: none; background: #fff; padding: 6px 14px; cursor: pointer; font-size: 13px; font-family: inherit; }
+.ck-seg-btn.on { background: #2e7d5b; color: #fff; }
+
+.ck-grid { overflow-x: auto; }
+.ck-list { border-collapse: collapse; width: 100%; }
+.ck-list th, .ck-list td { border-bottom: 1px solid #eee; padding: 7px 10px; text-align: left; font-size: 13px; vertical-align: top; }
+.ck-list thead th { background: #f5f9f7; position: sticky; top: 0; }
+.ck-detail { color: #667; font-size: 12px; }
+.ck-actions { white-space: nowrap; display: flex; gap: 4px; flex-wrap: wrap; }
+.ck-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; white-space: nowrap; }
+.ck-none-row td { background: #fdf6f6; }
+.ck-lack-row td { background: #fdf8f6; }
+
+.ck-matrix-wrap { border: 1px solid #e2e8e5; border-radius: 8px; overflow: auto; max-height: 70vh; }
+.ck-matrix { border-collapse: collapse; }
+.ck-matrix th, .ck-matrix td { border: 1px solid #eef1ef; text-align: center; padding: 2px; }
+.ck-mx-name {
+  position: sticky; left: 0; background: #fafcfb; text-align: left !important;
+  min-width: 90px; max-width: 130px; padding: 4px 8px !important; font-size: 12px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; z-index: 1;
+}
+.ck-mx-day { background: #f5f9f7; font-size: 11px; min-width: 30px; position: sticky; top: 0; z-index: 2; }
+.ck-mx-wd { font-size: 9px; color: #789; }
+.ck-mx-cell { min-width: 30px; height: 30px; }
+.ck-mx-sum { background: #fafcfb; min-width: 44px; }
+.ck-dot { cursor: pointer; font-size: 14px; display: inline-block; }
+.ck-ok-check { color: #2e7d5b; font-weight: 700; }
+
+/* ===================================================================
+ * 4. 🗓週間一覧(部屋別)
+ * =================================================================== */
+.wk-weekbtns { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.wk-monthlabel { font-size: 12px; color: #789; margin-right: 4px; }
+.wk-weekbtn {
+  font-size: 12px; padding: 6px 12px; border: 1px solid #cdd8d3; background: #fff;
+  color: #456; border-radius: 6px; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.wk-weekbtn:hover { background: #eef5f1; }
+.wk-weekbtn.on { background: #2e7d5b; color: #fff; border-color: #2e7d5b; font-weight: 700; }
+
+.wk-total { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; color: #567; padding: 4px 2px 8px; }
+.wk-grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.wk-grid { display: grid; gap: 8px; align-items: start; min-width: 100%; }
+.wk-col {
+  background: #fbfdfc; border: 1px solid #e2e8e5; border-radius: 8px; padding: 6px;
+  display: flex; flex-direction: column; gap: 6px; min-width: 0;
+}
+.wk-col.wk-sat .wk-date { color: #1f6feb; }
+.wk-col.wk-sun .wk-date { color: #c0392b; }
+.wk-colhead { border-bottom: 1px solid #e2e8e5; padding-bottom: 5px; }
+.wk-date { font-size: 13px; font-weight: 700; color: #345; white-space: nowrap; }
+.wk-count { font-size: 11px; color: #789; margin-top: 2px; }
+.wk-count b { color: #2e7d5b; font-size: 12px; }
+.wk-count b.wk-abs { color: #c0392b; }
+.wk-missing-badge {
+  display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 8px;
+  background: #fdecea; color: #c0392b; font-size: 10px; font-weight: 700;
+}
+.wk-empty { font-size: 12px; color: #bbb; text-align: center; padding: 10px 0; }
+
+.wk-block { background: #fff; border: 1px solid #e6ebe8; border-top: 3px solid #7a8a94; border-radius: 6px; padding: 6px 8px; }
+.wk-missing-block { border-top-color: #c0392b; background: #fffaf9; border-style: dashed; }
+/* 同時刻に実績ブロックがある場合: 点線・見出しなしのシンプルな追記表示 */
+.wk-missing-inline {
+  border-style: solid; border-top-width: 1px; border-top-color: #e6ebe8;
+  background: #fffdfc; margin-top: -1px; padding-top: 4px;
+}
+.wk-missing-title { color: #c0392b; font-weight: 700; font-size: 12px; }
+.wk-blockhead { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+.wk-time { font-size: 14px; font-weight: 700; letter-spacing: .02em; }
+.wk-room { font-size: 11px; font-weight: 700; margin-bottom: 4px; }
+.wk-members { display: flex; flex-direction: column; gap: 1px; }
+.wk-member { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; font-size: 12px; line-height: 1.5; }
+.wk-member-tap { cursor: pointer; padding: 1px 3px; margin: 0 -3px; border-radius: 4px; }
+.wk-member-tap:hover { background: #eef4f1; }
+.wk-micon { flex: 0 0 auto; font-size: 11px; }
+.wk-mname { color: #222; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1 1 auto; }
+/* 欠席種別に応じた文字色 */
+.wk-mabs-absPre .wk-mname { color: #b8770f; }
+.wk-mabs-absDay .wk-mname { color: #b02a17; }
+.wk-mabs-tag { font-size: 10px; margin-left: 3px; opacity: .85; }
+.wk-mfile { font-size: 10px; margin-left: 3px; }
+.wk-mgrade { color: #789; font-size: 11px; flex: 0 0 auto; }
+.wk-staff { margin-top: 5px; padding: 3px 6px; background: #f0f3f2; border-radius: 4px; font-size: 11px; color: #567; }
+.wk-opt { margin-top: 14px; color: #567; }
+
+/* ===================================================================
+ * 5. ⚙️マスタ設定
+ * =================================================================== */
+.karte-tabs { display: flex; gap: 4px; border-bottom: 2px solid #e2e8e5; margin-bottom: 12px; flex-wrap: wrap; }
+.karte-tab {
+  border: none; background: none; padding: 8px 16px; cursor: pointer; font-size: 14px;
+  border-bottom: 3px solid transparent; margin-bottom: -2px; font-family: inherit;
+}
+.karte-tab.on { color: #2e7d5b; font-weight: 700; border-bottom-color: #2e7d5b; }
+.karte-master-form {
+  display: flex; flex-direction: column; gap: 8px; margin: 10px 0; padding: 12px;
+  border: 1px solid #e2e8e5; border-radius: 8px; background: #fbfdfc;
+}
+.karte-holiday-list { margin-top: 12px; }
+.karte-holiday-year { margin-bottom: 10px; }
+.karte-holiday-y { font-weight: 700; color: #456; font-size: 13px; margin-bottom: 4px; }
+.karte-holiday-chip {
+  display: inline-flex; align-items: center; gap: 2px; background: #eef4fd;
+  border-radius: 12px; padding: 3px 10px; margin: 2px; font-size: 12px;
+}
+.karte-holiday-auto { background: #f0f0f0; color: #777; }
+.ms-suggest-wrap { display: flex; gap: 16px; flex-wrap: wrap; }
+.ms-suggest-col { flex: 1 1 320px; max-height: 460px; overflow-y: auto; border: 1px solid #e2e8e5; border-radius: 8px; padding: 8px 12px; }
+.ms-suggest-item { font-size: 12px; color: #456; padding: 2px 0; border-bottom: 1px dotted #eee; }
+
+/* ===================================================================
+ * 6. アプリ10: 出欠カレンダー
+ * =================================================================== */
+.karte-att-cal {
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 12px; max-width: 760px;
+}
+.ac-status { font-size: 12px; color: #789; padding: 4px 0; }
+.ac-status-err { color: #c0392b; }
+.ac-head { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; }
+.ac-month { font-weight: 700; font-size: 13px; color: #345; min-width: 74px; text-align: center; }
+.ac-navbtn {
+  border: 1px solid #cdd8d3; background: #fff; border-radius: 5px; padding: 1px 8px;
+  font-size: 12px; cursor: pointer; color: #456; font-family: inherit; line-height: 1.6;
+}
+.ac-navbtn:hover { background: #eef5f1; }
+.ac-navbtn.ac-today { margin-left: auto; font-size: 11px; }
+
+.ac-grid { display: flex; flex-direction: column; gap: 2px; }
+.ac-row { display: grid; gap: 2px; }
+.ac-cell {
+  position: relative; border: 1px solid #e6ebe8; border-radius: 4px; background: #fff;
+  text-align: center; padding: 1px 0 2px; min-height: 32px; cursor: pointer;
+}
+.ac-cell:hover { background: #f4f8f6; }
+.ac-cell.ac-hol { background: #fafafa; }
+.ac-cell.ac-today-cell { border-color: #1f6feb; border-width: 2px; }
+.ac-cell.ac-sat .ac-wd { color: #1f6feb; }
+.ac-cell.ac-sun .ac-wd, .ac-cell.ac-hol .ac-wd { color: #c0392b; }
+.ac-daynum { font-size: 10px; line-height: 1.3; display: flex; justify-content: center; gap: 2px; }
+.ac-daynum-n { color: #345; }
+.ac-wd { color: #9aa; }
+.ac-icon { font-size: 13px; line-height: 1.2; }
+.ac-off { opacity: .5; }
+.ac-off:hover { opacity: 1; background: #f4f8f6; }
+
+/* 状態別の背景色 */
+.ac-done { background: #f2f9f5; }
+.ac-warn { background: #fff8ef; }
+.ac-lack { background: #fdf1ef; }
+.ac-none { background: #fbeaea; }
+.ac-dup { background: #f3edfb; }
+.ac-extra { background: #f5f7f8; }
+.ac-excluded { background: #f0f0f0; }
+/* 事前欠席=オレンジ / 直近欠席=赤 */
+.ac-absPre { background: #fff3e0; border-color: #e0912f; }
+.ac-absDay { background: #fdeceb; border-color: #c0392b; }
+
+.ac-legend { display: flex; flex-wrap: wrap; gap: 8px; font-size: 10px; color: #789; margin-top: 4px; }
+.ac-legend-abspre { color: #b8770f; font-weight: 700; }
+.ac-legend-absday { color: #b02a17; font-weight: 700; }
+
+/* ===================================================================
+ * 7. アプリ10: カルテ一覧
+ * =================================================================== */
+.karte-klist-wrap { max-height: 280px; overflow-y: auto; border: 1px solid #e2e8e5; border-radius: 6px; margin-top: 4px; }
+.karte-klist { border-collapse: collapse; width: 100%; font-size: 11px; table-layout: fixed; }
+.karte-klist th, .karte-klist td {
+  border: 1px solid #eef1ef; padding: 3px 5px; text-align: left; vertical-align: top; word-break: break-all;
+}
+.karte-klist thead th { background: #f0f5f2; position: sticky; top: 0; font-size: 11px; white-space: nowrap; }
+.karte-klist .kl-date { width: 52px; white-space: nowrap; color: #345; font-weight: 700; }
+.karte-klist .kl-menu { width: 76px; color: #2e7d5b; }
+.karte-klist .kl-note, .karte-klist .kl-parent { color: #456; line-height: 1.4; }
+.karte-klist tbody tr:nth-child(even) { background: #fafcfb; }
+.karte-klist tbody tr.kl-row { cursor: pointer; }
+.karte-klist tbody tr.kl-row:hover td { background: #eef5f1; }
+.kl-pager { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 5px; }
+.kl-pageinfo { font-size: 10px; color: #789; min-width: 74px; text-align: center; }
+
+/* ===================================================================
+ * 8. 狭い画面(スマートフォン)
+ * =================================================================== */
+@media (max-width: 640px) {
+  .karte-header { gap: 8px; }
+  .karte-title { font-size: 16px; width: 100%; }
+  .karte-summary, .ck-summary { gap: 8px; font-size: 13px; }
+  .ck-modal-actions .karte-btn { flex: 1 1 auto; }
+  .wk-grid { grid-template-columns: repeat(7, minmax(150px, 1fr)) !important; }
+  .k11-hdr { margin-left: 0; }
+}

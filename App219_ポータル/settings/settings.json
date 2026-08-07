@@ -1,0 +1,30 @@
+{
+  "description": "",
+  "enableBulkDeletion": false,
+  "enableComments": false,
+  "enableDuplicateRecord": false,
+  "enableInlineRecordEditing": false,
+  "enableThumbnails": true,
+  "firstMonthOfFiscalYear": "4",
+  "icon": {
+    "file": {
+      "contentType": "image/jpeg",
+      "fileKey": "202605190606570086BAC9BD8C4E6BBBE86642AC6198ED235",
+      "name": "iroha_RGB-03-edit-20240330231502.jpg",
+      "size": "185770"
+    },
+    "type": "FILE"
+  },
+  "name": "ホーム",
+  "numberPrecision": {
+    "decimalPlaces": "4",
+    "digits": "16",
+    "roundingMode": "HALF_EVEN"
+  },
+  "revision": "225",
+  "theme": "WHITE",
+  "titleField": {
+    "code": "レコード番号",
+    "selectionMode": "AUTO"
+  }
+}

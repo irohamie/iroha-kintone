@@ -1,0 +1,1781 @@
+{
+  "layout": [
+    {
+      "code": "保存ファイル",
+      "layout": [
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "label": "<div><b><font size=\"6\">前</font></b><div><b><font size=\"6\">期</font></b></div></div>",
+              "size": {
+                "width": "64"
+              },
+              "type": "LABEL"
+            },
+            {
+              "elementId": "",
+              "label": "<div><div style=\"text-align:right\"><b><font size=\"4\">【立案】</font></b></div></div>",
+              "size": {
+                "width": "104"
+              },
+              "type": "LABEL"
+            },
+            {
+              "code": "前期案",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "前期計画",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "前期サイン済",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "elementId": "fix",
+              "size": {
+                "height": "66",
+                "width": "117"
+              },
+              "type": "SPACER"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "size": {
+                "height": "28",
+                "width": "64"
+              },
+              "type": "SPACER"
+            },
+            {
+              "elementId": "",
+              "size": {
+                "width": "725"
+              },
+              "type": "HR"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "size": {
+                "height": "28",
+                "width": "64"
+              },
+              "type": "SPACER"
+            },
+            {
+              "elementId": "",
+              "label": "<div><div style=\"text-align:right\"><b><font size=\"4\">【評価】</font></b></div></div>",
+              "size": {
+                "width": "104"
+              },
+              "type": "LABEL"
+            },
+            {
+              "code": "前期評価案",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "前期評価",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "前期評価サイン済",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "elementId": "move",
+              "size": {
+                "height": "66",
+                "width": "117"
+              },
+              "type": "SPACER"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "size": {
+                "width": "789"
+              },
+              "type": "HR"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "label": "<div><b style=\"font-size:xx-large\">後</b><div><b style=\"font-size:xx-large\">期</b></div></div>",
+              "size": {
+                "width": "64"
+              },
+              "type": "LABEL"
+            },
+            {
+              "elementId": "",
+              "label": "<div><div style=\"text-align:right\"><b><font size=\"4\">【立案】</font></b></div></div>",
+              "size": {
+                "width": "104"
+              },
+              "type": "LABEL"
+            },
+            {
+              "code": "後期案",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "後期計画",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "後期サイン済",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "size": {
+                "height": "28",
+                "width": "64"
+              },
+              "type": "SPACER"
+            },
+            {
+              "elementId": "",
+              "size": {
+                "width": "725"
+              },
+              "type": "HR"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "elementId": "",
+              "size": {
+                "height": "28",
+                "width": "64"
+              },
+              "type": "SPACER"
+            },
+            {
+              "elementId": "",
+              "label": "<div><div style=\"text-align:right\"><b><font size=\"4\">【評価】</font></b></div></div>",
+              "size": {
+                "width": "104"
+              },
+              "type": "LABEL"
+            },
+            {
+              "code": "後期評価案",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "後期評価",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            },
+            {
+              "code": "後期評価サイン済",
+              "size": {
+                "width": "207"
+              },
+              "type": "FILE"
+            }
+          ],
+          "type": "ROW"
+        }
+      ],
+      "type": "GROUP"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "972"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "担当",
+          "size": {
+            "width": "120"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "更新月",
+          "size": {
+            "width": "174"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "利用曜日",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "ドロップダウン_4",
+          "size": {
+            "width": "307"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "ドロップダウン_5",
+          "size": {
+            "width": "360"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "氏名",
+          "size": {
+            "width": "255"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "生年月日",
+          "size": {
+            "width": "173"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:center\"><b><font size=\"6\">個別支援計画・専門的支援実施計画</font></b></div></div>",
+          "size": {
+            "width": "544"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "太田ステージ",
+          "size": {
+            "width": "120"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "計画相談",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "aaaa",
+          "size": {
+            "height": "30",
+            "width": "856"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"6\" color=\"#0000ff\"><b>前期立案</b></font></div>",
+          "size": {
+            "width": "160"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "前期計画開始",
+          "size": {
+            "width": "134"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:center\"><font size=\"4\"><br /></font></div><div style=\"text-align:center\"><b><font size=\"4\">&#xff5e;</font></b></div></div>",
+          "size": {
+            "width": "50"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "前期計画終了",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "elementId": "copy2",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        },
+        {
+          "elementId": "move1",
+          "size": {
+            "height": "66",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"6\" color=\"#ff9900\"><b>前期評価</b></font></div>",
+          "size": {
+            "width": "160"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "前期計画開始コピー",
+          "size": {
+            "width": "134"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:center\"><font size=\"4\"><br /></font></div><div style=\"text-align:center\"><b><font size=\"4\">&#xff5e;</font></b></div></div>",
+          "size": {
+            "width": "50"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "前期計画終了コピー",
+          "size": {
+            "width": "110"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"6\" color=\"#0000ff\"><b>後期立案</b></font></div>",
+          "size": {
+            "width": "160"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "後期計画開始",
+          "size": {
+            "width": "134"
+          },
+          "type": "DATE"
+        },
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:center\"><font size=\"4\"><br /></font></div><div style=\"text-align:center\"><b><font size=\"4\">&#xff5e;</font></b></div></div>",
+          "size": {
+            "width": "50"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "後期計画終了",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "elementId": "copy1",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        },
+        {
+          "elementId": "move2",
+          "size": {
+            "height": "66",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"6\" color=\"#ff9900\"><b>後期評価</b></font></div>",
+          "size": {
+            "width": "160"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "後期計画開始コピー",
+          "size": {
+            "width": "134"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:center\"><font size=\"4\"><br /></font></div><div style=\"text-align:center\"><b><font size=\"4\">&#xff5e;</font></b></div></div>",
+          "size": {
+            "width": "50"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "後期計画終了コピー",
+          "size": {
+            "width": "110"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "長期目標",
+          "size": {
+            "width": "1465"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "前期短期目標",
+          "size": {
+            "width": "1465"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題1",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい1",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容1",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価1",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更1",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題2",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい2",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容2",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価2",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更2",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題3",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい3",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容3",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価3",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更3",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題4",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい4",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容4",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価4",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更4",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題5",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい5",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容5",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価5",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更5",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1464"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "後期短期目標",
+          "size": {
+            "width": "1465"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題6",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい6",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容6",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価6",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更6",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題7",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい7",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容7",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価7",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更7",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題8",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい8",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容8",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価8",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更8",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題9",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい9",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容9",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価9",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更9",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "課題10",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "ねらい10",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "内容10",
+          "size": {
+            "innerHeight": "125",
+            "width": "550"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "評価10",
+          "size": {
+            "innerHeight": "125",
+            "width": "300"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "変更10",
+          "size": {
+            "innerHeight": "125",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1464"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><span style=\"color:rgb( 0 , 0 , 255 );font-size:xx-large;font-weight:700\">専門的支援実施計画</span></div>",
+          "size": {
+            "width": "395"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "前期専門アセス",
+          "size": {
+            "width": "862"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "前期専門モニタ",
+          "size": {
+            "width": "602"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "前期専門目標",
+          "size": {
+            "width": "1464"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1464"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "後期専門アセス",
+          "size": {
+            "width": "862"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "後期専門モニタ",
+          "size": {
+            "width": "602"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "後期専門目標",
+          "size": {
+            "width": "1464"
+          },
+          "type": "CHECK_BOX"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1464"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font color=\"#ff0000\" size=\"6\"><u>【確認事項】</u></font></b></div><div><div><b><font size=\"6\">①</font></b><font size=\"6\"><b>受診(診断や薬)・検査・手帳・住所・園学校に変更があれば確認させてください。</b></font></div><div><b><font size=\"6\">②受診・検査・手帳・住所変更・園学校名を確認させてください。</font></b></div></div><div><font size=\"6\" style=\"font-weight:bold\">③本人の希望、保護者の希望を聞かせてください。</font><font size=\"2\"><u><b><a href=\"https://iroha-mie.cybozu.com/k/10/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">サービス等利用計画の確認</a></b></u></font></div>",
+          "size": {
+            "width": "1664"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "前期本人希望",
+          "size": {
+            "width": "1287"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "前期保護者希望",
+          "size": {
+            "width": "1287"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:left\"><u style=\"font-size:large\">利用者氏名　　　　　　　　　　(自筆)</u></div></div>",
+          "size": {
+            "width": "356"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "前期立案署名",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "児発管",
+          "size": {
+            "width": "724"
+          },
+          "type": "RADIO_BUTTON"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "ZRsyomei",
+          "size": {
+            "height": "30",
+            "width": "120"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:left\"><u style=\"font-size:large\">利用者氏名　　　　　　　　　　(自筆)</u></div></div>",
+          "size": {
+            "width": "356"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "前期評価署名",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "児発管1",
+          "size": {
+            "width": "724"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "ZHsyomei_0",
+          "size": {
+            "height": "30",
+            "width": "120"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1287"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "後期本人希望",
+          "size": {
+            "width": "1287"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "後期保護者希望",
+          "size": {
+            "width": "1287"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:left\"><u style=\"font-size:large\">利用者氏名　　　　　　　　　　(自筆)</u></div></div>",
+          "size": {
+            "width": "356"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "後期立案署名",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "児発管2",
+          "size": {
+            "width": "724"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "KRsyomei",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><div style=\"text-align:left\"><u style=\"font-size:large\">利用者氏名　　　　　　　　　　(自筆)</u></div></div>",
+          "size": {
+            "width": "356"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "後期評価署名",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "児発管3",
+          "size": {
+            "width": "724"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "KHsyomei_0",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "978"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"6\" style=\"font-weight:bold\">就学計画</font><font size=\"2\"><u>&#xff08;署名の保存のみ&#xff09;</u></font></div>",
+          "size": {
+            "width": "286"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><span style=\"font-size:large\">&#xff14;月&#xff11;日以降の放課後等デイサービスでの支援計画の引継ぎに同意します。　</span><u style=\"font-size:large\">利用者氏名　　　　　　　　　　(自筆)</u></div>",
+          "size": {
+            "width": "984"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "署名_玉城就学用_",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "Ssyomei",
+          "size": {
+            "height": "28",
+            "width": "117"
+          },
+          "type": "SPACER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"6\">個別支援会議</font></b></div>",
+          "size": {
+            "width": "224"
+          },
+          "type": "LABEL"
+        },
+        {
+          "elementId": "",
+          "label": "<div><font color=\"#ff0000\"><u>※新規は見学日当日に個別支援会議を実施すること</u></font></div>",
+          "size": {
+            "width": "354"
+          },
+          "type": "LABEL"
+        },
+        {
+          "code": "利用先",
+          "size": {
+            "width": "78"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "エリア",
+          "size": {
+            "width": "78"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "案訂正",
+      "fields": [
+        {
+          "code": "会議日",
+          "size": {
+            "width": "117"
+          },
+          "type": "DATE"
+        },
+        {
+          "code": "個別支援会議種別",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "個別支援会議領域",
+          "size": {
+            "width": "193"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "個別支援会議内容",
+          "size": {
+            "innerHeight": "125",
+            "width": "315"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "個別支援会議参加者",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "SUBTABLE"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><b><font size=\"6\">LINEでサイン</font></b><u><font color=\"#ff0000\">※<font size=\"2\">使いたいスタッフ</font></font></u><u><font color=\"#ff0000\"><font size=\"2\">は齋藤まで</font></font></u></div>",
+          "size": {
+            "width": "438"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "button_space",
+          "size": {
+            "height": "66",
+            "width": "117"
+          },
+          "type": "SPACER"
+        },
+        {
+          "code": "liff_url",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "size": {
+            "width": "1465"
+          },
+          "type": "HR"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "関連レコード一覧",
+          "type": "REFERENCE_TABLE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div><font size=\"6\"><b>データ</b></font></div>",
+          "size": {
+            "width": "128"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "token",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "作成者",
+          "size": {
+            "width": "120"
+          },
+          "type": "CREATOR"
+        },
+        {
+          "code": "更新者",
+          "size": {
+            "width": "120"
+          },
+          "type": "MODIFIER"
+        },
+        {
+          "code": "文字列__1行__3",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "学年",
+          "size": {
+            "width": "64"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "フリガナ",
+          "size": {
+            "width": "193"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "利用状況",
+          "size": {
+            "width": "92"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "前期裏",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "後期裏",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    }
+  ],
+  "revision": "1481"
+}

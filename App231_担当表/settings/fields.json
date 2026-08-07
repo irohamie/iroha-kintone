@@ -1,0 +1,122 @@
+{
+  "properties": {
+    "assignment_data": {
+      "code": "assignment_data",
+      "defaultValue": "",
+      "label": "データ",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "カテゴリー": {
+      "code": "カテゴリー",
+      "enabled": false,
+      "label": "カテゴリー",
+      "type": "CATEGORY"
+    },
+    "スタッフ": {
+      "code": "スタッフ",
+      "defaultValue": [],
+      "entities": [],
+      "label": "スタッフ",
+      "noLabel": false,
+      "required": false,
+      "type": "USER_SELECT"
+    },
+    "ステータス": {
+      "code": "ステータス",
+      "enabled": false,
+      "label": "ステータス",
+      "type": "STATUS"
+    },
+    "レコード番号": {
+      "code": "レコード番号",
+      "label": "レコード番号",
+      "noLabel": false,
+      "type": "RECORD_NUMBER"
+    },
+    "事業所": {
+      "code": "事業所",
+      "defaultValue": "",
+      "label": "事業所",
+      "noLabel": false,
+      "options": {
+        "明和": {
+          "index": "1",
+          "label": "明和"
+        },
+        "玉城": {
+          "index": "0",
+          "label": "玉城"
+        },
+        "訪問": {
+          "index": "2",
+          "label": "訪問"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "作成日時": {
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false,
+      "type": "CREATED_TIME"
+    },
+    "作成者": {
+      "code": "作成者",
+      "label": "作成者",
+      "noLabel": false,
+      "type": "CREATOR"
+    },
+    "作業者": {
+      "code": "作業者",
+      "enabled": false,
+      "label": "作業者",
+      "type": "STATUS_ASSIGNEE"
+    },
+    "年度": {
+      "code": "年度",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "年度",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "更新日時": {
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false,
+      "type": "UPDATED_TIME"
+    },
+    "更新者": {
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false,
+      "type": "MODIFIER"
+    },
+    "月": {
+      "code": "月",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "月",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    }
+  },
+  "revision": "60"
+}

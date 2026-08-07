@@ -1,0 +1,77 @@
+{
+  "appId": "207",
+  "appName": "04 個別支援計画",
+  "scope": "ALL",
+  "revision": "1481",
+  "pulledAt": "2026-08-07T06:55:10.880Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/js/merge_pdf_view(1) (1).js",
+        "name": "merge_pdf_view(1) (1).js",
+        "size": 21196,
+        "md5": "903543f4aa53537001a9b3854334d4b5"
+      },
+      {
+        "order": 2,
+        "type": "URL",
+        "url": "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"
+      },
+      {
+        "order": 3,
+        "type": "FILE",
+        "path": "desktop/js/file-move.js",
+        "name": "file-move.js",
+        "size": 8208,
+        "md5": "7bda3fb8170687b07d0b503019d4530c"
+      },
+      {
+        "order": 4,
+        "type": "FILE",
+        "path": "desktop/js/generate_token.js",
+        "name": "generate_token.js",
+        "size": 3287,
+        "md5": "70aadac9ec755b5c5d72d9c8dde31514"
+      },
+      {
+        "order": 5,
+        "type": "FILE",
+        "path": "desktop/js/check_duplicate_date.js",
+        "name": "check_duplicate_date.js",
+        "size": 9702,
+        "md5": "3e4bcafd67c6d21296cb6afd8e44d2b6"
+      },
+      {
+        "order": 6,
+        "type": "FILE",
+        "path": "desktop/js/fix_pdf_term.js",
+        "name": "fix_pdf_term.js",
+        "size": 18966,
+        "md5": "6ea5b06ebd8731b8ae921e4883d5283d"
+      },
+      {
+        "order": 7,
+        "type": "FILE",
+        "path": "desktop/js/app207_field_copy.js",
+        "name": "app207_field_copy.js",
+        "size": 82678,
+        "md5": "ed8a0dc2a19b068601d687e0078fa0f6"
+      },
+      {
+        "order": 8,
+        "type": "FILE",
+        "path": "desktop/js/app207_renewal_list.js",
+        "name": "app207_renewal_list.js",
+        "size": 73413,
+        "md5": "4c60c4c313799519d2c136dee7f1b2ab"
+      }
+    ],
+    "css": []
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

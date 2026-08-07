@@ -1,0 +1,41 @@
+{
+  "appId": "42",
+  "appName": "04 訪問支援計画",
+  "scope": "ALL",
+  "revision": "654",
+  "pulledAt": "2026-08-07T06:55:09.716Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/js/generate_token.js",
+        "name": "generate_token.js",
+        "size": 3287,
+        "md5": "70aadac9ec755b5c5d72d9c8dde31514"
+      },
+      {
+        "order": 2,
+        "type": "FILE",
+        "path": "desktop/js/app42_list_view.js",
+        "name": "app42_list_view.js",
+        "size": 86110,
+        "md5": "cd5330c34b5096b08bc09a74b7d9e2a5"
+      }
+    ],
+    "css": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/css/app42_list_view.css",
+        "name": "app42_list_view.css",
+        "size": 15608,
+        "md5": "50df5f21daa4981ac8ce5e21a1f0d4d5"
+      }
+    ]
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

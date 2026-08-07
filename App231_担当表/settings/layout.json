@@ -1,0 +1,56 @@
+{
+  "layout": [
+    {
+      "fields": [
+        {
+          "code": "年度",
+          "size": {
+            "width": "193"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "月",
+          "size": {
+            "width": "193"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "事業所",
+          "size": {
+            "width": "196"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "スタッフ",
+          "size": {
+            "width": "344"
+          },
+          "type": "USER_SELECT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "assignment_data",
+          "size": {
+            "innerHeight": "125",
+            "width": "315"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    }
+  ],
+  "revision": "60"
+}

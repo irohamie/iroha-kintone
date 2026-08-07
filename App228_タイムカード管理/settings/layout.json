@@ -1,0 +1,1165 @@
+{
+  "layout": [
+    {
+      "fields": [
+        {
+          "code": "record_type",
+          "size": {
+            "width": "140"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "target_year",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "target_month",
+          "size": {
+            "width": "100"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "houmon_json",
+          "size": {
+            "innerHeight": "91",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "actual_hours_json",
+          "size": {
+            "innerHeight": "125",
+            "width": "315"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "保存",
+          "size": {
+            "innerHeight": "91",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "備考",
+          "size": {
+            "innerHeight": "91",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div style=\"font-size:16px;font-weight:bold;color:#333;padding:8px 12px;border-left:4px solid #4a90d9;background:#f0f5fb;margin:8px 0 4px 0\">&#x1f4c1; 月次管理&#xff08;PDF・取込状態&#xff09;</div>",
+          "size": {
+            "width": "750"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "pdf_04",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_04",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_05",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_05",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_06",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_06",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "pdf_07",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_07",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_08",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_08",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_09",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_09",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "pdf_10",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_10",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_11",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_11",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_12",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_12",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "pdf_01",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_01",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_02",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_02",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        },
+        {
+          "code": "pdf_03",
+          "size": {
+            "width": "180"
+          },
+          "type": "FILE"
+        },
+        {
+          "code": "status_03",
+          "size": {
+            "width": "116"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div style=\"font-size:16px;font-weight:bold;color:#333;padding:8px 12px;border-left:4px solid #4a90d9;background:#f0f5fb;margin:8px 0 4px 0\">&#x1f464; 基本情報</div>",
+          "size": {
+            "width": "750"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "staff_name",
+          "size": {
+            "width": "200"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "staff_id",
+          "size": {
+            "width": "120"
+          },
+          "type": "SINGLE_LINE_TEXT"
+        },
+        {
+          "code": "employment_type",
+          "size": {
+            "width": "160"
+          },
+          "type": "DROP_DOWN"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "base_work_days",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "base_work_hours",
+          "size": {
+            "width": "120"
+          },
+          "type": "CALC"
+        },
+        {
+          "code": "weekly_days",
+          "size": {
+            "width": "130"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "daily_hours",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div style=\"font-size:16px;font-weight:bold;color:#333;padding:8px 12px;border-left:4px solid #4a90d9;background:#f0f5fb;margin:8px 0 4px 0\">&#x1f4b0; 担当・手当</div>",
+          "size": {
+            "width": "750"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "tanto_count",
+          "size": {
+            "width": "100"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "is_senju",
+          "size": {
+            "width": "110"
+          },
+          "type": "CHECK_BOX"
+        },
+        {
+          "code": "houmon",
+          "size": {
+            "width": "80"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "houmon_sub",
+          "size": {
+            "width": "100"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "senju",
+          "size": {
+            "width": "80"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "keikaku_count",
+          "size": {
+            "width": "80"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "monitor_count",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "keikaku_names",
+          "size": {
+            "innerHeight": "91",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        },
+        {
+          "code": "monitor_names",
+          "size": {
+            "innerHeight": "91",
+            "width": "205"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div style=\"font-size:13px;font-weight:bold;color:#d35400;padding:4px 8px;background:#fdf5ed;border-left:3px solid #e67e22;margin:4px 0\">✏️ 手入力: 専門・サブ(専門)</div>",
+          "size": {
+            "width": "600"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "senmon",
+          "size": {
+            "width": "80"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "senmon_sub",
+          "size": {
+            "width": "100"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "teate_total",
+          "size": {
+            "width": "150"
+          },
+          "type": "CALC"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "elementId": "",
+          "label": "<div style=\"font-size:16px;font-weight:bold;color:#333;padding:8px 12px;border-left:4px solid #4a90d9;background:#f0f5fb;margin:8px 0 4px 0\">&#x1f4ca; 月次集計</div>",
+          "size": {
+            "width": "750"
+          },
+          "type": "LABEL"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "work_days",
+          "size": {
+            "width": "100"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "work_hours",
+          "size": {
+            "width": "100"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "overtime",
+          "size": {
+            "width": "130"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "special_sat",
+          "size": {
+            "width": "150"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "yukyu_days",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "yukyu_hours",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "kekkin_days",
+          "size": {
+            "width": "110"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "kekkin_hours",
+          "size": {
+            "width": "110"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "kaki_kyuka",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "tokubetsu_kyuka",
+          "size": {
+            "width": "130"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "pdf_total",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        },
+        {
+          "code": "pdf_work_days",
+          "size": {
+            "width": "120"
+          },
+          "type": "NUMBER"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "code": "daily_detail_group",
+      "layout": [
+        {
+          "fields": [
+            {
+              "code": "d01_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d01_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d02_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d02_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d03_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d03_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d04_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d04_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d05_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d05_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d06_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d06_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d07_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d07_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d08_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d08_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d09_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d09_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d10_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d10_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d11_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d11_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d12_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d12_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d13_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d13_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d14_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d14_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d15_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d15_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d16_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d16_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d17_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d17_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d18_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d18_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d19_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d19_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d20_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d20_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d21_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d21_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d22_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d22_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d23_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d23_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d24_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d24_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d25_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d25_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d26_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d26_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d27_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d27_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d28_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d28_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d29_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d29_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d30_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d30_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        },
+        {
+          "fields": [
+            {
+              "code": "d31_hours",
+              "size": {
+                "width": "130"
+              },
+              "type": "NUMBER"
+            },
+            {
+              "code": "d31_type",
+              "size": {
+                "width": "170"
+              },
+              "type": "DROP_DOWN"
+            }
+          ],
+          "type": "ROW"
+        }
+      ],
+      "type": "GROUP"
+    }
+  ],
+  "revision": "191"
+}

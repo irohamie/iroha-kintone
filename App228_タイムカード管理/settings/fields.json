@@ -1,0 +1,2721 @@
+{
+  "properties": {
+    "actual_hours_json": {
+      "code": "actual_hours_json",
+      "defaultValue": "",
+      "label": "タイムカード日付データ",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "base_work_days": {
+      "code": "base_work_days",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "基準勤務日数",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "base_work_hours": {
+      "code": "base_work_hours",
+      "displayScale": "1",
+      "expression": "base_work_days * daily_hours",
+      "format": "NUMBER",
+      "hideExpression": false,
+      "label": "基準勤務時間",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d01_hours": {
+      "code": "d01_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "1日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d01_type": {
+      "code": "d01_type",
+      "defaultValue": "",
+      "label": "1日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d02_hours": {
+      "code": "d02_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "2日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d02_type": {
+      "code": "d02_type",
+      "defaultValue": "",
+      "label": "2日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d03_hours": {
+      "code": "d03_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "3日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d03_type": {
+      "code": "d03_type",
+      "defaultValue": "",
+      "label": "3日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d04_hours": {
+      "code": "d04_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "4日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d04_type": {
+      "code": "d04_type",
+      "defaultValue": "",
+      "label": "4日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d05_hours": {
+      "code": "d05_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "5日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d05_type": {
+      "code": "d05_type",
+      "defaultValue": "",
+      "label": "5日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d06_hours": {
+      "code": "d06_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "6日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d06_type": {
+      "code": "d06_type",
+      "defaultValue": "",
+      "label": "6日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d07_hours": {
+      "code": "d07_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "7日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d07_type": {
+      "code": "d07_type",
+      "defaultValue": "",
+      "label": "7日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d08_hours": {
+      "code": "d08_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "8日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d08_type": {
+      "code": "d08_type",
+      "defaultValue": "",
+      "label": "8日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d09_hours": {
+      "code": "d09_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "9日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d09_type": {
+      "code": "d09_type",
+      "defaultValue": "",
+      "label": "9日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d10_hours": {
+      "code": "d10_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "10日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d10_type": {
+      "code": "d10_type",
+      "defaultValue": "",
+      "label": "10日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d11_hours": {
+      "code": "d11_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "11日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d11_type": {
+      "code": "d11_type",
+      "defaultValue": "",
+      "label": "11日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d12_hours": {
+      "code": "d12_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "12日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d12_type": {
+      "code": "d12_type",
+      "defaultValue": "",
+      "label": "12日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d13_hours": {
+      "code": "d13_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "13日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d13_type": {
+      "code": "d13_type",
+      "defaultValue": "",
+      "label": "13日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d14_hours": {
+      "code": "d14_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "14日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d14_type": {
+      "code": "d14_type",
+      "defaultValue": "",
+      "label": "14日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d15_hours": {
+      "code": "d15_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "15日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d15_type": {
+      "code": "d15_type",
+      "defaultValue": "",
+      "label": "15日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d16_hours": {
+      "code": "d16_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "16日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d16_type": {
+      "code": "d16_type",
+      "defaultValue": "",
+      "label": "16日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d17_hours": {
+      "code": "d17_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "17日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d17_type": {
+      "code": "d17_type",
+      "defaultValue": "",
+      "label": "17日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d18_hours": {
+      "code": "d18_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "18日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d18_type": {
+      "code": "d18_type",
+      "defaultValue": "",
+      "label": "18日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d19_hours": {
+      "code": "d19_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "19日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d19_type": {
+      "code": "d19_type",
+      "defaultValue": "",
+      "label": "19日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d20_hours": {
+      "code": "d20_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "20日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d20_type": {
+      "code": "d20_type",
+      "defaultValue": "",
+      "label": "20日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d21_hours": {
+      "code": "d21_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "21日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d21_type": {
+      "code": "d21_type",
+      "defaultValue": "",
+      "label": "21日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d22_hours": {
+      "code": "d22_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "22日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d22_type": {
+      "code": "d22_type",
+      "defaultValue": "",
+      "label": "22日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d23_hours": {
+      "code": "d23_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "23日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d23_type": {
+      "code": "d23_type",
+      "defaultValue": "",
+      "label": "23日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d24_hours": {
+      "code": "d24_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "24日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d24_type": {
+      "code": "d24_type",
+      "defaultValue": "",
+      "label": "24日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d25_hours": {
+      "code": "d25_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "25日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d25_type": {
+      "code": "d25_type",
+      "defaultValue": "",
+      "label": "25日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d26_hours": {
+      "code": "d26_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "26日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d26_type": {
+      "code": "d26_type",
+      "defaultValue": "",
+      "label": "26日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d27_hours": {
+      "code": "d27_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "27日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d27_type": {
+      "code": "d27_type",
+      "defaultValue": "",
+      "label": "27日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d28_hours": {
+      "code": "d28_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "28日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d28_type": {
+      "code": "d28_type",
+      "defaultValue": "",
+      "label": "28日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d29_hours": {
+      "code": "d29_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "29日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d29_type": {
+      "code": "d29_type",
+      "defaultValue": "",
+      "label": "29日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d30_hours": {
+      "code": "d30_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "30日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d30_type": {
+      "code": "d30_type",
+      "defaultValue": "",
+      "label": "30日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "d31_hours": {
+      "code": "d31_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "31日_勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "d31_type": {
+      "code": "d31_type",
+      "defaultValue": "",
+      "label": "31日_種別",
+      "noLabel": false,
+      "options": {
+        "夏季休暇": {
+          "index": "4",
+          "label": "夏季休暇"
+        },
+        "平日残業": {
+          "index": "7",
+          "label": "平日残業"
+        },
+        "有給(時間)": {
+          "index": "1",
+          "label": "有給(時間)"
+        },
+        "有給(終日)": {
+          "index": "0",
+          "label": "有給(終日)"
+        },
+        "欠勤(時間)": {
+          "index": "3",
+          "label": "欠勤(時間)"
+        },
+        "欠勤(終日)": {
+          "index": "2",
+          "label": "欠勤(終日)"
+        },
+        "特別休暇": {
+          "index": "5",
+          "label": "特別休暇"
+        },
+        "特別土曜勤務": {
+          "index": "6",
+          "label": "特別土曜勤務"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "daily_detail_group": {
+      "code": "daily_detail_group",
+      "label": "日別明細（1日〜31日）",
+      "noLabel": false,
+      "openGroup": false,
+      "type": "GROUP"
+    },
+    "daily_hours": {
+      "code": "daily_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "所定労働時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "employment_type": {
+      "code": "employment_type",
+      "defaultValue": "",
+      "label": "雇用形態",
+      "noLabel": false,
+      "options": {
+        "パート／アルバイト": {
+          "index": "2",
+          "label": "パート／アルバイト"
+        },
+        "フルタイムパート": {
+          "index": "1",
+          "label": "フルタイムパート"
+        },
+        "嘱託": {
+          "index": "3",
+          "label": "嘱託"
+        },
+        "正規": {
+          "index": "0",
+          "label": "正規"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "houmon": {
+      "code": "houmon",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "訪問",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "houmon_json": {
+      "code": "houmon_json",
+      "defaultValue": "",
+      "label": "houmon_json",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "houmon_sub": {
+      "code": "houmon_sub",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "サブ(訪問)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "is_senju": {
+      "align": "HORIZONTAL",
+      "code": "is_senju",
+      "defaultValue": [],
+      "label": "訪問専従",
+      "noLabel": false,
+      "options": {
+        "ON": {
+          "index": "0",
+          "label": "ON"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "kaki_kyuka": {
+      "code": "kaki_kyuka",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "夏季休暇(日数)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "keikaku_count": {
+      "code": "keikaku_count",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "計画",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "keikaku_names": {
+      "code": "keikaku_names",
+      "defaultValue": "",
+      "label": "計画請求",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "kekkin_days": {
+      "code": "kekkin_days",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "欠勤(日数)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "kekkin_hours": {
+      "code": "kekkin_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "欠勤(時間)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "monitor_count": {
+      "code": "monitor_count",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "モニタリング",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "monitor_names": {
+      "code": "monitor_names",
+      "defaultValue": "",
+      "label": "モニタ請求",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "overtime": {
+      "code": "overtime",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "平日残業(時間)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "pdf_01": {
+      "code": "pdf_01",
+      "label": "1月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_02": {
+      "code": "pdf_02",
+      "label": "2月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_03": {
+      "code": "pdf_03",
+      "label": "3月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_04": {
+      "code": "pdf_04",
+      "label": "4月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_05": {
+      "code": "pdf_05",
+      "label": "5月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_06": {
+      "code": "pdf_06",
+      "label": "6月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_07": {
+      "code": "pdf_07",
+      "label": "7月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_08": {
+      "code": "pdf_08",
+      "label": "8月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_09": {
+      "code": "pdf_09",
+      "label": "9月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_10": {
+      "code": "pdf_10",
+      "label": "10月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_11": {
+      "code": "pdf_11",
+      "label": "11月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_12": {
+      "code": "pdf_12",
+      "label": "12月 PDF",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "pdf_total": {
+      "code": "pdf_total",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "PDF合計時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "pdf_work_days": {
+      "code": "pdf_work_days",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "PDF出勤日数",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "record_type": {
+      "code": "record_type",
+      "defaultValue": "スタッフ明細",
+      "label": "レコード種別",
+      "noLabel": false,
+      "options": {
+        "スタッフ明細": {
+          "index": "1",
+          "label": "スタッフ明細"
+        },
+        "月次管理": {
+          "index": "0",
+          "label": "月次管理"
+        }
+      },
+      "required": true,
+      "type": "DROP_DOWN"
+    },
+    "senju": {
+      "code": "senju",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "専従",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "senmon": {
+      "code": "senmon",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "専門",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "senmon_sub": {
+      "code": "senmon_sub",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "サブ(専門)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "special_sat": {
+      "code": "special_sat",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "特別土曜勤務(時間)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "staff_id": {
+      "code": "staff_id",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "社員番号",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "staff_name": {
+      "code": "staff_name",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "スタッフ名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "status_01": {
+      "code": "status_01",
+      "defaultValue": "未着手",
+      "label": "1月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_02": {
+      "code": "status_02",
+      "defaultValue": "未着手",
+      "label": "2月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_03": {
+      "code": "status_03",
+      "defaultValue": "未着手",
+      "label": "3月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_04": {
+      "code": "status_04",
+      "defaultValue": "未着手",
+      "label": "4月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_05": {
+      "code": "status_05",
+      "defaultValue": "未着手",
+      "label": "5月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_06": {
+      "code": "status_06",
+      "defaultValue": "未着手",
+      "label": "6月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_07": {
+      "code": "status_07",
+      "defaultValue": "未着手",
+      "label": "7月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_08": {
+      "code": "status_08",
+      "defaultValue": "未着手",
+      "label": "8月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_09": {
+      "code": "status_09",
+      "defaultValue": "未着手",
+      "label": "9月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_10": {
+      "code": "status_10",
+      "defaultValue": "未着手",
+      "label": "10月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_11": {
+      "code": "status_11",
+      "defaultValue": "未着手",
+      "label": "11月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "status_12": {
+      "code": "status_12",
+      "defaultValue": "未着手",
+      "label": "12月 状態",
+      "noLabel": false,
+      "options": {
+        "PDF済": {
+          "index": "1",
+          "label": "PDF済"
+        },
+        "取込済": {
+          "index": "2",
+          "label": "取込済"
+        },
+        "未着手": {
+          "index": "0",
+          "label": "未着手"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "tanto_count": {
+      "code": "tanto_count",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "担当者数",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "target_month": {
+      "code": "target_month",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "対象月",
+      "maxValue": "12",
+      "minValue": "1",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "target_year": {
+      "code": "target_year",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "対象年度",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": true,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "teate_total": {
+      "code": "teate_total",
+      "displayScale": "0",
+      "expression": "(tanto_count * 500) + (houmon * 3000) + (houmon_sub * 1000) + (senju * 1000) + (senmon * 5000) + (senmon_sub * 3000)+keikaku_count * 9000 + monitor_count * 6000",
+      "format": "NUMBER",
+      "hideExpression": false,
+      "label": "手当合計",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "tokubetsu_kyuka": {
+      "code": "tokubetsu_kyuka",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "特別休暇(日数)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "weekly_days": {
+      "code": "weekly_days",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "所定労働日数(週)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "work_days": {
+      "code": "work_days",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "出勤日数",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "work_hours": {
+      "code": "work_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "勤務時間",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "yukyu_days": {
+      "code": "yukyu_days",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "有給休暇(日数)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "yukyu_hours": {
+      "code": "yukyu_hours",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "有給休暇(時間)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "カテゴリー": {
+      "code": "カテゴリー",
+      "enabled": false,
+      "label": "カテゴリー",
+      "type": "CATEGORY"
+    },
+    "ステータス": {
+      "code": "ステータス",
+      "enabled": false,
+      "label": "ステータス",
+      "type": "STATUS"
+    },
+    "レコード番号": {
+      "code": "レコード番号",
+      "label": "レコード番号",
+      "noLabel": false,
+      "type": "RECORD_NUMBER"
+    },
+    "作成日時": {
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false,
+      "type": "CREATED_TIME"
+    },
+    "作成者": {
+      "code": "作成者",
+      "label": "作成者",
+      "noLabel": false,
+      "type": "CREATOR"
+    },
+    "作業者": {
+      "code": "作業者",
+      "enabled": false,
+      "label": "作業者",
+      "type": "STATUS_ASSIGNEE"
+    },
+    "保存": {
+      "code": "保存",
+      "defaultValue": "",
+      "label": "保存",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "備考": {
+      "code": "備考",
+      "defaultValue": "",
+      "label": "備考",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "更新日時": {
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false,
+      "type": "UPDATED_TIME"
+    },
+    "更新者": {
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false,
+      "type": "MODIFIER"
+    }
+  },
+  "revision": "191"
+}

@@ -1,0 +1,1700 @@
+{
+  "properties": {
+    "liff_url": {
+      "code": "liff_url",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "LINE署名用URL",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "token": {
+      "code": "token",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "LINE署名用トークン",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "ねらい1": {
+      "code": "ねらい1",
+      "defaultValue": "",
+      "label": "ねらい1",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい10": {
+      "code": "ねらい10",
+      "defaultValue": "",
+      "label": "ねらい10",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい2": {
+      "code": "ねらい2",
+      "defaultValue": "",
+      "label": "ねらい2",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい3": {
+      "code": "ねらい3",
+      "defaultValue": "",
+      "label": "ねらい3",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい4": {
+      "code": "ねらい4",
+      "defaultValue": "",
+      "label": "ねらい4",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい5": {
+      "code": "ねらい5",
+      "defaultValue": "",
+      "label": "ねらい5",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい6": {
+      "code": "ねらい6",
+      "defaultValue": "",
+      "label": "ねらい6",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい7": {
+      "code": "ねらい7",
+      "defaultValue": "",
+      "label": "ねらい7",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい8": {
+      "code": "ねらい8",
+      "defaultValue": "",
+      "label": "ねらい8",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "ねらい9": {
+      "code": "ねらい9",
+      "defaultValue": "",
+      "label": "ねらい9",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "エリア": {
+      "code": "エリア",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "エリア",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "カテゴリー": {
+      "code": "カテゴリー",
+      "enabled": false,
+      "label": "カテゴリー",
+      "type": "CATEGORY"
+    },
+    "ステータス": {
+      "code": "ステータス",
+      "enabled": false,
+      "label": "ステータス",
+      "type": "STATUS"
+    },
+    "ドロップダウン_4": {
+      "code": "ドロップダウン_4",
+      "defaultValue": "",
+      "label": "支援時間",
+      "noLabel": false,
+      "options": {
+        "10:00～11:00(1時間0分)": {
+          "index": "2",
+          "label": "10:00～11:00(1時間0分)"
+        },
+        "10:30～11:30(1時間0分)": {
+          "index": "3",
+          "label": "10:30～11:30(1時間0分)"
+        },
+        "11:00～12:00(1時間0分)": {
+          "index": "4",
+          "label": "11:00～12:00(1時間0分)"
+        },
+        "13:55～15:30(1時間35分)": {
+          "index": "5",
+          "label": "13:55～15:30(1時間35分)"
+        },
+        "14:00～15:00(1時間0分)": {
+          "index": "6",
+          "label": "14:00～15:00(1時間0分)"
+        },
+        "14:00～16:00(2時間0分)": {
+          "index": "7",
+          "label": "14:00～16:00(2時間0分)"
+        },
+        "15:00～16:00(1時間0分)": {
+          "index": "8",
+          "label": "15:00～16:00(1時間0分)"
+        },
+        "16:00～17:00(1時間0分)": {
+          "index": "9",
+          "label": "16:00～17:00(1時間0分)"
+        },
+        "17:00～18:00(1時間0分)": {
+          "index": "10",
+          "label": "17:00～18:00(1時間0分)"
+        },
+        "9:30～10:30(1時間0分)": {
+          "index": "1",
+          "label": "9:30～10:30(1時間0分)"
+        },
+        "9:30～11:30(2時間0分)": {
+          "index": "0",
+          "label": "9:30～11:30(2時間0分)"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_5": {
+      "code": "ドロップダウン_5",
+      "defaultValue": "",
+      "label": "支援時間（リハ）",
+      "noLabel": false,
+      "options": {
+        "（リハ45分）10:15～11:00": {
+          "index": "1",
+          "label": "（リハ45分）10:15～11:00"
+        },
+        "（リハ45分）11:15～12:00": {
+          "index": "2",
+          "label": "（リハ45分）11:15～12:00"
+        },
+        "（リハ45分）16:00～16:45": {
+          "index": "3",
+          "label": "（リハ45分）16:00～16:45"
+        },
+        "（リハ45分）9:15～10:00": {
+          "index": "0",
+          "label": "（リハ45分）9:15～10:00"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "フリガナ": {
+      "code": "フリガナ",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "フリガナ",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "レコード番号": {
+      "code": "レコード番号",
+      "label": "レコード番号",
+      "noLabel": false,
+      "type": "RECORD_NUMBER"
+    },
+    "作成日時": {
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false,
+      "type": "CREATED_TIME"
+    },
+    "作成者": {
+      "code": "作成者",
+      "label": "担当者",
+      "noLabel": false,
+      "type": "CREATOR"
+    },
+    "作業者": {
+      "code": "作業者",
+      "enabled": false,
+      "label": "作業者",
+      "type": "STATUS_ASSIGNEE"
+    },
+    "保存ファイル": {
+      "code": "保存ファイル",
+      "label": "保存ファイル",
+      "noLabel": false,
+      "openGroup": false,
+      "type": "GROUP"
+    },
+    "児発管": {
+      "align": "VERTICAL",
+      "code": "児発管",
+      "defaultValue": "児童発達支援管理責任者：　西川加奈・山本あや葉",
+      "label": "児発管",
+      "noLabel": true,
+      "options": {
+        "児童発達支援管理責任者：　小林華": {
+          "index": "1",
+          "label": "児童発達支援管理責任者：　小林華"
+        },
+        "児童発達支援管理責任者：　西川加奈・山本あや葉": {
+          "index": "0",
+          "label": "児童発達支援管理責任者：　西川加奈・山本あや葉"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "児発管1": {
+      "code": "児発管1",
+      "defaultValue": "",
+      "expression": "児発管",
+      "hideExpression": false,
+      "label": "児発管コピー1",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": true,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "児発管2": {
+      "code": "児発管2",
+      "defaultValue": "",
+      "expression": "児発管",
+      "hideExpression": false,
+      "label": "児発管コピー2",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": true,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "児発管3": {
+      "code": "児発管3",
+      "defaultValue": "",
+      "expression": "児発管",
+      "hideExpression": false,
+      "label": "児発管コピー3",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": true,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "内容1": {
+      "code": "内容1",
+      "defaultValue": "",
+      "label": "内容1",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容10": {
+      "code": "内容10",
+      "defaultValue": "",
+      "label": "内容10",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容2": {
+      "code": "内容2",
+      "defaultValue": "",
+      "label": "内容2",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容3": {
+      "code": "内容3",
+      "defaultValue": "",
+      "label": "内容3",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容4": {
+      "code": "内容4",
+      "defaultValue": "",
+      "label": "内容4",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容5": {
+      "code": "内容5",
+      "defaultValue": "",
+      "label": "内容5",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容6": {
+      "code": "内容6",
+      "defaultValue": "",
+      "label": "内容6",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容7": {
+      "code": "内容7",
+      "defaultValue": "",
+      "label": "内容7",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容8": {
+      "code": "内容8",
+      "defaultValue": "",
+      "label": "内容8",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "内容9": {
+      "code": "内容9",
+      "defaultValue": "",
+      "label": "内容9",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "利用先": {
+      "code": "利用先",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "利用先",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "利用曜日": {
+      "code": "利用曜日",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "利用曜日",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "利用状況": {
+      "code": "利用状況",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "利用状況",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "前期サイン済": {
+      "code": "前期サイン済",
+      "label": "サイン済",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期保護者希望": {
+      "code": "前期保護者希望",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "前期　保護者の希望",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "前期専門アセス": {
+      "code": "前期専門アセス",
+      "defaultValue": "",
+      "label": "前期アセスメント(※詳細は別紙 Vineland-2参照)",
+      "noLabel": false,
+      "options": {
+        "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する。時間管理、就労時に必要な報告・連絡・相談など、 今の生活に必要で実行可能なライフスキルから獲得できる。": {
+          "index": "7",
+          "label": "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する。時間管理、就労時に必要な報告・連絡・相談など、 今の生活に必要で実行可能なライフスキルから獲得できる。"
+        },
+        "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する時間管理など、今の生活に必要で実行可能なライフスキルから獲得できる。": {
+          "index": "6",
+          "label": "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する時間管理など、今の生活に必要で実行可能なライフスキルから獲得できる。"
+        },
+        "【認知・行動領域】モノの関連性や細かい違いに注目する力をつけ、比較して考えられるなど思考力の基礎ができる。また頭でイメージした事を、言語、身振り、描画で表現する力をつける。": {
+          "index": "5",
+          "label": "【認知・行動領域】モノの関連性や細かい違いに注目する力をつけ、比較して考えられるなど思考力の基礎ができる。また頭でイメージした事を、言語、身振り、描画で表現する力をつける。"
+        },
+        "【運動・感覚領域】体性感覚（触覚、視覚、聴覚、嗅覚、味覚）を育てる。身体操作に関わる内部感覚を育てる。コミュニケーションでは子どもと身近な大人との２人だけの関係の中で、相手からの関わりを意識したり関心を持てたり、また自ら関わろうともできることを目標とする。": {
+          "index": "0",
+          "label": "【運動・感覚領域】体性感覚（触覚、視覚、聴覚、嗅覚、味覚）を育てる。身体操作に関わる内部感覚を育てる。コミュニケーションでは子どもと身近な大人との２人だけの関係の中で、相手からの関わりを意識したり関心を持てたり、また自ら関わろうともできることを目標とする。"
+        },
+        "【運動・感覚領域】各種感覚の発達と統合を促す。触覚と手の運動を促し縦方向の活動ができる。コミュニケーションでは特定の大人と1対1の関わりを通して自分・相手・物の三項関係で相手と同じ視線や感情を共有できる。要求以外で関わりを広げられることを目標とする。": {
+          "index": "2",
+          "label": "【運動・感覚領域】各種感覚の発達と統合を促す。触覚と手の運動を促し縦方向の活動ができる。コミュニケーションでは特定の大人と1対1の関わりを通して自分・相手・物の三項関係で相手と同じ視線や感情を共有できる。要求以外で関わりを広げられることを目標とする。"
+        },
+        "【運動・感覚領域】各種感覚の発達と統合を育てる。触覚と手の運動を促し外側に向けた方向づけができる。コミュニケーションでは特定の大人との関わりを通して「相手と関わることはとても役に立つ」と意識でき、視線、表情、身振り、発声で要求できることを目標とする。": {
+          "index": "1",
+          "label": "【運動・感覚領域】各種感覚の発達と統合を育てる。触覚と手の運動を促し外側に向けた方向づけができる。コミュニケーションでは特定の大人との関わりを通して「相手と関わることはとても役に立つ」と意識でき、視線、表情、身振り、発声で要求できることを目標とする。"
+        },
+        "【運動・感覚領域】視覚（見て）―運動（動かす）の協調を促し、横方向や平面を把握する活動を促す。コミュニケーションでは、拒否や抗議をする、「なに？」「誰？」「どこ？」の質問に答える、お気に入りの物にコメントするなど、要求以外に広げられることを目標とする。": {
+          "index": "3",
+          "label": "【運動・感覚領域】視覚（見て）―運動（動かす）の協調を促し、横方向や平面を把握する活動を促す。コミュニケーションでは、拒否や抗議をする、「なに？」「誰？」「どこ？」の質問に答える、お気に入りの物にコメントするなど、要求以外に広げられることを目標とする。"
+        },
+        "【運動・感覚領域】視覚（見る）―聴覚（聞いた音）と運動の協調ができる。コミュニケーションでは、言葉からイメージする力を伸ばし、言葉で理解できる事物を比較して、その関連性を意識できる。 言葉をコミュニケーションの中で使える。": {
+          "index": "4",
+          "label": "【運動・感覚領域】視覚（見る）―聴覚（聞いた音）と運動の協調ができる。コミュニケーションでは、言葉からイメージする力を伸ばし、言葉で理解できる事物を比較して、その関連性を意識できる。 言葉をコミュニケーションの中で使える。"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "前期専門モニタ": {
+      "code": "前期専門モニタ",
+      "defaultValue": "",
+      "label": "前期モニタリング",
+      "noLabel": false,
+      "options": {
+        "ほぼ達成": {
+          "index": "1",
+          "label": "ほぼ達成"
+        },
+        "未達成": {
+          "index": "2",
+          "label": "未達成"
+        },
+        "達成": {
+          "index": "0",
+          "label": "達成"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "前期専門目標": {
+      "align": "VERTICAL",
+      "code": "前期専門目標",
+      "defaultValue": [],
+      "label": "前期目標",
+      "noLabel": false,
+      "options": {
+        "●1-1　1-2　1-3（共通）": {
+          "index": "0",
+          "label": "●1-1　1-2　1-3（共通）"
+        },
+        "●1-2　1-3（共通）": {
+          "index": "3",
+          "label": "●1-2　1-3（共通）"
+        },
+        "●2": {
+          "index": "5",
+          "label": "●2"
+        },
+        "●3-1": {
+          "index": "7",
+          "label": "●3-1"
+        },
+        "●3-2": {
+          "index": "9",
+          "label": "●3-2"
+        },
+        "●4以上": {
+          "index": "12",
+          "label": "●4以上"
+        },
+        "他者の視点に気づけ、教えあいや認め合いができ、思いやりがもてるようになる。": {
+          "index": "16",
+          "label": "他者の視点に気づけ、教えあいや認め合いができ、思いやりがもてるようになる。"
+        },
+        "因果関係の理解を伸ばし、過去の経験からの展開の予測ができる。また、ある行動によるその後の結果を考えられる。": {
+          "index": "15",
+          "label": "因果関係の理解を伸ばし、過去の経験からの展開の予測ができる。また、ある行動によるその後の結果を考えられる。"
+        },
+        "学習態度の基礎、模倣力、絵の理解、マッチング、分類、～取って、玩具の使用、簡単な用事をする": {
+          "index": "2",
+          "label": "学習態度の基礎、模倣力、絵の理解、マッチング、分類、～取って、玩具の使用、簡単な用事をする"
+        },
+        "家庭、園、学校生活で必要な日常生活スキルを身に付けられる。": {
+          "index": "18",
+          "label": "家庭、園、学校生活で必要な日常生活スキルを身に付けられる。"
+        },
+        "活動の流れに集団の一人として参加して楽しみ経験を積むことで、より良い集団適応や社会適応がなせる。": {
+          "index": "13",
+          "label": "活動の流れに集団の一人として参加して楽しみ経験を積むことで、より良い集団適応や社会適応がなせる。"
+        },
+        "物の１対１対応での理解、身近な物の名前に気づく": {
+          "index": "4",
+          "label": "物の１対１対応での理解、身近な物の名前に気づく"
+        },
+        "状況判断が必要なルールやマナー理解ができる。": {
+          "index": "17",
+          "label": "状況判断が必要なルールやマナー理解ができる。"
+        },
+        "簡単な類推ゲーム、時間、空間関係、目前にない物の大小理解、数の概念、やさしい文章題、お金、時計、「していいですか？」「～したい」と言える 、「あまる」「足りない」、意図模倣": {
+          "index": "11",
+          "label": "簡単な類推ゲーム、時間、空間関係、目前にない物の大小理解、数の概念、やさしい文章題、お金、時計、「していいですか？」「～したい」と言える 、「あまる」「足りない」、意図模倣"
+        },
+        "自分の感情や行動を自己調整する力を身に付けられる。": {
+          "index": "19",
+          "label": "自分の感情や行動を自己調整する力を身に付けられる。"
+        },
+        "自己体験からの理解を脱し、客観的な理解を高められる。": {
+          "index": "14",
+          "label": "自己体験からの理解を脱し、客観的な理解を高められる。"
+        },
+        "苦手な事にもチャレンジしようとできる、「やればできる自分」という意識を持ち、自分に自信が持てる。": {
+          "index": "20",
+          "label": "苦手な事にもチャレンジしようとできる、「やればできる自分」という意識を持ち、自分に自信が持てる。"
+        },
+        "要求手段をいろいろ使う、２つの物をとれる、物に名前があることの理解、属性に気づく、色名、形名、簡単な動作語、用途が分かる、構成課題、順に物を入れる、離れた指さし、同じがわかる": {
+          "index": "6",
+          "label": "要求手段をいろいろ使う、２つの物をとれる、物に名前があることの理解、属性に気づく、色名、形名、簡単な動作語、用途が分かる、構成課題、順に物を入れる、離れた指さし、同じがわかる"
+        },
+        "言語指示での運動、身体調整、列挙と文による指示理解、４Ｗの質問に答える、文字の読み書き、日記、異同弁別、買い物ができる、絵画配列と説明、役割交代": {
+          "index": "10",
+          "label": "言語指示での運動、身体調整、列挙と文による指示理解、４Ｗの質問に答える、文字の読み書き、日記、異同弁別、買い物ができる、絵画配列と説明、役割交代"
+        },
+        "語彙を増やす、動作語、属性を言葉で、３つまでの記憶の強化、上位概念、チャンキング、比較の始まり、数の初歩、単語の塊での文字、易しいゲーム、有用な言葉の使用": {
+          "index": "8",
+          "label": "語彙を増やす、動作語、属性を言葉で、３つまでの記憶の強化、上位概念、チャンキング、比較の始まり、数の初歩、単語の塊での文字、易しいゲーム、有用な言葉の使用"
+        },
+        "身体の調節、各種感覚を育てる、感覚の統合を促す、体のバランスを整える、小集団の活動になれる": {
+          "index": "1",
+          "label": "身体の調節、各種感覚を育てる、感覚の統合を促す、体のバランスを整える、小集団の活動になれる"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "前期本人希望": {
+      "code": "前期本人希望",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "前期　本人の希望　（※聴き取りが難しい場合は普段の様子から考えられる希望）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "前期案": {
+      "code": "前期案",
+      "label": "案",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期短期目標": {
+      "code": "前期短期目標",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "前期　短期目標（誕生月）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "前期立案署名": {
+      "code": "前期立案署名",
+      "label": "前期立案　署名",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "前期裏": {
+      "code": "前期裏",
+      "label": "前期　裏",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期計画": {
+      "code": "前期計画",
+      "label": "計画",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期計画終了": {
+      "code": "前期計画終了",
+      "defaultValue": "6か月",
+      "label": "計画終了",
+      "noLabel": false,
+      "options": {
+        "1か月": {
+          "index": "0",
+          "label": "1か月"
+        },
+        "2か月": {
+          "index": "1",
+          "label": "2か月"
+        },
+        "3か月": {
+          "index": "2",
+          "label": "3か月"
+        },
+        "4か月": {
+          "index": "3",
+          "label": "4か月"
+        },
+        "5か月": {
+          "index": "4",
+          "label": "5か月"
+        },
+        "6か月": {
+          "index": "5",
+          "label": "6か月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "前期計画終了コピー": {
+      "code": "前期計画終了コピー",
+      "defaultValue": "",
+      "expression": "前期計画終了",
+      "hideExpression": false,
+      "label": "計画終了",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "前期計画開始": {
+      "code": "前期計画開始",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "前期計画開始",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "前期計画開始コピー": {
+      "code": "前期計画開始コピー",
+      "defaultValue": "",
+      "expression": "DATE_FORMAT(前期計画開始, \"YYYY-MM-dd\", \"Asia/Tokyo\")",
+      "hideExpression": true,
+      "label": "計画開始",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "前期評価": {
+      "code": "前期評価",
+      "label": "評価",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期評価サイン済": {
+      "code": "前期評価サイン済",
+      "label": "サイン済",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期評価案": {
+      "code": "前期評価案",
+      "label": "案",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "前期評価署名": {
+      "code": "前期評価署名",
+      "label": "前期評価　署名",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "変更1": {
+      "code": "変更1",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点1",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更10": {
+      "code": "変更10",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点10",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更2": {
+      "code": "変更2",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点2",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更3": {
+      "code": "変更3",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点3",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更4": {
+      "code": "変更4",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点4",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更5": {
+      "code": "変更5",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点5",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更6": {
+      "code": "変更6",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点6",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更7": {
+      "code": "変更7",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点7",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更8": {
+      "code": "変更8",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点8",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "変更9": {
+      "code": "変更9",
+      "defaultValue": "変更有・無",
+      "label": "変更・変更点9",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "太田ステージ": {
+      "code": "太田ステージ",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "太田ステージ",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "学年": {
+      "code": "学年",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "学年",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "後期サイン済": {
+      "code": "後期サイン済",
+      "label": "サイン済",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期保護者希望": {
+      "code": "後期保護者希望",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "後期　保護者の希望",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "後期専門アセス": {
+      "code": "後期専門アセス",
+      "defaultValue": "",
+      "label": "後期アセスメント(※詳細は別紙 Vineland-2参照)",
+      "noLabel": false,
+      "options": {
+        "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する。時間管理、就労時に必要な報告・連絡・相談など、 今の生活に必要で実行可能なライフスキルから獲得できる。": {
+          "index": "7",
+          "label": "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する。時間管理、就労時に必要な報告・連絡・相談など、 今の生活に必要で実行可能なライフスキルから獲得できる。"
+        },
+        "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する時間管理など、今の生活に必要で実行可能なライフスキルから獲得できる。": {
+          "index": "6",
+          "label": "【人間関係・社会性領域】生活に役立つ家事、買い物、交通機関の利用、電話応答、スケジュールを意識して実行する時間管理など、今の生活に必要で実行可能なライフスキルから獲得できる。"
+        },
+        "【認知・行動領域】モノの関連性や細かい違いに注目する力をつけ、比較して考えられるなど思考力の基礎ができる。また頭でイメージした事を、言語、身振り、描画で表現する力をつける。": {
+          "index": "5",
+          "label": "【認知・行動領域】モノの関連性や細かい違いに注目する力をつけ、比較して考えられるなど思考力の基礎ができる。また頭でイメージした事を、言語、身振り、描画で表現する力をつける。"
+        },
+        "【運動・感覚領域】体性感覚（触覚、視覚、聴覚、嗅覚、味覚）を育てる。身体操作に関わる内部感覚を育てる。コミュニケーションでは子どもと身近な大人との２人だけの関係の中で、相手からの関わりを意識したり関心を持てたり、また自ら関わろうともできることを目標とする。": {
+          "index": "0",
+          "label": "【運動・感覚領域】体性感覚（触覚、視覚、聴覚、嗅覚、味覚）を育てる。身体操作に関わる内部感覚を育てる。コミュニケーションでは子どもと身近な大人との２人だけの関係の中で、相手からの関わりを意識したり関心を持てたり、また自ら関わろうともできることを目標とする。"
+        },
+        "【運動・感覚領域】各種感覚の発達と統合を促す。触覚と手の運動を促し縦方向の活動ができる。コミュニケーションでは特定の大人と1対1の関わりを通して自分・相手・物の三項関係で相手と同じ視線や感情を共有できる。要求以外で関わりを広げられることを目標とする。": {
+          "index": "2",
+          "label": "【運動・感覚領域】各種感覚の発達と統合を促す。触覚と手の運動を促し縦方向の活動ができる。コミュニケーションでは特定の大人と1対1の関わりを通して自分・相手・物の三項関係で相手と同じ視線や感情を共有できる。要求以外で関わりを広げられることを目標とする。"
+        },
+        "【運動・感覚領域】各種感覚の発達と統合を育てる。触覚と手の運動を促し外側に向けた方向づけができる。コミュニケーションでは特定の大人との関わりを通して「相手と関わることはとても役に立つ」と意識でき、視線、表情、身振り、発声で要求できることを目標とする。": {
+          "index": "1",
+          "label": "【運動・感覚領域】各種感覚の発達と統合を育てる。触覚と手の運動を促し外側に向けた方向づけができる。コミュニケーションでは特定の大人との関わりを通して「相手と関わることはとても役に立つ」と意識でき、視線、表情、身振り、発声で要求できることを目標とする。"
+        },
+        "【運動・感覚領域】視覚（見て）―運動（動かす）の協調を促し、横方向や平面を把握する活動を促す。コミュニケーションでは、拒否や抗議をする、「なに？」「誰？」「どこ？」の質問に答える、お気に入りの物にコメントするなど、要求以外に広げられることを目標とする。": {
+          "index": "3",
+          "label": "【運動・感覚領域】視覚（見て）―運動（動かす）の協調を促し、横方向や平面を把握する活動を促す。コミュニケーションでは、拒否や抗議をする、「なに？」「誰？」「どこ？」の質問に答える、お気に入りの物にコメントするなど、要求以外に広げられることを目標とする。"
+        },
+        "【運動・感覚領域】視覚（見る）―聴覚（聞いた音）と運動の協調ができる。コミュニケーションでは、言葉からイメージする力を伸ばし、言葉で理解できる事物を比較して、その関連性を意識できる。 言葉をコミュニケーションの中で使える。": {
+          "index": "4",
+          "label": "【運動・感覚領域】視覚（見る）―聴覚（聞いた音）と運動の協調ができる。コミュニケーションでは、言葉からイメージする力を伸ばし、言葉で理解できる事物を比較して、その関連性を意識できる。 言葉をコミュニケーションの中で使える。"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "後期専門モニタ": {
+      "code": "後期専門モニタ",
+      "defaultValue": "",
+      "label": "後期モニタリング",
+      "noLabel": false,
+      "options": {
+        "ほぼ達成": {
+          "index": "1",
+          "label": "ほぼ達成"
+        },
+        "未達成": {
+          "index": "2",
+          "label": "未達成"
+        },
+        "達成": {
+          "index": "0",
+          "label": "達成"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "後期専門目標": {
+      "align": "VERTICAL",
+      "code": "後期専門目標",
+      "defaultValue": [],
+      "label": "後期目標",
+      "noLabel": false,
+      "options": {
+        "●1-1　1-2　1-3（共通）": {
+          "index": "0",
+          "label": "●1-1　1-2　1-3（共通）"
+        },
+        "●1-2　1-3（共通）": {
+          "index": "3",
+          "label": "●1-2　1-3（共通）"
+        },
+        "●2": {
+          "index": "5",
+          "label": "●2"
+        },
+        "●3-1": {
+          "index": "7",
+          "label": "●3-1"
+        },
+        "●3-2": {
+          "index": "9",
+          "label": "●3-2"
+        },
+        "●4以上": {
+          "index": "12",
+          "label": "●4以上"
+        },
+        "他者の視点に気づけ、教えあいや認め合いができ、思いやりがもてるようになる。": {
+          "index": "16",
+          "label": "他者の視点に気づけ、教えあいや認め合いができ、思いやりがもてるようになる。"
+        },
+        "因果関係の理解を伸ばし、過去の経験からの展開の予測ができる。また、ある行動によるその後の結果を考えられる。": {
+          "index": "15",
+          "label": "因果関係の理解を伸ばし、過去の経験からの展開の予測ができる。また、ある行動によるその後の結果を考えられる。"
+        },
+        "学習態度の基礎、模倣力、絵の理解、マッチング、分類、～取って、玩具の使用、簡単な用事をする": {
+          "index": "2",
+          "label": "学習態度の基礎、模倣力、絵の理解、マッチング、分類、～取って、玩具の使用、簡単な用事をする"
+        },
+        "家庭、園、学校生活で必要な日常生活スキルを身に付けられる。": {
+          "index": "18",
+          "label": "家庭、園、学校生活で必要な日常生活スキルを身に付けられる。"
+        },
+        "活動の流れに集団の一人として参加して楽しみ経験を積むことで、より良い集団適応や社会適応がなせる。": {
+          "index": "13",
+          "label": "活動の流れに集団の一人として参加して楽しみ経験を積むことで、より良い集団適応や社会適応がなせる。"
+        },
+        "物の１対１対応での理解、身近な物の名前に気づく": {
+          "index": "4",
+          "label": "物の１対１対応での理解、身近な物の名前に気づく"
+        },
+        "状況判断が必要なルールやマナー理解ができる。": {
+          "index": "17",
+          "label": "状況判断が必要なルールやマナー理解ができる。"
+        },
+        "簡単な類推ゲーム、時間、空間関係、目前にない物の大小理解、数の概念、やさしい文章題、お金、時計、「していいですか？」「～したい」と言える 、「あまる」「足りない」、意図模倣": {
+          "index": "11",
+          "label": "簡単な類推ゲーム、時間、空間関係、目前にない物の大小理解、数の概念、やさしい文章題、お金、時計、「していいですか？」「～したい」と言える 、「あまる」「足りない」、意図模倣"
+        },
+        "自分の感情や行動を自己調整する力を身に付けられる。": {
+          "index": "19",
+          "label": "自分の感情や行動を自己調整する力を身に付けられる。"
+        },
+        "自己体験からの理解を脱し、客観的な理解を高められる。": {
+          "index": "14",
+          "label": "自己体験からの理解を脱し、客観的な理解を高められる。"
+        },
+        "苦手な事にもチャレンジしようとできる、「やればできる自分」という意識を持ち、自分に自信が持てる。": {
+          "index": "20",
+          "label": "苦手な事にもチャレンジしようとできる、「やればできる自分」という意識を持ち、自分に自信が持てる。"
+        },
+        "要求手段をいろいろ使う、２つの物をとれる、物に名前があることの理解、属性に気づく、色名、形名、簡単な動作語、用途が分かる、構成課題、順に物を入れる、離れた指さし、同じがわかる": {
+          "index": "6",
+          "label": "要求手段をいろいろ使う、２つの物をとれる、物に名前があることの理解、属性に気づく、色名、形名、簡単な動作語、用途が分かる、構成課題、順に物を入れる、離れた指さし、同じがわかる"
+        },
+        "言語指示での運動、身体調整、列挙と文による指示理解、４Ｗの質問に答える、文字の読み書き、日記、異同弁別、買い物ができる、絵画配列と説明、役割交代": {
+          "index": "10",
+          "label": "言語指示での運動、身体調整、列挙と文による指示理解、４Ｗの質問に答える、文字の読み書き、日記、異同弁別、買い物ができる、絵画配列と説明、役割交代"
+        },
+        "語彙を増やす、動作語、属性を言葉で、３つまでの記憶の強化、上位概念、チャンキング、比較の始まり、数の初歩、単語の塊での文字、易しいゲーム、有用な言葉の使用": {
+          "index": "8",
+          "label": "語彙を増やす、動作語、属性を言葉で、３つまでの記憶の強化、上位概念、チャンキング、比較の始まり、数の初歩、単語の塊での文字、易しいゲーム、有用な言葉の使用"
+        },
+        "身体の調節、各種感覚を育てる、感覚の統合を促す、体のバランスを整える、小集団の活動になれる": {
+          "index": "1",
+          "label": "身体の調節、各種感覚を育てる、感覚の統合を促す、体のバランスを整える、小集団の活動になれる"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "後期本人希望": {
+      "code": "後期本人希望",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "後期　本人の希望　（※聴き取りが難しい場合は普段の様子から考えられる希望）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "後期案": {
+      "code": "後期案",
+      "label": "案",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期短期目標": {
+      "code": "後期短期目標",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "後期　短期目標（半年後）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "後期立案署名": {
+      "code": "後期立案署名",
+      "label": "後期立案　署名",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "後期裏": {
+      "code": "後期裏",
+      "label": "後期　裏",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期計画": {
+      "code": "後期計画",
+      "label": "計画",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期計画終了": {
+      "code": "後期計画終了",
+      "defaultValue": "6か月",
+      "label": "計画終了",
+      "noLabel": false,
+      "options": {
+        "1か月": {
+          "index": "0",
+          "label": "1か月"
+        },
+        "2か月": {
+          "index": "1",
+          "label": "2か月"
+        },
+        "3か月": {
+          "index": "2",
+          "label": "3か月"
+        },
+        "4か月": {
+          "index": "3",
+          "label": "4か月"
+        },
+        "5か月": {
+          "index": "4",
+          "label": "5か月"
+        },
+        "6か月": {
+          "index": "5",
+          "label": "6か月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "後期計画終了コピー": {
+      "code": "後期計画終了コピー",
+      "defaultValue": "",
+      "expression": "後期計画終了",
+      "hideExpression": false,
+      "label": "計画終了",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "後期計画開始": {
+      "code": "後期計画開始",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "後期計画開始",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "後期計画開始コピー": {
+      "code": "後期計画開始コピー",
+      "defaultValue": "",
+      "expression": "DATE_FORMAT(後期計画開始, \"YYYY-MM-dd\", \"Asia/Tokyo\")",
+      "hideExpression": true,
+      "label": "後期　計画開始",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "後期評価": {
+      "code": "後期評価",
+      "label": "評価",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期評価サイン済": {
+      "code": "後期評価サイン済",
+      "label": "サイン済",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期評価案": {
+      "code": "後期評価案",
+      "label": "案",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "後期評価署名": {
+      "code": "後期評価署名",
+      "label": "後期評価　署名",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "担当": {
+      "code": "担当",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": true,
+      "label": "担当",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__3": {
+      "code": "文字列__1行__3",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "更新日時": {
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false,
+      "type": "UPDATED_TIME"
+    },
+    "更新月": {
+      "code": "更新月",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "更新月",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "更新者": {
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false,
+      "type": "MODIFIER"
+    },
+    "案訂正": {
+      "code": "案訂正",
+      "fields": {
+        "会議日": {
+          "code": "会議日",
+          "defaultNowValue": false,
+          "defaultValue": "",
+          "label": "会議日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "個別支援会議内容": {
+          "code": "個別支援会議内容",
+          "defaultValue": "個別支援計画（案）について参加者で検討し、修正点がないことを確認しました。",
+          "label": "会議内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "個別支援会議参加者": {
+          "code": "個別支援会議参加者",
+          "defaultValue": [
+            {
+              "code": "npo@iroha-mie.com",
+              "type": "USER"
+            },
+            {
+              "code": "マギー永里子",
+              "type": "USER"
+            },
+            {
+              "code": "西川加奈",
+              "type": "USER"
+            },
+            {
+              "code": "小林美千子",
+              "type": "USER"
+            },
+            {
+              "code": "山本あや葉",
+              "type": "USER"
+            },
+            {
+              "code": "太田裕美子",
+              "type": "USER"
+            }
+          ],
+          "entities": [],
+          "label": "参加者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "個別支援会議種別": {
+          "code": "個別支援会議種別",
+          "defaultValue": "",
+          "label": "種別",
+          "noLabel": false,
+          "options": {
+            "前期立案": {
+              "index": "0",
+              "label": "前期立案"
+            },
+            "前期評価": {
+              "index": "1",
+              "label": "前期評価"
+            },
+            "後期立案": {
+              "index": "2",
+              "label": "後期立案"
+            },
+            "後期評価": {
+              "index": "3",
+              "label": "後期評価"
+            },
+            "終結評価": {
+              "index": "4",
+              "label": "終結評価"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        },
+        "個別支援会議領域": {
+          "code": "個別支援会議領域",
+          "defaultValue": "",
+          "label": "領域",
+          "noLabel": false,
+          "options": {
+            "人間関係・社会性": {
+              "index": "5",
+              "label": "人間関係・社会性"
+            },
+            "体裁": {
+              "index": "1",
+              "label": "体裁"
+            },
+            "修正点なし": {
+              "index": "0",
+              "label": "修正点なし"
+            },
+            "健康・生活": {
+              "index": "2",
+              "label": "健康・生活"
+            },
+            "言語・コミュ": {
+              "index": "6",
+              "label": "言語・コミュ"
+            },
+            "認知・行動": {
+              "index": "4",
+              "label": "認知・行動"
+            },
+            "運動・感覚": {
+              "index": "3",
+              "label": "運動・感覚"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        }
+      },
+      "label": "案　訂正",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "氏名": {
+      "code": "氏名",
+      "label": "氏名",
+      "lookup": {
+        "fieldMappings": [
+          {
+            "field": "生年月日",
+            "relatedField": "誕生日"
+          },
+          {
+            "field": "文字列__1行__3",
+            "relatedField": "児童氏名"
+          },
+          {
+            "field": "太田ステージ",
+            "relatedField": "太田ステージ"
+          },
+          {
+            "field": "学年",
+            "relatedField": "学年"
+          },
+          {
+            "field": "利用状況",
+            "relatedField": "利用状況"
+          },
+          {
+            "field": "利用先",
+            "relatedField": "通所先"
+          },
+          {
+            "field": "計画相談",
+            "relatedField": "計画相談事業所"
+          },
+          {
+            "field": "担当",
+            "relatedField": "担当者コピー"
+          },
+          {
+            "field": "更新月",
+            "relatedField": "支援計画"
+          },
+          {
+            "field": "利用曜日",
+            "relatedField": "利用曜日コピー"
+          },
+          {
+            "field": "エリア",
+            "relatedField": "エリア"
+          },
+          {
+            "field": "フリガナ",
+            "relatedField": "児童フリガナ"
+          }
+        ],
+        "filterCond": "",
+        "lookupPickerFields": [],
+        "relatedApp": {
+          "app": "10",
+          "code": ""
+        },
+        "relatedKeyField": "児童氏名",
+        "sort": "record_no desc"
+      },
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT"
+    },
+    "生年月日": {
+      "code": "生年月日",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "生年月日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "署名_玉城就学用_": {
+      "code": "署名_玉城就学用_",
+      "label": "署名(玉城就学用)",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "計画相談": {
+      "code": "計画相談",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "計画相談",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "評価1": {
+      "code": "評価1",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価1",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価10": {
+      "code": "評価10",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価10",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価2": {
+      "code": "評価2",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価2",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価3": {
+      "code": "評価3",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価3",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価4": {
+      "code": "評価4",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価4",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価5": {
+      "code": "評価5",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価5",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価6": {
+      "code": "評価6",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価6",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価7": {
+      "code": "評価7",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価7",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価8": {
+      "code": "評価8",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価8",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "評価9": {
+      "code": "評価9",
+      "defaultValue": "達成・ほぼ達成・未達成",
+      "label": "達成状況の評価9",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題1": {
+      "code": "課題1",
+      "defaultValue": "【健康・生活】\n①生活習慣と生活スキルの形成\n②自立した生活動作",
+      "label": "課題1",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題10": {
+      "code": "課題10",
+      "defaultValue": "【言語・コミュ】\n①理解力\n②表現力\n③コミュニケーションの基礎的能力\n④コミュニケーション手段の選択と活用\n⑤年齢に応じた余暇活動や表現活動",
+      "label": "課題10",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題2": {
+      "code": "課題2",
+      "defaultValue": "【運動・感覚】\n①姿勢と運動・動作の向上\n②有する感覚の総合的な活用\n③目と手の協応\n④運動と動作",
+      "label": "課題2",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題3": {
+      "code": "課題3",
+      "defaultValue": "【認知・行動】\n①目と手の協応\n②認知の発達と行動の習得\n③空間・時間・数等の概念の形成\n④認知の発達と行動の習得（具体的操作）",
+      "label": "課題3",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題4": {
+      "code": "課題4",
+      "defaultValue": "【人間関係・社会性】\n①他者との関わりの形成\n②年齢に応じた遊びの発達\n③集団への参加と適切な行動の習得\n④自己の理解と行動の調整\n⑤自己理解と意思表示",
+      "label": "課題4",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題5": {
+      "code": "課題5",
+      "defaultValue": "【言語・コミュ】\n①理解力\n②表現力\n③コミュニケーションの基礎的能力\n④コミュニケーション手段の選択と活用\n⑤年齢に応じた余暇活動や表現活動",
+      "label": "課題5",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題6": {
+      "code": "課題6",
+      "defaultValue": "【健康・生活】\n①生活習慣と生活スキルの形成\n②自立した生活動作",
+      "label": "課題6",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題7": {
+      "code": "課題7",
+      "defaultValue": "【運動・感覚】\n①姿勢と運動・動作の向上\n②有する感覚の総合的な活用\n③目と手の協応\n④運動と動作",
+      "label": "課題7",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題8": {
+      "code": "課題8",
+      "defaultValue": "【認知・行動】\n①目と手の協応\n②認知の発達と行動の習得\n③空間・時間・数等の概念の形成\n④認知の発達と行動の習得（具体的操作）",
+      "label": "課題8",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "課題9": {
+      "code": "課題9",
+      "defaultValue": "【人間関係・社会性】\n①他者との関わりの形成\n②年齢に応じた遊びの発達\n③集団への参加と適切な行動の習得\n④自己の理解と行動の調整\n⑤自己理解と意思表示",
+      "label": "課題9",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "長期目標": {
+      "code": "長期目標",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "長期目標（1年）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "関連レコード一覧": {
+      "code": "関連レコード一覧",
+      "label": "関連レコード一覧",
+      "noLabel": true,
+      "referenceTable": {
+        "condition": {
+          "field": "氏名",
+          "relatedField": "氏名"
+        },
+        "displayFields": [
+          "前期計画開始",
+          "後期計画開始コピー",
+          "前期案",
+          "前期サイン済",
+          "後期案",
+          "後期サイン済"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "207",
+          "code": ""
+        },
+        "size": "5",
+        "sort": "レコード番号 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    }
+  },
+  "revision": "1481"
+}

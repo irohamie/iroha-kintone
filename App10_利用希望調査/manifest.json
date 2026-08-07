@@ -1,0 +1,57 @@
+{
+  "appId": "10",
+  "appName": "05 利用者リスト",
+  "scope": "ALL",
+  "revision": "1517",
+  "pulledAt": "2026-08-07T06:55:07.907Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/js/pdf_zahyo (1).js",
+        "name": "pdf_zahyo (1).js",
+        "size": 21752,
+        "md5": "1c4037e52cb7b8e8be5a9b308546e0b8"
+      },
+      {
+        "order": 2,
+        "type": "FILE",
+        "path": "desktop/js/timestamp.js",
+        "name": "timestamp.js",
+        "size": 4184,
+        "md5": "fc5853dd1d72ca8f416d63472ba7b194"
+      },
+      {
+        "order": 3,
+        "type": "FILE",
+        "path": "desktop/js/karte_core.js",
+        "name": "karte_core.js",
+        "size": 59461,
+        "md5": "6b2efed9a4bf8978824369620f1c5de3"
+      },
+      {
+        "order": 4,
+        "type": "FILE",
+        "path": "desktop/js/app10_karte_panel.js",
+        "name": "app10_karte_panel.js",
+        "size": 12795,
+        "md5": "cd7b7f8b3f5496e03e2aa8cf3b2cd81f"
+      }
+    ],
+    "css": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/css/karte_style.css",
+        "name": "karte_style.css",
+        "size": 22209,
+        "md5": "933310ff5d1443e79cf119948f927ab4"
+      }
+    ]
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

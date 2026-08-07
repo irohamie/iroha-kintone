@@ -1,0 +1,16 @@
+{
+  "revision": "60",
+  "views": {
+    "担当表": {
+      "device": "ANY",
+      "filterCond": "",
+      "html": "<!-- アプリ231 カスタマイズビュー用HTML（この2行をそのまま貼り付け） -->\n<div id=\"tantou-root\">\n  <p style=\"padding:24px;color:#64748b;\">担当表を読み込んでいます…（この表示のまま変わらない場合は、JavaScript/CSSカスタマイズの設定をご確認ください）</p>\n</div>",
+      "id": "5770131",
+      "index": "0",
+      "name": "担当表",
+      "pager": false,
+      "sort": "レコード番号 desc",
+      "type": "CUSTOM"
+    }
+  }
+}

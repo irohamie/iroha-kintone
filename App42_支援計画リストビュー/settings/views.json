@@ -1,0 +1,60 @@
+{
+  "revision": "654",
+  "views": {
+    "一覧": {
+      "device": "ANY",
+      "filterCond": "",
+      "html": "<div id='ribbit-smart-view-root'></div>",
+      "id": "5527167",
+      "index": "1",
+      "name": "一覧",
+      "pager": false,
+      "sort": "更新日時 desc",
+      "type": "CUSTOM"
+    },
+    "一覧1": {
+      "fields": [
+        "更新日時",
+        "児童氏名",
+        "生年月日",
+        "作成者",
+        "案",
+        "計画",
+        "アセス案",
+        "アセス計画",
+        "長期目標",
+        "短期目標"
+      ],
+      "filterCond": "",
+      "id": "5522497",
+      "index": "2",
+      "name": "一覧1",
+      "sort": "レコード番号 desc",
+      "type": "LIST"
+    },
+    "一覧2": {
+      "fields": [
+        "児童氏名",
+        "更新者",
+        "更新日時"
+      ],
+      "filterCond": "",
+      "id": "5523102",
+      "index": "3",
+      "name": "一覧2",
+      "sort": "レコード番号 desc",
+      "type": "LIST"
+    },
+    "支援計画一覧": {
+      "device": "ANY",
+      "filterCond": "",
+      "html": "<div id=\"a42m-root\"></div>",
+      "id": "5771130",
+      "index": "0",
+      "name": "支援計画一覧",
+      "pager": true,
+      "sort": "レコード番号 desc",
+      "type": "CUSTOM"
+    }
+  }
+}

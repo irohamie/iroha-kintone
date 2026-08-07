@@ -1,0 +1,70 @@
+{
+  "appId": "219",
+  "appName": "ホーム",
+  "scope": "ALL",
+  "revision": "225",
+  "pulledAt": "2026-08-07T06:55:12.833Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/js/IrohaPortal.js",
+        "name": "IrohaPortal.js",
+        "size": 37823,
+        "md5": "462af7bd7faa2878d7e3c5bb0d05a7e8"
+      },
+      {
+        "order": 2,
+        "type": "FILE",
+        "path": "desktop/js/iroha_plan_tab.js",
+        "name": "iroha_plan_tab.js",
+        "size": 24432,
+        "md5": "31036c08bc23698d268ac10cb8cc1c77"
+      },
+      {
+        "order": 3,
+        "type": "FILE",
+        "path": "desktop/js/iroha_plan_popup.js",
+        "name": "iroha_plan_popup.js",
+        "size": 24072,
+        "md5": "3b1a5a06aace9e2f50e4b772081b459d"
+      },
+      {
+        "order": 4,
+        "type": "FILE",
+        "path": "desktop/js/secret_renewal_popup.js",
+        "name": "secret_renewal_popup.js",
+        "size": 9656,
+        "md5": "c192ba9a4d5c4c50720542d1835179f2"
+      }
+    ],
+    "css": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/css/iroha Brand Colors.css",
+        "name": "iroha Brand Colors.css",
+        "size": 14187,
+        "md5": "150921c4aa633a9564fbc7dca8c57bd2"
+      },
+      {
+        "order": 2,
+        "type": "URL",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      },
+      {
+        "order": 3,
+        "type": "FILE",
+        "path": "desktop/css/secret_renewal_popup.css",
+        "name": "secret_renewal_popup.css",
+        "size": 2590,
+        "md5": "23150659dc0a9f126a3447360bb914c6"
+      }
+    ]
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

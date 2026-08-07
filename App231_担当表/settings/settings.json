@@ -1,0 +1,25 @@
+{
+  "description": "",
+  "enableBulkDeletion": false,
+  "enableComments": true,
+  "enableDuplicateRecord": true,
+  "enableInlineRecordEditing": true,
+  "enableThumbnails": true,
+  "firstMonthOfFiscalYear": "4",
+  "icon": {
+    "key": "APP68",
+    "type": "PRESET"
+  },
+  "name": "08 担当表",
+  "numberPrecision": {
+    "decimalPlaces": "4",
+    "digits": "16",
+    "roundingMode": "HALF_EVEN"
+  },
+  "revision": "60",
+  "theme": "WHITE",
+  "titleField": {
+    "code": "レコード番号",
+    "selectionMode": "AUTO"
+  }
+}

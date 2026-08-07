@@ -1,0 +1,24 @@
+{
+  "appId": "231",
+  "appName": "08 担当表",
+  "scope": "ALL",
+  "revision": "60",
+  "pulledAt": "2026-08-07T06:55:16.907Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/js/tantou_hyou.js",
+        "name": "tantou_hyou.js",
+        "size": 92418,
+        "md5": "ad07edd7e60b6b05a80f150dad1300bf"
+      }
+    ],
+    "css": []
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "appId": "228",
+  "appName": "95 事務アプリ",
+  "scope": "ALL",
+  "revision": "191",
+  "pulledAt": "2026-08-07T06:55:15.664Z",
+  "desktop": {
+    "js": [
+      {
+        "order": 1,
+        "type": "FILE",
+        "path": "desktop/js/houmon_dashboard.js",
+        "name": "houmon_dashboard.js",
+        "size": 31884,
+        "md5": "296e36fa97381dee0ed8371559244f9a"
+      },
+      {
+        "order": 2,
+        "type": "FILE",
+        "path": "desktop/js/timecard_dashboard.js",
+        "name": "timecard_dashboard.js",
+        "size": 87971,
+        "md5": "613872c3547bbacbeceaa793c9401cdc"
+      },
+      {
+        "order": 3,
+        "type": "FILE",
+        "path": "desktop/js/Iroha 228 dashboard.JS.js",
+        "name": "Iroha 228 dashboard.JS.js",
+        "size": 54586,
+        "md5": "384b2a61c999845c860a1419b7ab88ff"
+      },
+      {
+        "order": 4,
+        "type": "FILE",
+        "path": "desktop/js/bonus_custom.js",
+        "name": "bonus_custom.js",
+        "size": 20145,
+        "md5": "ec3f890545ad6258d6b7eef66876474a"
+      }
+    ],
+    "css": []
+  },
+  "mobile": {
+    "js": [],
+    "css": []
+  }
+}

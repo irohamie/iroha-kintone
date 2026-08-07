@@ -1,0 +1,4909 @@
+{
+  "properties": {
+    "Table_0": {
+      "code": "Table_0",
+      "fields": {
+        "ユーザー選択_5": {
+          "code": "ユーザー選択_5",
+          "defaultValue": [],
+          "entities": [],
+          "label": "実施者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__1行__13": {
+          "code": "文字列__1行__13",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "ステージ変更（旧）",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "文字列__複数行__7": {
+          "code": "文字列__複数行__7",
+          "defaultValue": "",
+          "label": "ステージ変更",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_3": {
+          "code": "日付_3",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "日付",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        }
+      },
+      "label": "太田ステージ変更",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "Table_1": {
+      "code": "Table_1",
+      "fields": {
+        "ユーザー選択_0": {
+          "code": "ユーザー選択_0",
+          "defaultValue": [],
+          "entities": [],
+          "label": "記入者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__4": {
+          "code": "文字列__複数行__4",
+          "defaultValue": "",
+          "label": "報告内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_2": {
+          "code": "日付_2",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "記入日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "添付ファイル_13": {
+          "code": "添付ファイル_13",
+          "label": "添付ファイル",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150",
+          "type": "FILE"
+        }
+      },
+      "label": "2019年度",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "Table_2": {
+      "code": "Table_2",
+      "fields": {
+        "ユーザー選択_2": {
+          "code": "ユーザー選択_2",
+          "defaultValue": [],
+          "entities": [],
+          "label": "記入者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__3": {
+          "code": "文字列__複数行__3",
+          "defaultValue": "",
+          "label": "報告内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_6": {
+          "code": "日付_6",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "記入日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "添付ファイル_12": {
+          "code": "添付ファイル_12",
+          "label": "添付ファイル",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150",
+          "type": "FILE"
+        }
+      },
+      "label": "2020年度",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "Table_3": {
+      "code": "Table_3",
+      "fields": {
+        "ドロップダウン_2": {
+          "code": "ドロップダウン_2",
+          "defaultValue": "",
+          "label": "理由",
+          "noLabel": false,
+          "options": {
+            "保育所・学校の臨時休業のため": {
+              "index": "2",
+              "label": "保育所・学校の臨時休業のため"
+            },
+            "母より家族の都合により欠席の連絡がある。次回の利用日程の確認を行う。": {
+              "index": "1",
+              "label": "母より家族の都合により欠席の連絡がある。次回の利用日程の確認を行う。"
+            },
+            "母より本人の体調不良により欠席の連絡がある。体調等の確認を行い、次回の利用日程を確認する。": {
+              "index": "0",
+              "label": "母より本人の体調不良により欠席の連絡がある。体調等の確認を行い、次回の利用日程を確認する。"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        },
+        "ドロップダウン_20": {
+          "code": "ドロップダウン_20",
+          "defaultValue": "",
+          "label": "対応加算",
+          "noLabel": false,
+          "options": {
+            "事業所都合": {
+              "index": "2",
+              "label": "事業所都合"
+            },
+            "休(4日以上)": {
+              "index": "0",
+              "label": "休(4日以上)"
+            },
+            "急(3日以内)": {
+              "index": "1",
+              "label": "急(3日以内)"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        },
+        "ユーザー選択": {
+          "code": "ユーザー選択",
+          "defaultValue": [],
+          "entities": [],
+          "label": "対応者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__1行__14": {
+          "code": "文字列__1行__14",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "備考",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "日付_4": {
+          "code": "日付_4",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "受付日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "日付_5": {
+          "code": "日付_5",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "欠席日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        }
+      },
+      "label": "欠席連絡",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "Table_4": {
+      "code": "Table_4",
+      "fields": {
+        "文字列__1行__33": {
+          "code": "文字列__1行__33",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "コメント",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "日付_8": {
+          "code": "日付_8",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "日付",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        }
+      },
+      "label": "添付ファイル備考",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "Table_5": {
+      "code": "Table_5",
+      "fields": {
+        "ユーザー選択_3": {
+          "code": "ユーザー選択_3",
+          "defaultValue": [],
+          "entities": [],
+          "label": "記入者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__5": {
+          "code": "文字列__複数行__5",
+          "defaultValue": "",
+          "label": "報告内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_9": {
+          "code": "日付_9",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "記入日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "添付ファイル_14": {
+          "code": "添付ファイル_14",
+          "label": "添付ファイル",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150",
+          "type": "FILE"
+        }
+      },
+      "label": "2021年度",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "Table_6": {
+      "code": "Table_6",
+      "fields": {
+        "文字列__1行__30": {
+          "code": "文字列__1行__30",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "投薬内容",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "日付_10": {
+          "code": "日付_10",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "投薬開始日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        }
+      },
+      "label": "太田ステージ変更",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "Table_7": {
+      "code": "Table_7",
+      "fields": {
+        "ユーザー選択_8": {
+          "code": "ユーザー選択_8",
+          "defaultValue": [],
+          "entities": [],
+          "label": "記入者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__6": {
+          "code": "文字列__複数行__6",
+          "defaultValue": "",
+          "label": "報告内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_11": {
+          "code": "日付_11",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "記入日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "添付ファイル_10": {
+          "code": "添付ファイル_10",
+          "label": "添付ファイル",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150",
+          "type": "FILE"
+        }
+      },
+      "label": "2022年度",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "Table_8": {
+      "code": "Table_8",
+      "fields": {
+        "ユーザー選択_9": {
+          "code": "ユーザー選択_9",
+          "defaultValue": [],
+          "entities": [],
+          "label": "記入者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__9": {
+          "code": "文字列__複数行__9",
+          "defaultValue": "",
+          "label": "報告内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_13": {
+          "code": "日付_13",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "記入日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "添付ファイル_19": {
+          "code": "添付ファイル_19",
+          "label": "添付ファイル",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150",
+          "type": "FILE"
+        }
+      },
+      "label": "2023年度",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "Vineland実施": {
+      "align": "HORIZONTAL",
+      "code": "Vineland実施",
+      "defaultValue": [],
+      "label": "Vineland実施",
+      "noLabel": false,
+      "options": {
+        "小２": {
+          "index": "1",
+          "label": "小２"
+        },
+        "小５": {
+          "index": "2",
+          "label": "小５"
+        },
+        "４歳(年中)": {
+          "index": "0",
+          "label": "４歳(年中)"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "YMD1": {
+      "code": "YMD1",
+      "displayScale": "",
+      "expression": "DATE_FORMAT(誕生日,\"YYYYMMdd\",\"system\")",
+      "format": "NUMBER",
+      "hideExpression": false,
+      "label": "YMD1",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "YMD2": {
+      "code": "YMD2",
+      "displayScale": "",
+      "expression": "DATE_FORMAT(基準日,\"YYYYMMdd\",\"system\")",
+      "format": "NUMBER",
+      "hideExpression": false,
+      "label": "YMD2",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "Zipcode": {
+      "code": "Zipcode",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "郵便番号（ﾊｲﾌﾝなし）",
+      "maxLength": "7",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "record_no": {
+      "code": "record_no",
+      "label": "会員番号",
+      "noLabel": false,
+      "type": "RECORD_NUMBER"
+    },
+    "vineチェック": {
+      "code": "vineチェック",
+      "defaultValue": "",
+      "expression": "IF(OR(学年コピー=\"０歳\", 学年コピー=\"１歳\", 学年コピー=\"２歳\", 学年コピー=\"３歳(年少)\"), \"提出済\",\n  IF(学年コピー=\"４歳(年中)\", IF(CONTAINS(Vineland実施, \"４歳(年中)\"), \"提出済\", \"未提出\"),\n    IF(OR(学年コピー=\"５歳(年長)\", 学年コピー=\"小１\"), IF(CONTAINS(Vineland実施, \"４歳(年中)\"), \"提出済\", \"未提出\"),\n      IF(学年コピー=\"小２\", IF(CONTAINS(Vineland実施, \"小２\"), \"提出済\", \"未提出\"),\n        IF(OR(学年コピー=\"小３\", 学年コピー=\"小４\"), IF(CONTAINS(Vineland実施, \"小２\"), \"提出済\", \"未提出\"),\n          IF(学年コピー=\"小５\", IF(CONTAINS(Vineland実施, \"小５\"), \"提出済\", \"未提出\"),\n            IF(OR(学年コピー=\"小６\", 学年コピー=\"中学生以上\"), IF(CONTAINS(Vineland実施, \"小５\"), \"提出済\", \"未提出\"),\n              IF(学年コピー=\"初回\", IF(CONTAINS(Vineland実施, \"初回\"), \"提出済\", \"未提出\"), \"未提出\")\n            )\n          )\n        )\n      )\n    )\n  )\n)",
+      "hideExpression": true,
+      "label": "vineチェック",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "かかりつけ": {
+      "code": "かかりつけ",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "医療機関（かかりつけ）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "きょうだい": {
+      "code": "きょうだい",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "きょうだい",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "その他病院": {
+      "code": "その他病院",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "医療機関（その他）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "エリア": {
+      "code": "エリア",
+      "defaultValue": "",
+      "label": "エリア",
+      "noLabel": false,
+      "options": {
+        "伊勢市": {
+          "index": "8",
+          "label": "伊勢市"
+        },
+        "南伊勢町": {
+          "index": "6",
+          "label": "南伊勢町"
+        },
+        "多気町": {
+          "index": "0",
+          "label": "多気町"
+        },
+        "大台町": {
+          "index": "2",
+          "label": "大台町"
+        },
+        "大紀町": {
+          "index": "5",
+          "label": "大紀町"
+        },
+        "度会町": {
+          "index": "4",
+          "label": "度会町"
+        },
+        "志摩市": {
+          "index": "9",
+          "label": "志摩市"
+        },
+        "明和町": {
+          "index": "1",
+          "label": "明和町"
+        },
+        "松阪市": {
+          "index": "7",
+          "label": "松阪市"
+        },
+        "玉城町": {
+          "index": "3",
+          "label": "玉城町"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "カテゴリー": {
+      "code": "カテゴリー",
+      "enabled": false,
+      "label": "カテゴリー",
+      "type": "CATEGORY"
+    },
+    "クラスコピー": {
+      "code": "クラスコピー",
+      "defaultValue": "",
+      "expression": "ドロップダウン_21",
+      "hideExpression": false,
+      "label": "クラス",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "サインファイルキー": {
+      "code": "サインファイルキー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "サインファイルキー",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "ステータス": {
+      "code": "ステータス",
+      "enabled": false,
+      "label": "ステータス",
+      "type": "STATUS"
+    },
+    "チェックボックス": {
+      "align": "VERTICAL",
+      "code": "チェックボックス",
+      "defaultValue": [],
+      "label": "手帳",
+      "noLabel": false,
+      "options": {
+        "療育手帳": {
+          "index": "0",
+          "label": "療育手帳"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_0": {
+      "align": "VERTICAL",
+      "code": "チェックボックス_0",
+      "defaultValue": [],
+      "label": "手帳（精神）",
+      "noLabel": true,
+      "options": {
+        "精神障害者保健福祉手帳": {
+          "index": "0",
+          "label": "精神障害者保健福祉手帳"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_1": {
+      "align": "VERTICAL",
+      "code": "チェックボックス_1",
+      "defaultValue": [],
+      "label": "手帳（身体）",
+      "noLabel": true,
+      "options": {
+        "身体障害者手帳": {
+          "index": "0",
+          "label": "身体障害者手帳"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_11": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_11",
+      "defaultValue": [],
+      "label": "16:00",
+      "noLabel": false,
+      "options": {
+        "月": {
+          "index": "0",
+          "label": "月"
+        },
+        "木": {
+          "index": "3",
+          "label": "木"
+        },
+        "水": {
+          "index": "2",
+          "label": "水"
+        },
+        "火": {
+          "index": "1",
+          "label": "火"
+        },
+        "金": {
+          "index": "4",
+          "label": "金"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_12": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_12",
+      "defaultValue": [],
+      "label": "17:00",
+      "noLabel": false,
+      "options": {
+        "月": {
+          "index": "0",
+          "label": "月"
+        },
+        "木": {
+          "index": "3",
+          "label": "木"
+        },
+        "水": {
+          "index": "2",
+          "label": "水"
+        },
+        "火": {
+          "index": "1",
+          "label": "火"
+        },
+        "金": {
+          "index": "4",
+          "label": "金"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_13": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_13",
+      "defaultValue": [],
+      "label": "土曜日",
+      "noLabel": false,
+      "options": {
+        "10:00": {
+          "index": "0",
+          "label": "10:00"
+        },
+        "11:00": {
+          "index": "1",
+          "label": "11:00"
+        },
+        "14:00": {
+          "index": "2",
+          "label": "14:00"
+        },
+        "15:00": {
+          "index": "3",
+          "label": "15:00"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_14": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_14",
+      "defaultValue": [],
+      "label": "午前",
+      "noLabel": false,
+      "options": {
+        "月": {
+          "index": "0",
+          "label": "月"
+        },
+        "木": {
+          "index": "3",
+          "label": "木"
+        },
+        "水": {
+          "index": "2",
+          "label": "水"
+        },
+        "火": {
+          "index": "1",
+          "label": "火"
+        },
+        "金": {
+          "index": "4",
+          "label": "金"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_15": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_15",
+      "defaultValue": [],
+      "label": "14:00",
+      "noLabel": false,
+      "options": {
+        "月": {
+          "index": "0",
+          "label": "月"
+        },
+        "木": {
+          "index": "3",
+          "label": "木"
+        },
+        "水": {
+          "index": "2",
+          "label": "水"
+        },
+        "火": {
+          "index": "1",
+          "label": "火"
+        },
+        "金": {
+          "index": "4",
+          "label": "金"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_16": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_16",
+      "defaultValue": [],
+      "label": "個別サポート２",
+      "noLabel": false,
+      "options": {
+        "○": {
+          "index": "0",
+          "label": "○"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_17": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_17",
+      "defaultValue": [
+        "○"
+      ],
+      "label": "個別サポート１",
+      "noLabel": false,
+      "options": {
+        "○": {
+          "index": "0",
+          "label": "○"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_18": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_18",
+      "defaultValue": [],
+      "label": "2026懇談（通所）",
+      "noLabel": false,
+      "options": {
+        "1回目": {
+          "index": "1",
+          "label": "1回目"
+        },
+        "2回目": {
+          "index": "2",
+          "label": "2回目"
+        },
+        "初回": {
+          "index": "0",
+          "label": "初回"
+        },
+        "受診・検査・手帳・住所変更・園学校名": {
+          "index": "3",
+          "label": "受診・検査・手帳・住所変更・園学校名"
+        },
+        "学齢期終結": {
+          "index": "5",
+          "label": "学齢期終結"
+        },
+        "幼児終結": {
+          "index": "4",
+          "label": "幼児終結"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_19": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_19",
+      "defaultValue": [],
+      "label": "2026懇談（訪問）",
+      "noLabel": false,
+      "options": {
+        "1回目": {
+          "index": "0",
+          "label": "1回目"
+        },
+        "2回目": {
+          "index": "1",
+          "label": "2回目"
+        },
+        "幼児終結": {
+          "index": "2",
+          "label": "幼児終結"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_2": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_2",
+      "defaultValue": [],
+      "label": "2018年度",
+      "noLabel": false,
+      "options": {
+        "入会": {
+          "index": "0",
+          "label": "入会"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_20": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_20",
+      "defaultValue": [],
+      "label": "訪問支援　初回加算",
+      "noLabel": false,
+      "options": {
+        "済": {
+          "index": "0",
+          "label": "済"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_22": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_22",
+      "defaultValue": [],
+      "label": "毎月モニタリング",
+      "noLabel": false,
+      "options": {
+        "10月": {
+          "index": "6",
+          "label": "10月"
+        },
+        "11月": {
+          "index": "7",
+          "label": "11月"
+        },
+        "12月": {
+          "index": "8",
+          "label": "12月"
+        },
+        "1月": {
+          "index": "9",
+          "label": "1月"
+        },
+        "2月": {
+          "index": "10",
+          "label": "2月"
+        },
+        "3月": {
+          "index": "11",
+          "label": "3月"
+        },
+        "4月": {
+          "index": "0",
+          "label": "4月"
+        },
+        "5月": {
+          "index": "1",
+          "label": "5月"
+        },
+        "6月": {
+          "index": "2",
+          "label": "6月"
+        },
+        "7月": {
+          "index": "3",
+          "label": "7月"
+        },
+        "8月": {
+          "index": "4",
+          "label": "8月"
+        },
+        "9月": {
+          "index": "5",
+          "label": "9月"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_23": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_23",
+      "defaultValue": [],
+      "label": "ＤＣＤ",
+      "noLabel": false,
+      "options": {
+        "1": {
+          "index": "0",
+          "label": "1"
+        },
+        "2": {
+          "index": "1",
+          "label": "2"
+        },
+        "3": {
+          "index": "2",
+          "label": "3"
+        },
+        "4": {
+          "index": "3",
+          "label": "4"
+        },
+        "5": {
+          "index": "4",
+          "label": "5"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_24": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_24",
+      "defaultValue": [],
+      "label": "2023懇談（通所）",
+      "noLabel": false,
+      "options": {
+        "1回目": {
+          "index": "1",
+          "label": "1回目"
+        },
+        "2回目": {
+          "index": "2",
+          "label": "2回目"
+        },
+        "初回": {
+          "index": "0",
+          "label": "初回"
+        },
+        "受診・検査・手帳・住所変更・園学校名": {
+          "index": "3",
+          "label": "受診・検査・手帳・住所変更・園学校名"
+        },
+        "学齢期終結": {
+          "index": "5",
+          "label": "学齢期終結"
+        },
+        "幼児終結": {
+          "index": "4",
+          "label": "幼児終結"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_25": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_25",
+      "defaultValue": [],
+      "label": "2023懇談（訪問）",
+      "noLabel": false,
+      "options": {
+        "1回目": {
+          "index": "0",
+          "label": "1回目"
+        },
+        "2回目": {
+          "index": "1",
+          "label": "2回目"
+        },
+        "幼児終結": {
+          "index": "2",
+          "label": "幼児終結"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_26": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_26",
+      "defaultValue": [],
+      "label": "2024懇談（通所）",
+      "noLabel": false,
+      "options": {
+        "1回目": {
+          "index": "1",
+          "label": "1回目"
+        },
+        "2回目": {
+          "index": "2",
+          "label": "2回目"
+        },
+        "初回": {
+          "index": "0",
+          "label": "初回"
+        },
+        "受診・検査・手帳・住所変更・園学校名": {
+          "index": "3",
+          "label": "受診・検査・手帳・住所変更・園学校名"
+        },
+        "学齢期終結": {
+          "index": "5",
+          "label": "学齢期終結"
+        },
+        "幼児終結": {
+          "index": "4",
+          "label": "幼児終結"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_27": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_27",
+      "defaultValue": [],
+      "label": "2024懇談（訪問）",
+      "noLabel": false,
+      "options": {
+        "1回目": {
+          "index": "0",
+          "label": "1回目"
+        },
+        "2回目": {
+          "index": "1",
+          "label": "2回目"
+        },
+        "幼児終結": {
+          "index": "2",
+          "label": "幼児終結"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_3": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_3",
+      "defaultValue": [],
+      "label": "2019年度",
+      "noLabel": false,
+      "options": {
+        "入会": {
+          "index": "0",
+          "label": "入会"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_4": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_4",
+      "defaultValue": [],
+      "label": "2020年度",
+      "noLabel": false,
+      "options": {
+        "入会": {
+          "index": "0",
+          "label": "入会"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_5": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_5",
+      "defaultValue": [],
+      "label": "2021年度",
+      "noLabel": false,
+      "options": {
+        "入会": {
+          "index": "0",
+          "label": "入会"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_6": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_6",
+      "defaultValue": [],
+      "label": "2022年度",
+      "noLabel": false,
+      "options": {
+        "入会": {
+          "index": "0",
+          "label": "入会"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_7": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_7",
+      "defaultValue": [],
+      "label": "無償化",
+      "noLabel": false,
+      "options": {
+        "○": {
+          "index": "0",
+          "label": "○"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "チェックボックス_8": {
+      "align": "HORIZONTAL",
+      "code": "チェックボックス_8",
+      "defaultValue": [],
+      "label": "上限管理加算",
+      "noLabel": false,
+      "options": {
+        "○": {
+          "index": "0",
+          "label": "○"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "テーブル": {
+      "code": "テーブル",
+      "fields": {
+        "ドロップダウン_23": {
+          "code": "ドロップダウン_23",
+          "defaultValue": "",
+          "label": "項目",
+          "noLabel": false,
+          "options": {
+            "【就学】引継ぎ情報": {
+              "index": "8",
+              "label": "【就学】引継ぎ情報"
+            },
+            "【年中】数量理解": {
+              "index": "3",
+              "label": "【年中】数量理解"
+            },
+            "【年中】眼球運動②": {
+              "index": "1",
+              "label": "【年中】眼球運動②"
+            },
+            "【年中】視空間認識チェック": {
+              "index": "0",
+              "label": "【年中】視空間認識チェック"
+            },
+            "【年中】音韻認識": {
+              "index": "2",
+              "label": "【年中】音韻認識"
+            },
+            "【年長】数量理解": {
+              "index": "7",
+              "label": "【年長】数量理解"
+            },
+            "【年長】眼球運動": {
+              "index": "5",
+              "label": "【年長】眼球運動"
+            },
+            "【年長】視空間認識チェック": {
+              "index": "4",
+              "label": "【年長】視空間認識チェック"
+            },
+            "【年長】音韻認識": {
+              "index": "6",
+              "label": "【年長】音韻認識"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        },
+        "文字列__複数行__8": {
+          "code": "文字列__複数行__8",
+          "defaultValue": "",
+          "label": "コメント",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_12": {
+          "code": "日付_12",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "日付",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        }
+      },
+      "label": "就学チェック備考",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "テーブル_0": {
+      "code": "テーブル_0",
+      "fields": {
+        "文字列__1行__40": {
+          "code": "文字列__1行__40",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "名称",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "文字列__1行__41": {
+          "code": "文字列__1行__41",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "留意点",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        },
+        "診断日": {
+          "code": "診断日",
+          "defaultValue": "",
+          "expression": "",
+          "hideExpression": false,
+          "label": "診断日(不明の場合は〇歳頃)",
+          "maxLength": "",
+          "minLength": "",
+          "noLabel": false,
+          "required": false,
+          "type": "SINGLE_LINE_TEXT",
+          "unique": false
+        }
+      },
+      "label": "診断名・アレルギー・食物アレルギー",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "テーブル_1": {
+      "code": "テーブル_1",
+      "fields": {
+        "チェックボックス_21": {
+          "align": "HORIZONTAL",
+          "code": "チェックボックス_21",
+          "defaultValue": [],
+          "label": "回数",
+          "noLabel": false,
+          "options": {
+            "3": {
+              "index": "2",
+              "label": "3"
+            },
+            "4": {
+              "index": "3",
+              "label": "4"
+            },
+            "5": {
+              "index": "4",
+              "label": "5"
+            },
+            "6": {
+              "index": "5",
+              "label": "6"
+            },
+            "7": {
+              "index": "6",
+              "label": "7"
+            },
+            "8": {
+              "index": "7",
+              "label": "8"
+            },
+            "9": {
+              "index": "8",
+              "label": "9"
+            },
+            "10": {
+              "index": "9",
+              "label": "10"
+            },
+            "11": {
+              "index": "10",
+              "label": "11"
+            },
+            "12": {
+              "index": "11",
+              "label": "12"
+            },
+            "1回目": {
+              "index": "0",
+              "label": "1回目"
+            },
+            "２": {
+              "index": "1",
+              "label": "２"
+            }
+          },
+          "required": false,
+          "type": "CHECK_BOX"
+        },
+        "ドロップダウン_24": {
+          "code": "ドロップダウン_24",
+          "defaultValue": "",
+          "label": "年度",
+          "noLabel": false,
+          "options": {
+            "2023": {
+              "index": "0",
+              "label": "2023"
+            },
+            "2024": {
+              "index": "1",
+              "label": "2024"
+            },
+            "2025": {
+              "index": "2",
+              "label": "2025"
+            },
+            "2026": {
+              "index": "3",
+              "label": "2026"
+            },
+            "2027": {
+              "index": "4",
+              "label": "2027"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        }
+      },
+      "label": "訪問回数",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    },
+    "ドロップダウン": {
+      "code": "ドロップダウン",
+      "defaultValue": "",
+      "label": "2026引落月",
+      "noLabel": false,
+      "options": {
+        "10月": {
+          "index": "6",
+          "label": "10月"
+        },
+        "11月": {
+          "index": "7",
+          "label": "11月"
+        },
+        "12月": {
+          "index": "8",
+          "label": "12月"
+        },
+        "1月": {
+          "index": "9",
+          "label": "1月"
+        },
+        "2月": {
+          "index": "10",
+          "label": "2月"
+        },
+        "3月": {
+          "index": "11",
+          "label": "3月"
+        },
+        "4月": {
+          "index": "0",
+          "label": "4月"
+        },
+        "5月": {
+          "index": "1",
+          "label": "5月"
+        },
+        "6月": {
+          "index": "2",
+          "label": "6月"
+        },
+        "7月": {
+          "index": "3",
+          "label": "7月"
+        },
+        "8月": {
+          "index": "4",
+          "label": "8月"
+        },
+        "9月": {
+          "index": "5",
+          "label": "9月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_0": {
+      "code": "ドロップダウン_0",
+      "defaultValue": "",
+      "label": "旧)計画相談",
+      "noLabel": false,
+      "options": {
+        "えがおの木": {
+          "index": "10",
+          "label": "えがおの木"
+        },
+        "おおぞら児童園": {
+          "index": "8",
+          "label": "おおぞら児童園"
+        },
+        "かすみ草": {
+          "index": "11",
+          "label": "かすみ草"
+        },
+        "たまきあい": {
+          "index": "20",
+          "label": "たまきあい"
+        },
+        "ねむの木": {
+          "index": "2",
+          "label": "ねむの木"
+        },
+        "はじめのいっぽ": {
+          "index": "19",
+          "label": "はじめのいっぽ"
+        },
+        "はちみつ": {
+          "index": "22",
+          "label": "はちみつ"
+        },
+        "ふれあいなんとう": {
+          "index": "7",
+          "label": "ふれあいなんとう"
+        },
+        "ほたるいせ": {
+          "index": "5",
+          "label": "ほたるいせ"
+        },
+        "セルフプラン": {
+          "index": "12",
+          "label": "セルフプラン"
+        },
+        "ファイト": {
+          "index": "6",
+          "label": "ファイト"
+        },
+        "プランツ": {
+          "index": "16",
+          "label": "プランツ"
+        },
+        "マーベル": {
+          "index": "18",
+          "label": "マーベル"
+        },
+        "ヤマト": {
+          "index": "17",
+          "label": "ヤマト"
+        },
+        "伊勢社協二見": {
+          "index": "9",
+          "label": "伊勢社協二見"
+        },
+        "多気町社協": {
+          "index": "3",
+          "label": "多気町社協"
+        },
+        "大台社協": {
+          "index": "13",
+          "label": "大台社協"
+        },
+        "大紀社協めばえ": {
+          "index": "15",
+          "label": "大紀社協めばえ"
+        },
+        "度会町社協": {
+          "index": "4",
+          "label": "度会町社協"
+        },
+        "志摩こだま": {
+          "index": "14",
+          "label": "志摩こだま"
+        },
+        "明和町社協": {
+          "index": "1",
+          "label": "明和町社協"
+        },
+        "松阪市子ども発達総合支援センター": {
+          "index": "21",
+          "label": "松阪市子ども発達総合支援センター"
+        },
+        "玉城町社協みらい": {
+          "index": "0",
+          "label": "玉城町社協みらい"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_1": {
+      "code": "ドロップダウン_1",
+      "defaultValue": "",
+      "label": "加配",
+      "noLabel": false,
+      "options": {
+        "加配あり": {
+          "index": "0",
+          "label": "加配あり"
+        },
+        "加配なし": {
+          "index": "1",
+          "label": "加配なし"
+        },
+        "特別支援学校": {
+          "index": "5",
+          "label": "特別支援学校"
+        },
+        "特別支援学級": {
+          "index": "4",
+          "label": "特別支援学級"
+        },
+        "通常級": {
+          "index": "2",
+          "label": "通常級"
+        },
+        "通級": {
+          "index": "3",
+          "label": "通級"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_10": {
+      "code": "ドロップダウン_10",
+      "defaultValue": "1",
+      "label": "契約番号",
+      "noLabel": false,
+      "options": {
+        "1": {
+          "index": "0",
+          "label": "1"
+        },
+        "2": {
+          "index": "1",
+          "label": "2"
+        },
+        "3": {
+          "index": "2",
+          "label": "3"
+        },
+        "4": {
+          "index": "3",
+          "label": "4"
+        },
+        "5": {
+          "index": "4",
+          "label": "5"
+        },
+        "6": {
+          "index": "5",
+          "label": "6"
+        },
+        "7": {
+          "index": "6",
+          "label": "7"
+        },
+        "8": {
+          "index": "7",
+          "label": "8"
+        },
+        "9": {
+          "index": "8",
+          "label": "9"
+        },
+        "10": {
+          "index": "9",
+          "label": "10"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_11": {
+      "code": "ドロップダウン_11",
+      "defaultValue": "",
+      "label": "兄弟利用順番",
+      "noLabel": false,
+      "options": {
+        "1": {
+          "index": "0",
+          "label": "1"
+        },
+        "2": {
+          "index": "1",
+          "label": "2"
+        },
+        "3": {
+          "index": "2",
+          "label": "3"
+        },
+        "4": {
+          "index": "3",
+          "label": "4"
+        },
+        "5": {
+          "index": "4",
+          "label": "5"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_12": {
+      "code": "ドロップダウン_12",
+      "defaultValue": "",
+      "label": "上限管理結果",
+      "noLabel": false,
+      "options": {
+        "自動": {
+          "index": "0",
+          "label": "自動"
+        },
+        "調整中": {
+          "index": "1",
+          "label": "調整中"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_13": {
+      "code": "ドロップダウン_13",
+      "defaultValue": "",
+      "label": "上限管理後利用者負担額",
+      "noLabel": false,
+      "options": {
+        "自動": {
+          "index": "0",
+          "label": "自動"
+        },
+        "調整中": {
+          "index": "1",
+          "label": "調整中"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_17": {
+      "code": "ドロップダウン_17",
+      "defaultValue": "",
+      "label": "医療的ケア児",
+      "noLabel": false,
+      "options": {
+        "1": {
+          "index": "0",
+          "label": "1"
+        },
+        "2": {
+          "index": "1",
+          "label": "2"
+        },
+        "3": {
+          "index": "2",
+          "label": "3"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_18": {
+      "code": "ドロップダウン_18",
+      "defaultValue": "",
+      "label": "2025引落月",
+      "noLabel": false,
+      "options": {
+        "10月": {
+          "index": "6",
+          "label": "10月"
+        },
+        "11月": {
+          "index": "7",
+          "label": "11月"
+        },
+        "12月": {
+          "index": "8",
+          "label": "12月"
+        },
+        "1月": {
+          "index": "9",
+          "label": "1月"
+        },
+        "2月": {
+          "index": "10",
+          "label": "2月"
+        },
+        "3月": {
+          "index": "11",
+          "label": "3月"
+        },
+        "4月": {
+          "index": "0",
+          "label": "4月"
+        },
+        "5月": {
+          "index": "1",
+          "label": "5月"
+        },
+        "6月": {
+          "index": "2",
+          "label": "6月"
+        },
+        "7月": {
+          "index": "3",
+          "label": "7月"
+        },
+        "8月": {
+          "index": "4",
+          "label": "8月"
+        },
+        "9月": {
+          "index": "5",
+          "label": "9月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_21": {
+      "code": "ドロップダウン_21",
+      "defaultValue": "",
+      "label": "クラス",
+      "noLabel": false,
+      "options": {
+        "加配あり": {
+          "index": "0",
+          "label": "加配あり"
+        },
+        "加配なし": {
+          "index": "1",
+          "label": "加配なし"
+        },
+        "特別支援学校": {
+          "index": "5",
+          "label": "特別支援学校"
+        },
+        "特別支援学級": {
+          "index": "4",
+          "label": "特別支援学級"
+        },
+        "通常級": {
+          "index": "2",
+          "label": "通常級"
+        },
+        "通級": {
+          "index": "3",
+          "label": "通級"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_22": {
+      "code": "ドロップダウン_22",
+      "defaultValue": "",
+      "label": "単位（放デイのみ）",
+      "noLabel": false,
+      "options": {
+        "第1単位": {
+          "index": "0",
+          "label": "第1単位"
+        },
+        "第2単位": {
+          "index": "1",
+          "label": "第2単位"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_25": {
+      "code": "ドロップダウン_25",
+      "defaultValue": "",
+      "label": "2024引落月",
+      "noLabel": false,
+      "options": {
+        "10月": {
+          "index": "6",
+          "label": "10月"
+        },
+        "11月": {
+          "index": "7",
+          "label": "11月"
+        },
+        "12月": {
+          "index": "8",
+          "label": "12月"
+        },
+        "1月": {
+          "index": "9",
+          "label": "1月"
+        },
+        "2月": {
+          "index": "10",
+          "label": "2月"
+        },
+        "3月": {
+          "index": "11",
+          "label": "3月"
+        },
+        "4月": {
+          "index": "0",
+          "label": "4月"
+        },
+        "5月": {
+          "index": "1",
+          "label": "5月"
+        },
+        "6月": {
+          "index": "2",
+          "label": "6月"
+        },
+        "7月": {
+          "index": "3",
+          "label": "7月"
+        },
+        "8月": {
+          "index": "4",
+          "label": "8月"
+        },
+        "9月": {
+          "index": "5",
+          "label": "9月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_3": {
+      "code": "ドロップダウン_3",
+      "defaultValue": "",
+      "label": "2023引落月",
+      "noLabel": false,
+      "options": {
+        "10月": {
+          "index": "6",
+          "label": "10月"
+        },
+        "11月": {
+          "index": "7",
+          "label": "11月"
+        },
+        "12月": {
+          "index": "8",
+          "label": "12月"
+        },
+        "1月": {
+          "index": "9",
+          "label": "1月"
+        },
+        "2月": {
+          "index": "10",
+          "label": "2月"
+        },
+        "3月": {
+          "index": "11",
+          "label": "3月"
+        },
+        "4月": {
+          "index": "0",
+          "label": "4月"
+        },
+        "5月": {
+          "index": "1",
+          "label": "5月"
+        },
+        "6月": {
+          "index": "2",
+          "label": "6月"
+        },
+        "7月": {
+          "index": "3",
+          "label": "7月"
+        },
+        "8月": {
+          "index": "4",
+          "label": "8月"
+        },
+        "9月": {
+          "index": "5",
+          "label": "9月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_34": {
+      "code": "ドロップダウン_34",
+      "defaultValue": "",
+      "label": "TOB",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_36": {
+      "code": "ドロップダウン_36",
+      "defaultValue": "",
+      "label": "④数量理解",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_37": {
+      "code": "ドロップダウン_37",
+      "defaultValue": "",
+      "label": "③音韻認識",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_38": {
+      "code": "ドロップダウン_38",
+      "defaultValue": "",
+      "label": "②眼球運動",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_39": {
+      "code": "ドロップダウン_39",
+      "defaultValue": "",
+      "label": "読字",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_4": {
+      "code": "ドロップダウン_4",
+      "defaultValue": "",
+      "label": "上限額",
+      "noLabel": false,
+      "options": {
+        "0": {
+          "index": "0",
+          "label": "0"
+        },
+        "4600": {
+          "index": "1",
+          "label": "4600"
+        },
+        "37200": {
+          "index": "2",
+          "label": "37200"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_40": {
+      "code": "ドロップダウン_40",
+      "defaultValue": "",
+      "label": "追視",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_41": {
+      "code": "ドロップダウン_41",
+      "defaultValue": "",
+      "label": "模写",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_42": {
+      "code": "ドロップダウン_42",
+      "defaultValue": "",
+      "label": "TOB",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_43": {
+      "code": "ドロップダウン_43",
+      "defaultValue": "",
+      "label": "模写",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_44": {
+      "code": "ドロップダウン_44",
+      "defaultValue": "",
+      "label": "追視",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_45": {
+      "code": "ドロップダウン_45",
+      "defaultValue": "",
+      "label": "読字",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_46": {
+      "code": "ドロップダウン_46",
+      "defaultValue": "",
+      "label": "②眼球運動",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_47": {
+      "code": "ドロップダウン_47",
+      "defaultValue": "",
+      "label": "③音韻認識",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_48": {
+      "code": "ドロップダウン_48",
+      "defaultValue": "",
+      "label": "④数量理解",
+      "noLabel": false,
+      "options": {
+        "×": {
+          "index": "1",
+          "label": "×"
+        },
+        "△": {
+          "index": "2",
+          "label": "△"
+        },
+        "〇": {
+          "index": "0",
+          "label": "〇"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_5": {
+      "code": "ドロップダウン_5",
+      "defaultValue": "",
+      "label": "等級",
+      "noLabel": false,
+      "options": {
+        "A１（最重度）": {
+          "index": "3",
+          "label": "A１（最重度）"
+        },
+        "A２（重度）": {
+          "index": "2",
+          "label": "A２（重度）"
+        },
+        "B１（中度）": {
+          "index": "1",
+          "label": "B１（中度）"
+        },
+        "B２（軽度）": {
+          "index": "0",
+          "label": "B２（軽度）"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_6": {
+      "code": "ドロップダウン_6",
+      "defaultValue": "",
+      "label": "等級（精神）",
+      "noLabel": true,
+      "options": {
+        "１級": {
+          "index": "2",
+          "label": "１級"
+        },
+        "２級": {
+          "index": "1",
+          "label": "２級"
+        },
+        "３級": {
+          "index": "0",
+          "label": "３級"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_7": {
+      "code": "ドロップダウン_7",
+      "defaultValue": "",
+      "label": "等級（身体）",
+      "noLabel": true,
+      "options": {
+        "１級": {
+          "index": "5",
+          "label": "１級"
+        },
+        "２級": {
+          "index": "4",
+          "label": "２級"
+        },
+        "３級": {
+          "index": "3",
+          "label": "３級"
+        },
+        "４級": {
+          "index": "2",
+          "label": "４級"
+        },
+        "５級": {
+          "index": "1",
+          "label": "５級"
+        },
+        "６級": {
+          "index": "0",
+          "label": "６級"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ドロップダウン_8": {
+      "code": "ドロップダウン_8",
+      "defaultValue": "",
+      "label": "多子軽減",
+      "noLabel": false,
+      "options": {
+        "第２子": {
+          "index": "0",
+          "label": "第２子"
+        },
+        "第３子以降": {
+          "index": "1",
+          "label": "第３子以降"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "ユーザー選択_7": {
+      "code": "ユーザー選択_7",
+      "defaultValue": [],
+      "entities": [],
+      "label": "実施者",
+      "noLabel": false,
+      "required": false,
+      "type": "USER_SELECT"
+    },
+    "ラジオボタン": {
+      "align": "HORIZONTAL",
+      "code": "ラジオボタン",
+      "defaultValue": "男",
+      "label": "性別",
+      "noLabel": false,
+      "options": {
+        "女": {
+          "index": "1",
+          "label": "女"
+        },
+        "男": {
+          "index": "0",
+          "label": "男"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "ラジオボタン_0": {
+      "align": "HORIZONTAL",
+      "code": "ラジオボタン_0",
+      "defaultValue": "普通",
+      "label": "預金種目",
+      "noLabel": false,
+      "options": {
+        "普通": {
+          "index": "0",
+          "label": "普通"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "ラジオボタン_3": {
+      "align": "HORIZONTAL",
+      "code": "ラジオボタン_3",
+      "defaultValue": "正",
+      "label": "フォロー",
+      "noLabel": false,
+      "options": {
+        "中": {
+          "index": "2",
+          "label": "中"
+        },
+        "正": {
+          "index": "0",
+          "label": "正"
+        },
+        "軽": {
+          "index": "1",
+          "label": "軽"
+        },
+        "重": {
+          "index": "3",
+          "label": "重"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "リハ病院": {
+      "code": "リハ病院",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "医療機関（リハ）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "レディネス実施者": {
+      "code": "レディネス実施者",
+      "defaultValue": [],
+      "entities": [],
+      "label": "実施者",
+      "noLabel": false,
+      "required": false,
+      "type": "USER_SELECT"
+    },
+    "中学クラス": {
+      "code": "中学クラス",
+      "defaultValue": "",
+      "label": "クラス",
+      "noLabel": false,
+      "options": {
+        "加配あり": {
+          "index": "0",
+          "label": "加配あり"
+        },
+        "加配なし": {
+          "index": "1",
+          "label": "加配なし"
+        },
+        "特別支援学校": {
+          "index": "5",
+          "label": "特別支援学校"
+        },
+        "特別支援学級": {
+          "index": "4",
+          "label": "特別支援学級"
+        },
+        "通常級": {
+          "index": "2",
+          "label": "通常級"
+        },
+        "通級": {
+          "index": "3",
+          "label": "通級"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "中学校": {
+      "code": "中学校",
+      "label": "中学校",
+      "lookup": {
+        "fieldMappings": [],
+        "filterCond": "",
+        "lookupPickerFields": [],
+        "relatedApp": {
+          "app": "146",
+          "code": ""
+        },
+        "relatedKeyField": "学校名",
+        "sort": "レコード番号 desc"
+      },
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT"
+    },
+    "中学生以上": {
+      "code": "中学生以上",
+      "defaultValue": "",
+      "expression": "IF(年齢>11,\"中学生以上\",\"\")",
+      "hideExpression": true,
+      "label": "中学生以上",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "主保護者TEL": {
+      "code": "主保護者TEL",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "TEL（主）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "主保護者氏名": {
+      "code": "主保護者氏名",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "保護者（主）氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "主保護者続柄": {
+      "code": "主保護者続柄",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "続柄１",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "主治医": {
+      "code": "主治医",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "主治医",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "住所": {
+      "code": "住所",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "住所",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "作成日時": {
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false,
+      "type": "CREATED_TIME"
+    },
+    "作成者": {
+      "code": "作成者",
+      "label": "作成者",
+      "noLabel": false,
+      "type": "CREATOR"
+    },
+    "作業者": {
+      "code": "作業者",
+      "enabled": false,
+      "label": "作業者",
+      "type": "STATUS_ASSIGNEE"
+    },
+    "児童フリガナ": {
+      "code": "児童フリガナ",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "児童フリガナ",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "児童氏名": {
+      "code": "児童氏名",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "児童氏名",
+      "maxLength": "64",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": true
+    },
+    "児童精神": {
+      "code": "児童精神",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "医療機関（児童精神）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "利用時間": {
+      "code": "利用時間",
+      "defaultValue": "",
+      "label": "主な利用時間",
+      "noLabel": false,
+      "options": {
+        "930": {
+          "index": "0",
+          "label": "930"
+        },
+        "1000": {
+          "index": "4",
+          "label": "1000"
+        },
+        "1100": {
+          "index": "5",
+          "label": "1100"
+        },
+        "1400": {
+          "index": "1",
+          "label": "1400"
+        },
+        "1500": {
+          "index": "6",
+          "label": "1500"
+        },
+        "1600": {
+          "index": "2",
+          "label": "1600"
+        },
+        "1700": {
+          "index": "3",
+          "label": "1700"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "利用曜日": {
+      "align": "HORIZONTAL",
+      "code": "利用曜日",
+      "defaultValue": [],
+      "label": "利用曜日",
+      "noLabel": false,
+      "options": {
+        "土": {
+          "index": "5",
+          "label": "土"
+        },
+        "月": {
+          "index": "0",
+          "label": "月"
+        },
+        "木": {
+          "index": "3",
+          "label": "木"
+        },
+        "水": {
+          "index": "2",
+          "label": "水"
+        },
+        "火": {
+          "index": "1",
+          "label": "火"
+        },
+        "金": {
+          "index": "4",
+          "label": "金"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "利用曜日コピー": {
+      "code": "利用曜日コピー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "利用曜日",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "利用状況": {
+      "align": "HORIZONTAL",
+      "code": "利用状況",
+      "defaultValue": "利用中",
+      "label": "利用状況",
+      "noLabel": false,
+      "options": {
+        "利用中": {
+          "index": "0",
+          "label": "利用中"
+        },
+        "待機中": {
+          "index": "1",
+          "label": "待機中"
+        },
+        "検討中": {
+          "index": "2",
+          "label": "検討中"
+        },
+        "終結": {
+          "index": "3",
+          "label": "終結"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "利用者サイン": {
+      "code": "利用者サイン",
+      "label": "タイムスタンプ",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "250",
+      "type": "FILE"
+    },
+    "利用者サイン原本": {
+      "code": "利用者サイン原本",
+      "label": "利用者サイン",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "園": {
+      "code": "園",
+      "label": "園",
+      "lookup": {
+        "fieldMappings": [],
+        "filterCond": "",
+        "lookupPickerFields": [
+          "園名",
+          "園名ふりがな",
+          "園住所"
+        ],
+        "relatedApp": {
+          "app": "147",
+          "code": ""
+        },
+        "relatedKeyField": "園名",
+        "sort": "レコード番号 asc"
+      },
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT"
+    },
+    "園コピー": {
+      "code": "園コピー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "園",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "基準日": {
+      "code": "基準日",
+      "defaultNowValue": false,
+      "defaultValue": "2026-04-02",
+      "label": "基準日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "太田ステージ": {
+      "align": "HORIZONTAL",
+      "code": "太田ステージ",
+      "defaultValue": "1-1",
+      "label": "太田ステージ",
+      "noLabel": false,
+      "options": {
+        "2": {
+          "index": "4",
+          "label": "2"
+        },
+        "1-1": {
+          "index": "1",
+          "label": "1-1"
+        },
+        "1-2": {
+          "index": "2",
+          "label": "1-2"
+        },
+        "1-3": {
+          "index": "3",
+          "label": "1-3"
+        },
+        "3-1": {
+          "index": "5",
+          "label": "3-1"
+        },
+        "3-2": {
+          "index": "6",
+          "label": "3-2"
+        },
+        "4-1": {
+          "index": "7",
+          "label": "4-1"
+        },
+        "4-2": {
+          "index": "8",
+          "label": "4-2"
+        },
+        "5以上": {
+          "index": "9",
+          "label": "5以上"
+        },
+        "未": {
+          "index": "0",
+          "label": "未"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "契約保護者フリガナ": {
+      "code": "契約保護者フリガナ",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "フリガナ",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "契約保護者氏名": {
+      "code": "契約保護者氏名",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "契約保護者氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "契約保護者続柄": {
+      "code": "契約保護者続柄",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "続柄",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "契約日": {
+      "code": "契約日",
+      "defaultNowValue": false,
+      "defaultValue": "",
+      "label": "契約日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "契約書": {
+      "code": "契約書",
+      "label": "契約書",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "契約書原本明和": {
+      "code": "契約書原本明和",
+      "label": "契約書原本（明和）",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "契約書原本玉城": {
+      "code": "契約書原本玉城",
+      "label": "契約書原本（玉城）",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "学年": {
+      "code": "学年",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": true,
+      "label": "学年",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "学年コピー": {
+      "code": "学年コピー",
+      "defaultValue": "",
+      "expression": "学年",
+      "hideExpression": false,
+      "label": "学年（コピー）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "学校コピー": {
+      "code": "学校コピー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "学校",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "小学校": {
+      "code": "小学校",
+      "label": "小学校",
+      "lookup": {
+        "fieldMappings": [],
+        "filterCond": "",
+        "lookupPickerFields": [
+          "学校名"
+        ],
+        "relatedApp": {
+          "app": "146",
+          "code": ""
+        },
+        "relatedKeyField": "学校名",
+        "sort": "レコード番号 asc"
+      },
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT"
+    },
+    "小１": {
+      "code": "小１",
+      "defaultValue": "",
+      "expression": "IF(年齢=6,\"小１\",\"\")",
+      "hideExpression": true,
+      "label": "小１",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "小２": {
+      "code": "小２",
+      "defaultValue": "",
+      "expression": "IF(年齢=7,\"小２\",\"\")",
+      "hideExpression": true,
+      "label": "小２",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "小３": {
+      "code": "小３",
+      "defaultValue": "",
+      "expression": "IF(年齢=8,\"小３\",\"\")",
+      "hideExpression": true,
+      "label": "小３",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "小４": {
+      "code": "小４",
+      "defaultValue": "",
+      "expression": "IF(年齢=9,\"小４\",\"\")",
+      "hideExpression": true,
+      "label": "小４",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "小５": {
+      "code": "小５",
+      "defaultValue": "",
+      "expression": "IF(年齢=10,\"小５\",\"\")",
+      "hideExpression": true,
+      "label": "小５",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "小６": {
+      "code": "小６",
+      "defaultValue": "",
+      "expression": "IF(年齢=11,\"小６\",\"\")",
+      "hideExpression": true,
+      "label": "小６",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "年中": {
+      "code": "年中",
+      "defaultValue": "",
+      "expression": "IF(年齢=4,\"４歳(年中)\",\"\")",
+      "hideExpression": true,
+      "label": "４歳(年中)",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "年少": {
+      "code": "年少",
+      "defaultValue": "",
+      "expression": "IF(年齢=3,\"３歳(年少)\",\"\")",
+      "hideExpression": true,
+      "label": "３歳(年少)",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "年長": {
+      "code": "年長",
+      "defaultValue": "",
+      "expression": "IF(年齢=5,\"５歳(年長)\",\"\")",
+      "hideExpression": true,
+      "label": "５歳(年長)",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "年齢": {
+      "code": "年齢",
+      "displayScale": "",
+      "expression": "ROUNDDOWN( (YMD2 - YMD1) / 10000,0)",
+      "format": "NUMBER",
+      "hideExpression": false,
+      "label": "年齢",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "歳",
+      "unitPosition": "AFTER"
+    },
+    "年齢4": {
+      "code": "年齢4",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "年齢（誕生日前）",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "座標設定データ": {
+      "code": "座標設定データ",
+      "defaultValue": "",
+      "label": "座標設定データ",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "担当": {
+      "code": "担当",
+      "defaultValue": [],
+      "entities": [],
+      "label": "担当",
+      "noLabel": false,
+      "required": false,
+      "type": "USER_SELECT"
+    },
+    "担当者コピー": {
+      "code": "担当者コピー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "担当者",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "支援計画": {
+      "code": "支援計画",
+      "defaultValue": "",
+      "label": "支援計画",
+      "noLabel": false,
+      "options": {
+        "4月・10月": {
+          "index": "0",
+          "label": "4月・10月"
+        },
+        "5月・11月": {
+          "index": "1",
+          "label": "5月・11月"
+        },
+        "6月・12月": {
+          "index": "2",
+          "label": "6月・12月"
+        },
+        "7月・1月": {
+          "index": "3",
+          "label": "7月・1月"
+        },
+        "8月・2月": {
+          "index": "4",
+          "label": "8月・2月"
+        },
+        "9月・3月": {
+          "index": "5",
+          "label": "9月・3月"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "支援計画月コピー": {
+      "code": "支援計画月コピー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "支援計画月",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "支給量": {
+      "code": "支給量",
+      "defaultValue": "",
+      "label": "支給量",
+      "noLabel": false,
+      "options": {
+        "1": {
+          "index": "1",
+          "label": "1"
+        },
+        "2": {
+          "index": "2",
+          "label": "2"
+        },
+        "3": {
+          "index": "3",
+          "label": "3"
+        },
+        "4": {
+          "index": "4",
+          "label": "4"
+        },
+        "5": {
+          "index": "5",
+          "label": "5"
+        },
+        "6": {
+          "index": "6",
+          "label": "6"
+        },
+        "7": {
+          "index": "7",
+          "label": "7"
+        },
+        "8": {
+          "index": "8",
+          "label": "8"
+        },
+        "9": {
+          "index": "9",
+          "label": "9"
+        },
+        "10": {
+          "index": "10",
+          "label": "10"
+        },
+        "11": {
+          "index": "11",
+          "label": "11"
+        },
+        "12": {
+          "index": "12",
+          "label": "12"
+        },
+        "13": {
+          "index": "13",
+          "label": "13"
+        },
+        "14": {
+          "index": "14",
+          "label": "14"
+        },
+        "15": {
+          "index": "15",
+          "label": "15"
+        },
+        "16": {
+          "index": "16",
+          "label": "16"
+        },
+        "17": {
+          "index": "17",
+          "label": "17"
+        },
+        "18": {
+          "index": "18",
+          "label": "18"
+        },
+        "19": {
+          "index": "19",
+          "label": "19"
+        },
+        "20": {
+          "index": "20",
+          "label": "20"
+        },
+        "21": {
+          "index": "21",
+          "label": "21"
+        },
+        "22": {
+          "index": "22",
+          "label": "22"
+        },
+        "23": {
+          "index": "23",
+          "label": "23"
+        },
+        "24": {
+          "index": "24",
+          "label": "24"
+        },
+        "25": {
+          "index": "25",
+          "label": "25"
+        },
+        "26": {
+          "index": "26",
+          "label": "26"
+        },
+        "27": {
+          "index": "27",
+          "label": "27"
+        },
+        "28": {
+          "index": "28",
+          "label": "28"
+        },
+        "原則の日数": {
+          "index": "0",
+          "label": "原則の日数"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "数値": {
+      "code": "数値",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "受給者証番号",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_0": {
+      "code": "数値_0",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "ペアプロ修了",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "年度",
+      "unitPosition": "AFTER"
+    },
+    "数値_1": {
+      "code": "数値_1",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "開始日(例：20201201)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_2": {
+      "code": "数値_2",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "事業所番号⑤",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_3": {
+      "code": "数値_3",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "契約日(例：20201201)",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_4": {
+      "code": "数値_4",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "ペアトレ受講",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "年度",
+      "unitPosition": "AFTER"
+    },
+    "数値_5": {
+      "code": "数値_5",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "口座番号",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_6": {
+      "code": "数値_6",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "事業所番号①",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_7": {
+      "code": "数値_7",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "事業所番号②",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_8": {
+      "code": "数値_8",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "事業所番号③",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "数値_9": {
+      "code": "数値_9",
+      "defaultValue": "",
+      "digit": false,
+      "displayScale": "",
+      "label": "事業所番号④",
+      "maxValue": "",
+      "minValue": "",
+      "noLabel": false,
+      "required": false,
+      "type": "NUMBER",
+      "unique": false,
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "文字列__1行__16": {
+      "code": "文字列__1行__16",
+      "defaultValue": "障害児",
+      "expression": "",
+      "hideExpression": false,
+      "label": "障害児",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__17": {
+      "code": "文字列__1行__17",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "上限管理事業所番号（いろ葉の場合は「自社」）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__18": {
+      "code": "文字列__1行__18",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "上限管理事業所名（いろ葉の場合は「自社」）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__19": {
+      "code": "文字列__1行__19",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "事業所名①",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__20": {
+      "code": "文字列__1行__20",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "事業所名②",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__21": {
+      "code": "文字列__1行__21",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "事業所名③",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__22": {
+      "code": "文字列__1行__22",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "事業所名④",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__23": {
+      "code": "文字列__1行__23",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "終了日",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__24": {
+      "code": "文字列__1行__24",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "契約終了日",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__25": {
+      "code": "文字列__1行__25",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "計画未作成",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__26": {
+      "code": "文字列__1行__26",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "送迎重度",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__27": {
+      "code": "文字列__1行__27",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "送迎同一敷地",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__28": {
+      "code": "文字列__1行__28",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "強度行動",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__29": {
+      "code": "文字列__1行__29",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "人工内耳",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__31": {
+      "code": "文字列__1行__31",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "関係機関連携",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__32": {
+      "code": "文字列__1行__32",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "備考",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__34": {
+      "code": "文字列__1行__34",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "移行支援",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__37": {
+      "code": "文字列__1行__37",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "会員氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__38": {
+      "code": "文字列__1行__38",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "旧備考（年中）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__39": {
+      "code": "文字列__1行__39",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "旧備考（年長）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__42": {
+      "code": "文字列__1行__42",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "口座名義",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__43": {
+      "code": "文字列__1行__43",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "blank1",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__44": {
+      "code": "文字列__1行__44",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "口座名義人",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__45": {
+      "code": "文字列__1行__45",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "口振初回",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__46": {
+      "code": "文字列__1行__46",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "blank2",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__47": {
+      "code": "文字列__1行__47",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "blank3",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__48": {
+      "code": "文字列__1行__48",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "blank5",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__49": {
+      "code": "文字列__1行__49",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "blank4",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__50": {
+      "code": "文字列__1行__50",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "金融機関番号",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__51": {
+      "code": "文字列__1行__51",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "店舗番号",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__52": {
+      "code": "文字列__1行__52",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "事業所名⑤",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__1行__54": {
+      "code": "文字列__1行__54",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "旧姓",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "文字列__複数行_": {
+      "code": "文字列__複数行_",
+      "defaultValue": "",
+      "label": "備考（サービス）",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "文字列__複数行__0": {
+      "code": "文字列__複数行__0",
+      "defaultValue": "",
+      "label": "初回見学メモ",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "文字列__複数行__1": {
+      "code": "文字列__複数行__1",
+      "defaultValue": "",
+      "label": "備考・留意点",
+      "noLabel": false,
+      "required": false,
+      "type": "MULTI_LINE_TEXT"
+    },
+    "日付_7": {
+      "code": "日付_7",
+      "defaultNowValue": true,
+      "defaultValue": "",
+      "label": "給付決定期間（終了）",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "更新日時": {
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false,
+      "type": "UPDATED_TIME"
+    },
+    "更新者": {
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false,
+      "type": "MODIFIER"
+    },
+    "添付ファイル": {
+      "code": "添付ファイル",
+      "label": "Vineland-Ⅱ(ｸﾞﾙｰﾌﾟLINE)",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_0": {
+      "code": "添付ファイル_0",
+      "label": "発達検査等",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_1": {
+      "code": "添付ファイル_1",
+      "label": "TOB",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_11": {
+      "code": "添付ファイル_11",
+      "label": "障害手帳",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_15": {
+      "code": "添付ファイル_15",
+      "label": "その他検査",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_17": {
+      "code": "添付ファイル_17",
+      "label": "音韻チェック",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_18": {
+      "code": "添付ファイル_18",
+      "label": "ＤＣＤチェック",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_2": {
+      "code": "添付ファイル_2",
+      "label": "診断書等",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_20": {
+      "code": "添付ファイル_20",
+      "label": "運動評価",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_3": {
+      "code": "添付ファイル_3",
+      "label": "プロフィール",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_4": {
+      "code": "添付ファイル_4",
+      "label": "事例検討",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_5": {
+      "code": "添付ファイル_5",
+      "label": "その他",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "添付ファイル_6": {
+      "code": "添付ファイル_6",
+      "label": "受給者証写真（両面）必ず内容の変更を確認",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "添付ファイル_7": {
+      "code": "添付ファイル_7",
+      "label": "サービス等利用計画",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "50",
+      "type": "FILE"
+    },
+    "添付ファイル_9": {
+      "code": "添付ファイル_9",
+      "label": "ビジョンチェック",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150",
+      "type": "FILE"
+    },
+    "病院住所": {
+      "code": "病院住所",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "病院住所",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "病院電話": {
+      "code": "病院電話",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "病院電話",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急1TEL": {
+      "code": "緊急1TEL",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "TEL（副）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急1氏名": {
+      "code": "緊急1氏名",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "保護者（副）氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急2TEL": {
+      "code": "緊急2TEL",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "TEL（副2）",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急2氏名": {
+      "code": "緊急2氏名",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "保護者（副2）氏名",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急住所1": {
+      "code": "緊急住所1",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "住所1",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急住所2": {
+      "code": "緊急住所2",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "住所2",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急続柄1": {
+      "code": "緊急続柄1",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "続柄1",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急続柄2": {
+      "code": "緊急続柄2",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "続柄2",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "緊急連絡先1": {
+      "align": "HORIZONTAL",
+      "code": "緊急連絡先1",
+      "defaultValue": "携帯",
+      "label": "緊急連絡先1",
+      "noLabel": false,
+      "options": {
+        "携帯": {
+          "index": "0",
+          "label": "携帯"
+        },
+        "職場": {
+          "index": "1",
+          "label": "職場"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "緊急連絡先2": {
+      "align": "HORIZONTAL",
+      "code": "緊急連絡先2",
+      "defaultValue": "携帯",
+      "label": "緊急連絡先2",
+      "noLabel": false,
+      "options": {
+        "携帯": {
+          "index": "0",
+          "label": "携帯"
+        },
+        "職場": {
+          "index": "1",
+          "label": "職場"
+        }
+      },
+      "required": true,
+      "type": "RADIO_BUTTON"
+    },
+    "見学日": {
+      "code": "見学日",
+      "defaultNowValue": true,
+      "defaultValue": "",
+      "label": "見学日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "計画相談コピー": {
+      "code": "計画相談コピー",
+      "defaultValue": "",
+      "expression": "計画相談事業所",
+      "hideExpression": false,
+      "label": "計画相談",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": true,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "計画相談事業所": {
+      "code": "計画相談事業所",
+      "label": "計画相談事業所",
+      "lookup": {
+        "fieldMappings": [],
+        "filterCond": "",
+        "lookupPickerFields": [
+          "事業所名"
+        ],
+        "relatedApp": {
+          "app": "144",
+          "code": ""
+        },
+        "relatedKeyField": "事業所名",
+        "sort": "事業所名 asc"
+      },
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT"
+    },
+    "計画相談担当者": {
+      "code": "計画相談担当者",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "計画相談担当者",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "訪問契約": {
+      "align": "HORIZONTAL",
+      "code": "訪問契約",
+      "defaultValue": [],
+      "label": "訪問(契約事業所)",
+      "noLabel": false,
+      "options": {
+        "明和": {
+          "index": "0",
+          "label": "明和"
+        },
+        "玉城": {
+          "index": "1",
+          "label": "玉城"
+        }
+      },
+      "required": false,
+      "type": "CHECK_BOX"
+    },
+    "訪問契約事業所": {
+      "code": "訪問契約事業所",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "訪問契約",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "訪問担当者コピー": {
+      "code": "訪問担当者コピー",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "訪問担当者",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "訪問支援担当": {
+      "code": "訪問支援担当",
+      "defaultValue": [],
+      "entities": [],
+      "label": "訪問支援担当",
+      "noLabel": false,
+      "required": false,
+      "type": "USER_SELECT"
+    },
+    "診療科": {
+      "code": "診療科",
+      "defaultValue": "",
+      "expression": "",
+      "hideExpression": false,
+      "label": "診療科",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "誕生日": {
+      "code": "誕生日",
+      "defaultNowValue": true,
+      "defaultValue": "",
+      "label": "生年月日",
+      "noLabel": false,
+      "required": false,
+      "type": "DATE",
+      "unique": false
+    },
+    "誕生月": {
+      "code": "誕生月",
+      "displayScale": "",
+      "expression": "DATE_FORMAT(誕生日, \"MM\", \"Etc/GMT\")",
+      "format": "NUMBER",
+      "hideExpression": true,
+      "label": "誕生月",
+      "noLabel": false,
+      "required": false,
+      "type": "CALC",
+      "unit": "",
+      "unitPosition": "BEFORE"
+    },
+    "通所先": {
+      "code": "通所先",
+      "defaultValue": "",
+      "label": "通所先",
+      "noLabel": false,
+      "options": {
+        "両方": {
+          "index": "3",
+          "label": "両方"
+        },
+        "明和": {
+          "index": "1",
+          "label": "明和"
+        },
+        "玉城": {
+          "index": "0",
+          "label": "玉城"
+        },
+        "訪問のみ": {
+          "index": "2",
+          "label": "訪問のみ"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "通所先コピー": {
+      "code": "通所先コピー",
+      "defaultValue": "",
+      "expression": "通所先",
+      "hideExpression": false,
+      "label": "通所先",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "通所種別": {
+      "code": "通所種別",
+      "defaultValue": "",
+      "label": "通所種別",
+      "noLabel": false,
+      "options": {
+        "児童発達": {
+          "index": "0",
+          "label": "児童発達"
+        },
+        "放デイ": {
+          "index": "1",
+          "label": "放デイ"
+        }
+      },
+      "required": false,
+      "type": "DROP_DOWN"
+    },
+    "連絡調整": {
+      "code": "連絡調整",
+      "fields": {
+        "ユーザー選択_1": {
+          "code": "ユーザー選択_1",
+          "defaultValue": [],
+          "entities": [],
+          "label": "対応者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__2": {
+          "code": "文字列__複数行__2",
+          "defaultValue": "",
+          "label": "内容",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_1": {
+          "code": "日付_1",
+          "defaultNowValue": true,
+          "defaultValue": "",
+          "label": "日付",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        },
+        "添付ファイル_16": {
+          "code": "添付ファイル_16",
+          "label": "添付ファイル",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150",
+          "type": "FILE"
+        },
+        "電話・会議": {
+          "code": "電話・会議",
+          "defaultValue": "",
+          "label": "項目",
+          "noLabel": false,
+          "options": {
+            "ケース検討": {
+              "index": "15",
+              "label": "ケース検討"
+            },
+            "ペアトレ（オンライン）": {
+              "index": "9",
+              "label": "ペアトレ（オンライン）"
+            },
+            "ペアトレ（対面）": {
+              "index": "8",
+              "label": "ペアトレ（対面）"
+            },
+            "保護者面談（オンライン）": {
+              "index": "7",
+              "label": "保護者面談（オンライン）"
+            },
+            "保護者面談（事業所内）": {
+              "index": "5",
+              "label": "保護者面談（事業所内）"
+            },
+            "保護者面談（居宅）": {
+              "index": "4",
+              "label": "保護者面談（居宅）"
+            },
+            "保護者面談（進路相談）": {
+              "index": "6",
+              "label": "保護者面談（進路相談）"
+            },
+            "健康診断": {
+              "index": "3",
+              "label": "健康診断"
+            },
+            "初回面談": {
+              "index": "2",
+              "label": "初回面談"
+            },
+            "担当者会議": {
+              "index": "1",
+              "label": "担当者会議"
+            },
+            "訪問会議・相談・連携": {
+              "index": "14",
+              "label": "訪問会議・相談・連携"
+            },
+            "関係機関連携（会議）": {
+              "index": "10",
+              "label": "関係機関連携（会議）"
+            },
+            "関係機関連携（児相・医療機関）": {
+              "index": "12",
+              "label": "関係機関連携（児相・医療機関）"
+            },
+            "関係機関連携（情報連携）": {
+              "index": "11",
+              "label": "関係機関連携（情報連携）"
+            },
+            "関係機関連携（移行先）": {
+              "index": "13",
+              "label": "関係機関連携（移行先）"
+            },
+            "電話連絡・軽微な相談": {
+              "index": "0",
+              "label": "電話連絡・軽微な相談"
+            }
+          },
+          "required": false,
+          "type": "DROP_DOWN"
+        }
+      },
+      "label": "担当者会議等",
+      "noLabel": true,
+      "type": "SUBTABLE"
+    },
+    "運動評価": {
+      "code": "運動評価",
+      "label": "運動評価",
+      "noLabel": false,
+      "referenceTable": {
+        "condition": {
+          "field": "児童氏名",
+          "relatedField": "児童氏名"
+        },
+        "displayFields": [
+          "日付",
+          "児童氏名",
+          "更新者"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "143",
+          "code": ""
+        },
+        "size": "5",
+        "sort": "更新日時 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    },
+    "関連レコード一覧": {
+      "code": "関連レコード一覧",
+      "label": "個別支援計画（新）",
+      "noLabel": false,
+      "referenceTable": {
+        "condition": {
+          "field": "児童氏名",
+          "relatedField": "氏名"
+        },
+        "displayFields": [
+          "前期計画開始",
+          "後期計画開始",
+          "前期案",
+          "前期サイン済",
+          "後期案",
+          "後期サイン済",
+          "担当",
+          "更新日時"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "207",
+          "code": ""
+        },
+        "size": "5",
+        "sort": "前期計画開始コピー desc, 更新日時 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    },
+    "関連レコード一覧_0": {
+      "code": "関連レコード一覧_0",
+      "label": "個別カルテ",
+      "noLabel": false,
+      "referenceTable": {
+        "condition": {
+          "field": "児童氏名",
+          "relatedField": "ルックアップ_0"
+        },
+        "displayFields": [
+          "本日日付",
+          "ドロップダウン",
+          "全体SV",
+          "個別SV",
+          "保護者",
+          "記入担当者"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "11",
+          "code": ""
+        },
+        "size": "50",
+        "sort": "本日日付 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    },
+    "関連レコード一覧_1": {
+      "code": "関連レコード一覧_1",
+      "label": "個別支援計画（旧）",
+      "noLabel": false,
+      "referenceTable": {
+        "condition": {
+          "field": "児童氏名",
+          "relatedField": "氏名"
+        },
+        "displayFields": [
+          "計画開始",
+          "種別",
+          "長期目標",
+          "短期目標",
+          "作成者"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "125",
+          "code": ""
+        },
+        "size": "10",
+        "sort": "計画開始 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    },
+    "関連レコード一覧_10": {
+      "code": "関連レコード一覧_10",
+      "label": "訪問カルテ",
+      "noLabel": false,
+      "referenceTable": {
+        "condition": {
+          "field": "児童氏名",
+          "relatedField": "ルックアップ_0"
+        },
+        "displayFields": [
+          "本日日付",
+          "コメント",
+          "コメント_0"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "30",
+          "code": ""
+        },
+        "size": "5",
+        "sort": "レコード番号 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    },
+    "関連レコード一覧_8": {
+      "code": "関連レコード一覧_8",
+      "label": "訪問支援計画",
+      "noLabel": false,
+      "referenceTable": {
+        "condition": {
+          "field": "児童氏名",
+          "relatedField": "児童氏名"
+        },
+        "displayFields": [
+          "種別",
+          "アセス開始",
+          "アセス終了",
+          "短期開始日",
+          "短期終了日",
+          "長期目標",
+          "短期目標",
+          "支援のポイント",
+          "作成者"
+        ],
+        "filterCond": "",
+        "relatedApp": {
+          "app": "42",
+          "code": ""
+        },
+        "size": "5",
+        "sort": "レコード番号 desc"
+      },
+      "type": "REFERENCE_TABLE"
+    },
+    "０歳児": {
+      "code": "０歳児",
+      "defaultValue": "",
+      "expression": "IF(年齢=0,\"０歳\",\"\")",
+      "hideExpression": true,
+      "label": "０歳",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "１歳児": {
+      "code": "１歳児",
+      "defaultValue": "",
+      "expression": "IF(年齢=1,\"１歳\",\"\")",
+      "hideExpression": true,
+      "label": "１歳",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "２歳児": {
+      "code": "２歳児",
+      "defaultValue": "",
+      "expression": "IF(年齢=2,\"２歳\",\"\")",
+      "hideExpression": true,
+      "label": "２歳",
+      "maxLength": "",
+      "minLength": "",
+      "noLabel": false,
+      "required": false,
+      "type": "SINGLE_LINE_TEXT",
+      "unique": false
+    },
+    "ﾓﾆﾀ": {
+      "code": "ﾓﾆﾀ",
+      "fields": {
+        "ユーザー選択_10": {
+          "code": "ユーザー選択_10",
+          "defaultValue": [],
+          "entities": [],
+          "label": "記入者",
+          "noLabel": false,
+          "required": false,
+          "type": "USER_SELECT"
+        },
+        "文字列__複数行__10": {
+          "code": "文字列__複数行__10",
+          "defaultValue": "",
+          "label": "支援内容や様子",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "文字列__複数行__11": {
+          "code": "文字列__複数行__11",
+          "defaultValue": "",
+          "label": "今後の課題",
+          "noLabel": false,
+          "required": false,
+          "type": "MULTI_LINE_TEXT"
+        },
+        "日付_14": {
+          "code": "日付_14",
+          "defaultNowValue": false,
+          "defaultValue": "",
+          "label": "記入日",
+          "noLabel": false,
+          "required": false,
+          "type": "DATE",
+          "unique": false
+        }
+      },
+      "label": "詳しいモニタリングのみ依頼があった場合に記載",
+      "noLabel": false,
+      "type": "SUBTABLE"
+    }
+  },
+  "revision": "1517"
+}

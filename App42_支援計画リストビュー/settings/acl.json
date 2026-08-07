@@ -1,0 +1,103 @@
+{
+  "revision": "654",
+  "rights": [
+    {
+      "appEditable": true,
+      "entity": {
+        "code": null,
+        "type": "CREATOR"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": true,
+      "recordImportable": true,
+      "recordViewable": true
+    },
+    {
+      "appEditable": true,
+      "entity": {
+        "code": "GitHub",
+        "type": "USER"
+      },
+      "includeSubs": false,
+      "recordAddable": false,
+      "recordDeletable": false,
+      "recordEditable": false,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": true,
+      "entity": {
+        "code": "github-bot",
+        "type": "USER"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "マネジャー_ClXPed",
+        "type": "ORGANIZATION"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "太田裕美子",
+        "type": "USER"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": true,
+      "recordEditable": true,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "いろ葉_3oWTo5",
+        "type": "ORGANIZATION"
+      },
+      "includeSubs": false,
+      "recordAddable": true,
+      "recordDeletable": false,
+      "recordEditable": true,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": true
+    },
+    {
+      "appEditable": false,
+      "entity": {
+        "code": "everyone",
+        "type": "GROUP"
+      },
+      "includeSubs": false,
+      "recordAddable": false,
+      "recordDeletable": false,
+      "recordEditable": false,
+      "recordExportable": false,
+      "recordImportable": false,
+      "recordViewable": false
+    }
+  ]
+}

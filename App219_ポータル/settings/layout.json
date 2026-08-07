@@ -1,0 +1,30 @@
+{
+  "layout": [
+    {
+      "fields": [
+        {
+          "code": "添付ファイル",
+          "size": {
+            "width": "207"
+          },
+          "type": "FILE"
+        }
+      ],
+      "type": "ROW"
+    },
+    {
+      "fields": [
+        {
+          "code": "レイアウト情報",
+          "size": {
+            "innerHeight": "125",
+            "width": "315"
+          },
+          "type": "MULTI_LINE_TEXT"
+        }
+      ],
+      "type": "ROW"
+    }
+  ],
+  "revision": "225"
+}
